@@ -12,7 +12,7 @@ app.listen(port, () => {
 
 const secret_key = process.env.API_KEY;
 
-const url = "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/arrivals?station=ASD";
+const url = "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/departures?station=Hn&maxJourneys=20";
 
 async function getData() {
     const response = await fetch(url, {
