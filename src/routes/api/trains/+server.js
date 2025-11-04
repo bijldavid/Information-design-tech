@@ -1,6 +1,6 @@
 import { API_KEY } from '$env/static/private';
 
-const url = "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/arrivals?station=ASD";
+const url = "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/departures?station=HN&dateTime=2025-11-03T10:00:00+01:00";
 
 async function getData() {
     const response = await fetch(url, {
