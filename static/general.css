@@ -1,0 +1,37 @@
+:root {
+    --text: #070721;
+
+    --border: #B4B4BC;
+
+    --NS-yellow: #FFC917;
+    --NS-positive: #009A42;
+    --NS-negative: #DB0029;
+
+    --NS-blue: #003082;
+    --NS-blue-accent: #0063D3;
+
+    --NS-gray-800: #6A6A7A;
+    --NS-gray-600: #9C9CA6;
+    --NS-gray-400: #B4B4BC;
+    --NS-gray-200: #CDCDD3;
+    --NS-gray-100: #E0E0E8;
+}
+
+html {
+    interpolate-size: allow-keywords;
+}
+
+body {
+    background-color: var(--NS-gray-100);
+    font-family: 'gg-mono';
+}
+
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }

@@ -26,5 +26,110 @@
     "actualDepartureTime": "2025-11-05T00:34:16+0100",
     "direction": "Enkhuizen",
     "loggedAt": "2025-11-04T23:15:09.182Z"
+  },
+  {
+    "trainNumber": "3962",
+    "plannedDepartureTime": "2025-11-05T19:29:00+0100",
+    "actualDepartureTime": "2025-11-05T19:29:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-05T18:25:30.752Z"
+  },
+  {
+    "trainNumber": "4864",
+    "plannedDepartureTime": "2025-11-05T19:36:00+0100",
+    "actualDepartureTime": "2025-11-05T19:36:00+0100",
+    "direction": "Amsterdam Centraal",
+    "loggedAt": "2025-11-05T18:25:30.752Z"
+  },
+  {
+    "trainNumber": "3964",
+    "plannedDepartureTime": "2025-11-05T19:59:00+0100",
+    "actualDepartureTime": "2025-11-05T19:59:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-05T18:25:30.752Z"
+  },
+  {
+    "trainNumber": "4866",
+    "plannedDepartureTime": "2025-11-05T20:06:00+0100",
+    "actualDepartureTime": "2025-11-05T20:06:00+0100",
+    "direction": "Amsterdam Centraal",
+    "loggedAt": "2025-11-05T18:25:30.752Z"
+  },
+  {
+    "trainNumber": "302966",
+    "plannedDepartureTime": "2025-11-05T20:29:00+0100",
+    "actualDepartureTime": "2025-11-05T20:29:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-05T18:25:30.752Z"
+  },
+  {
+    "trainNumber": "302970",
+    "plannedDepartureTime": "2025-11-05T21:29:00+0100",
+    "actualDepartureTime": "2025-11-05T21:29:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-05T20:20:02.459Z"
+  },
+  {
+    "trainNumber": "302972",
+    "plannedDepartureTime": "2025-11-05T21:59:00+0100",
+    "actualDepartureTime": "2025-11-05T21:59:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-05T20:20:02.459Z"
+  },
+  {
+    "trainNumber": "4874",
+    "plannedDepartureTime": "2025-11-05T22:06:00+0100",
+    "actualDepartureTime": "2025-11-05T22:06:00+0100",
+    "direction": "Amsterdam Centraal",
+    "loggedAt": "2025-11-05T20:20:02.459Z"
+  },
+  {
+    "trainNumber": "302974",
+    "plannedDepartureTime": "2025-11-05T22:29:00+0100",
+    "actualDepartureTime": "2025-11-05T22:29:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-05T20:20:02.459Z"
+  },
+  {
+    "trainNumber": "4836",
+    "plannedDepartureTime": "2025-11-06T12:36:00+0100",
+    "actualDepartureTime": "2025-11-06T12:36:00+0100",
+    "direction": "Amsterdam Centraal",
+    "loggedAt": "2025-11-06T11:32:06.386Z"
+  },
+  {
+    "trainNumber": "3936",
+    "plannedDepartureTime": "2025-11-06T12:59:00+0100",
+    "actualDepartureTime": "2025-11-06T12:59:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-06T11:32:06.386Z"
+  },
+  {
+    "trainNumber": "4838",
+    "plannedDepartureTime": "2025-11-06T13:06:00+0100",
+    "actualDepartureTime": "2025-11-06T13:06:00+0100",
+    "direction": "Amsterdam Centraal",
+    "loggedAt": "2025-11-06T11:32:06.386Z"
+  },
+  {
+    "trainNumber": "3938",
+    "plannedDepartureTime": "2025-11-06T13:29:00+0100",
+    "actualDepartureTime": "2025-11-06T13:29:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-06T11:32:06.386Z"
+  },
+  {
+    "trainNumber": "4840",
+    "plannedDepartureTime": "2025-11-06T13:36:00+0100",
+    "actualDepartureTime": "2025-11-06T13:36:00+0100",
+    "direction": "Amsterdam Centraal",
+    "loggedAt": "2025-11-06T11:32:06.386Z"
+  },
+  {
+    "trainNumber": "3940",
+    "plannedDepartureTime": "2025-11-06T13:59:00+0100",
+    "actualDepartureTime": "2025-11-06T13:59:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-06T11:32:06.386Z"
   }
 ]
