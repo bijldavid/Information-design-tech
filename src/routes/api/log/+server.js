@@ -1,62 +1,63 @@
-// import { API_KEY } from '$env/static/private';
-// import { readFile, writeFile } from "fs/promises";
+import { API_KEY } from '$env/static/private';
+import { readFile, writeFile } from "fs/promises";
 
-// const url = "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/departures?station=HN";
+const url = "https://gateway.apiportal.ns.nl/reisinformatie-api/api/v2/departures?station=HN";
 
-// async function getDepartures() {
-//     const response = await fetch(url, {
-//         method: "GET",
-//         headers: {
-//             "Ocp-Apim-Subscription-Key": API_KEY
-//         }
-//     });
+async function getDepartures() {
+    const response = await fetch(url, {
+        method: "GET",
+        headers: {
+            "Ocp-Apim-Subscription-Key": API_KEY
+        }
+    });
 
-//     return response.json();
-// }
+    return response.json();
+}
 
-// export async function GET() {
-//     const data = await getDepartures();
+export async function GET() {
+    const data = await getDepartures();
+    const departures = data.payload.departures;
 
-//     const mappedData = data.payload.departures.map(item => {
-//         return {
-//             trainNumber: item.product.number,
-//             plannedDepartureTime: item.plannedDateTime,
-//             actualDepartureTime: item.actualDateTime,
-//             direction: item.direction,
-//             loggedAt: new Date().toISOString()
-//         }
-//     });
+    const intercityViaAmsterdam = departures.filter(departure => {
 
-//     const transformedData = mappedData.filter(item => {
-//         return item.direction === "Amsterdam Centraal" || item.direction === "Enkhuizen"
-//     });
+        const passesAmsterdam = departure.routeStations?.some(
+            station => station.mediumName === "Amsterdam C."
+        );
 
-//     const fileData = await readFile("static/data/delays.json", "utf8");
-//     const existingData = JSON.parse(fileData);
+        const isFromAmsterdamDirection = departure.direction === "Enkhuizen";
 
-//     transformedData.forEach(item => {
-//         const key = item.trainNumber + item.plannedDepartureTime + item.direction;
+        return (passesAmsterdam || isFromAmsterdamDirection);
+    });
 
-//         const existingIndex = existingData.findIndex(existingItem => {
-//             const existingKey =
-//                 existingItem.trainNumber + existingItem.plannedDepartureTime + existingItem.direction;
-//             return existingKey === key;
-//         });
+    const mappedData = intercityViaAmsterdam.map(item => ({
+        trainNumber: item.product.number,
+        plannedDepartureTime: item.plannedDateTime,
+        actualDepartureTime: item.actualDateTime,
+        direction: item.direction,
+        loggedAt: new Date().toISOString()
+    }));
 
-//         if (existingIndex === -1) {
-//             existingData.push(item);
-//         }
-//         else {
-//             existingData[existingIndex] = item;
-//         }
-//     });
+    const fileData = await readFile("static/data/delays.json", "utf8");
+    const existingData = JSON.parse(fileData);
 
-//     const updatedJson = JSON.stringify(existingData, null, 2);
-//     await writeFile("static/data/delays.json", updatedJson, "utf8");
+    mappedData.forEach(item => {
+        const key = item.trainNumber + item.plannedDepartureTime + item.direction;
 
-//     console.log(transformedData);
+        const index = existingData.findIndex(existing =>
+            existing.trainNumber + existing.plannedDepartureTime + existing.direction === key
+        );
 
-//     return new Response(JSON.stringify(transformedData), {
-//         headers: { "Content-Type": "application/json" }
-//     });
-// }
+        if (index === -1) {
+            existingData.push(item);
+        } else {
+            existingData[index] = item;
+        }
+    });
+
+    const updatedJson = JSON.stringify(existingData, null, 2);
+    await writeFile("static/data/delays.json", updatedJson, "utf8");
+
+    return new Response(JSON.stringify(mappedData), {
+        headers: { "Content-Type": "application/json" }
+    });
+}
