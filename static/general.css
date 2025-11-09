@@ -24,6 +24,7 @@ html {
 body {
     background-color: var(--NS-gray-100);
     font-family: 'gg-mono';
+    line-height: 1.4em;
 }
 
 .visually-hidden {

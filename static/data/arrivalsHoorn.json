@@ -1,0 +1,135 @@
+[
+  {
+    "trainNumber": "3986",
+    "plannedArrivalTime": "2025-11-09T01:34:00+0100",
+    "actualArrivalTime": "2025-11-09T01:34:00+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T00:27:10.969Z"
+  },
+  {
+    "trainNumber": "2990",
+    "plannedArrivalTime": "2025-11-09T02:34:00+0100",
+    "actualArrivalTime": "2025-11-09T02:34:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-09T00:27:10.969Z"
+  },
+  {
+    "trainNumber": "4189",
+    "plannedArrivalTime": "2025-11-09T22:52:00+0100",
+    "actualArrivalTime": "2025-11-09T22:52:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-09T21:42:32.300Z"
+  },
+  {
+    "trainNumber": "4883",
+    "plannedArrivalTime": "2025-11-09T22:54:00+0100",
+    "actualArrivalTime": "2025-11-09T22:54:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-09T21:42:32.300Z"
+  },
+  {
+    "trainNumber": "303976",
+    "plannedArrivalTime": "2025-11-09T22:54:00+0100",
+    "actualArrivalTime": "2025-11-09T23:09:20+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T22:08:33.251Z"
+  },
+  {
+    "trainNumber": "3989",
+    "plannedArrivalTime": "2025-11-09T23:03:00+0100",
+    "actualArrivalTime": "2025-11-09T23:03:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-09T21:42:32.300Z"
+  },
+  {
+    "trainNumber": "4176",
+    "plannedArrivalTime": "2025-11-09T23:04:00+0100",
+    "actualArrivalTime": "2025-11-09T23:14:20+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-09T22:08:33.251Z"
+  },
+  {
+    "trainNumber": "4191",
+    "plannedArrivalTime": "2025-11-09T23:22:00+0100",
+    "actualArrivalTime": "2025-11-09T23:22:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-09T22:08:33.251Z"
+  },
+  {
+    "trainNumber": "3978",
+    "plannedArrivalTime": "2025-11-09T23:24:00+0100",
+    "actualArrivalTime": "2025-11-09T23:24:00+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T21:42:32.300Z"
+  },
+  {
+    "trainNumber": "4178",
+    "plannedArrivalTime": "2025-11-09T23:34:00+0100",
+    "actualArrivalTime": "2025-11-09T23:34:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "4887",
+    "plannedArrivalTime": "2025-11-09T23:54:00+0100",
+    "actualArrivalTime": "2025-11-10T00:06:14+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "3980",
+    "plannedArrivalTime": "2025-11-09T23:54:00+0100",
+    "actualArrivalTime": "2025-11-09T23:54:00+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T21:42:32.300Z"
+  },
+  {
+    "trainNumber": "2993",
+    "plannedArrivalTime": "2025-11-10T00:03:00+0100",
+    "actualArrivalTime": "2025-11-10T00:10:15+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "4180",
+    "plannedArrivalTime": "2025-11-10T00:04:00+0100",
+    "actualArrivalTime": "2025-11-10T00:04:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "303978",
+    "plannedArrivalTime": "2025-11-09T23:24:00+0100",
+    "actualArrivalTime": "2025-11-09T23:38:56+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "303980",
+    "plannedArrivalTime": "2025-11-09T23:54:00+0100",
+    "actualArrivalTime": "2025-11-09T23:54:00+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "4889",
+    "plannedArrivalTime": "2025-11-10T00:24:00+0100",
+    "actualArrivalTime": "2025-11-10T00:24:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "3982",
+    "plannedArrivalTime": "2025-11-10T00:24:00+0100",
+    "actualArrivalTime": "2025-11-10T00:24:00+0100",
+    "origin": "Roosendaal",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "4182",
+    "plannedArrivalTime": "2025-11-10T00:34:00+0100",
+    "actualArrivalTime": "2025-11-10T00:34:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-09T22:23:33.514Z"
+  }
+]

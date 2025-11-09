@@ -20,13 +20,11 @@ export async function GET() {
 
     const intercityViaAmsterdam = departures.filter(departure => {
 
-        const passesAmsterdam = departure.routeStations?.some(
-            station => station.mediumName === "Amsterdam C."
-        );
+        const passesAmsterdam = departure.routeStations?.some(station => {
+            return station.mediumName === "Amsterdam C."
+        });
 
-        const isFromAmsterdamDirection = departure.direction === "Enkhuizen";
-
-        return (passesAmsterdam || isFromAmsterdamDirection);
+        return passesAmsterdam;
     });
 
     const mappedData = intercityViaAmsterdam.map(item => ({
@@ -37,15 +35,15 @@ export async function GET() {
         loggedAt: new Date().toISOString()
     }));
 
-    const fileData = await readFile("static/data/delays.json", "utf8");
+    const fileData = await readFile("static/data/departuresHoorn.json", "utf8");
     const existingData = JSON.parse(fileData);
 
     mappedData.forEach(item => {
         const key = item.trainNumber + item.plannedDepartureTime + item.direction;
 
-        const index = existingData.findIndex(existing =>
-            existing.trainNumber + existing.plannedDepartureTime + existing.direction === key
-        );
+        const index = existingData.findIndex(existing => {
+            return existing.trainNumber + existing.plannedDepartureTime + existing.direction === key
+        });
 
         if (index === -1) {
             existingData.push(item);
@@ -55,9 +53,7 @@ export async function GET() {
     });
 
     const updatedJson = JSON.stringify(existingData, null, 2);
-    await writeFile("static/data/delays.json", updatedJson, "utf8");
+    await writeFile("static/data/departuresHoorn.json", updatedJson, "utf8");
 
-    return new Response(JSON.stringify(mappedData), {
-        headers: { "Content-Type": "application/json" }
-    });
+    return new Response(JSON.stringify(mappedData));
 }

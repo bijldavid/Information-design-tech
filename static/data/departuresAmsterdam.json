@@ -1,0 +1,30 @@
+[
+  {
+    "trainNumber": "2990",
+    "plannedDepartureTime": "2025-11-09T01:52:00+0100",
+    "actualDepartureTime": "2025-11-09T01:52:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-09T00:37:06.270Z"
+  },
+  {
+    "trainNumber": "3978",
+    "plannedDepartureTime": "2025-11-09T22:50:00+0100",
+    "actualDepartureTime": "2025-11-09T22:50:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-09T21:42:32.199Z"
+  },
+  {
+    "trainNumber": "3980",
+    "plannedDepartureTime": "2025-11-09T23:20:00+0100",
+    "actualDepartureTime": "2025-11-09T23:20:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-09T21:42:32.199Z"
+  },
+  {
+    "trainNumber": "3982",
+    "plannedDepartureTime": "2025-11-09T23:50:00+0100",
+    "actualDepartureTime": "2025-11-09T23:50:00+0100",
+    "direction": "Enkhuizen",
+    "loggedAt": "2025-11-09T22:23:33.370Z"
+  }
+]

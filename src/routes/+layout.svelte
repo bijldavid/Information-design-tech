@@ -23,6 +23,7 @@
 		display: grid;
 		grid-template-columns: max-content 2fr 1fr;
 		gap: 2rem;
+		padding-inline: 1rem;
 	}
 
 	section > div {

@@ -2,7 +2,7 @@
 
 </script>
 
-<details>
+<details open>
     <summary><div class="details-icon"><span></span><span></span></div></summary>
     <section>
         <h2>Description</h2>
@@ -20,11 +20,7 @@
 
 <style>
     details {
-        --details-width: 500px;
-    }
-
-    ol {
-        padding-left: 28px;
+        --details-width: 400px;
     }
 
     details {
@@ -76,15 +72,6 @@
         rotate: z 180deg;
     }
 
-    /* details summary:hover .details-icon span:nth-of-type(1) {
-        rotate: z 90deg;
-    }
-
-    details[open] summary:hover .details-icon span:nth-of-type(1) {
-        rotate: z 0deg;
-    } */
-
-
 
     details summary .details-icon span {
         position: absolute;
@@ -110,12 +97,34 @@
 
     details section {
         min-width: calc(var(--details-width) - 4rem);
-        padding: 1rem;
     }
 
     details section h2 {
         font-size: 1rem;
         font-weight: normal;
         font-style: normal;
+        padding: 1rem 1.5rem;
+        border-bottom: 1px solid var(--border);
+    }
+
+    details section p {
+        padding: 1rem 1.5rem;
+    }
+
+    details section p:not(:last-of-type, :nth-of-type(3)) {
+        border-bottom: 1px solid var(--border);
+    }
+
+    details section ol {
+        padding: 1rem 1.5rem 1rem calc(28px + 1.5rem);
+        border-bottom: 1px solid var(--border);
+    }
+
+    details section p:nth-of-type(1) {
+        background: var(--NS-gray-200);
+    }
+
+    details section p:nth-of-type(3) {
+        padding: 1rem 1.5rem 0 1.5rem;
     }
 </style>

@@ -6,8 +6,8 @@
     <nav>
         <a class="highlight" href="/">Find delay</a>
         <div>
-            <a href="">Documentation</a>
-            <a href="">About the ...</a>
+            <a href="#">Documentation</a>
+            <a href="#">About the ...</a>
         </div>
     </nav>
 </header>
