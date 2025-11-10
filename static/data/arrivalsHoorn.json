@@ -131,5 +131,236 @@
     "actualArrivalTime": "2025-11-10T00:34:00+0100",
     "origin": "Hoofddorp",
     "loggedAt": "2025-11-09T22:23:33.514Z"
+  },
+  {
+    "trainNumber": "4149",
+    "plannedArrivalTime": "2025-11-10T12:57:00+0100",
+    "actualArrivalTime": "2025-11-10T12:57:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T11:56:51.566Z"
+  },
+  {
+    "trainNumber": "3949",
+    "plannedArrivalTime": "2025-11-10T13:03:00+0100",
+    "actualArrivalTime": "2025-11-10T13:03:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T11:59:54.518Z"
+  },
+  {
+    "trainNumber": "4136",
+    "plannedArrivalTime": "2025-11-10T13:03:00+0100",
+    "actualArrivalTime": "2025-11-10T13:03:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T11:59:54.518Z"
+  },
+  {
+    "trainNumber": "3938",
+    "plannedArrivalTime": "2025-11-10T13:21:00+0100",
+    "actualArrivalTime": "2025-11-10T13:21:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T12:19:54.882Z"
+  },
+  {
+    "trainNumber": "4845",
+    "plannedArrivalTime": "2025-11-10T13:24:00+0100",
+    "actualArrivalTime": "2025-11-10T13:25:39+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-10T12:19:54.882Z"
+  },
+  {
+    "trainNumber": "4151",
+    "plannedArrivalTime": "2025-11-10T13:27:00+0100",
+    "actualArrivalTime": "2025-11-10T13:27:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T12:19:54.882Z"
+  },
+  {
+    "trainNumber": "3951",
+    "plannedArrivalTime": "2025-11-10T13:33:00+0100",
+    "actualArrivalTime": "2025-11-10T13:33:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T12:29:54.976Z"
+  },
+  {
+    "trainNumber": "4138",
+    "plannedArrivalTime": "2025-11-10T13:33:00+0100",
+    "actualArrivalTime": "2025-11-10T13:33:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:29:54.976Z"
+  },
+  {
+    "trainNumber": "3940",
+    "plannedArrivalTime": "2025-11-10T13:51:00+0100",
+    "actualArrivalTime": "2025-11-10T13:51:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T12:47:22.647Z"
+  },
+  {
+    "trainNumber": "4847",
+    "plannedArrivalTime": "2025-11-10T13:54:00+0100",
+    "actualArrivalTime": "2025-11-10T13:54:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-10T12:47:22.647Z"
+  },
+  {
+    "trainNumber": "4153",
+    "plannedArrivalTime": "2025-11-10T13:57:00+0100",
+    "actualArrivalTime": "2025-11-10T13:57:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T12:47:22.647Z"
+  },
+  {
+    "trainNumber": "3953",
+    "plannedArrivalTime": "2025-11-10T14:03:00+0100",
+    "actualArrivalTime": "2025-11-10T14:03:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T12:57:21.992Z"
+  },
+  {
+    "trainNumber": "4140",
+    "plannedArrivalTime": "2025-11-10T14:03:00+0100",
+    "actualArrivalTime": "2025-11-10T14:03:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:57:21.992Z"
+  },
+  {
+    "trainNumber": "3942",
+    "plannedArrivalTime": "2025-11-10T14:21:00+0100",
+    "actualArrivalTime": "2025-11-10T14:21:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:17:21.989Z"
+  },
+  {
+    "trainNumber": "4849",
+    "plannedArrivalTime": "2025-11-10T14:24:00+0100",
+    "actualArrivalTime": "2025-11-10T14:24:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-10T13:17:21.989Z"
+  },
+  {
+    "trainNumber": "4155",
+    "plannedArrivalTime": "2025-11-10T14:27:00+0100",
+    "actualArrivalTime": "2025-11-10T14:27:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T13:17:21.989Z"
+  },
+  {
+    "trainNumber": "3955",
+    "plannedArrivalTime": "2025-11-10T14:33:00+0100",
+    "actualArrivalTime": "2025-11-10T14:33:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:27:21.963Z"
+  },
+  {
+    "trainNumber": "4142",
+    "plannedArrivalTime": "2025-11-10T14:33:00+0100",
+    "actualArrivalTime": "2025-11-10T14:38:30+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "3944",
+    "plannedArrivalTime": "2025-11-10T14:51:00+0100",
+    "actualArrivalTime": "2025-11-10T14:51:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4851",
+    "plannedArrivalTime": "2025-11-10T14:54:00+0100",
+    "actualArrivalTime": "2025-11-10T14:54:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4157",
+    "plannedArrivalTime": "2025-11-10T14:57:00+0100",
+    "actualArrivalTime": "2025-11-10T14:57:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "3957",
+    "plannedArrivalTime": "2025-11-10T15:03:00+0100",
+    "actualArrivalTime": "2025-11-10T15:03:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4144",
+    "plannedArrivalTime": "2025-11-10T15:03:00+0100",
+    "actualArrivalTime": "2025-11-10T15:03:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "3946",
+    "plannedArrivalTime": "2025-11-10T15:21:00+0100",
+    "actualArrivalTime": "2025-11-10T15:21:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4853",
+    "plannedArrivalTime": "2025-11-10T15:24:00+0100",
+    "actualArrivalTime": "2025-11-10T15:24:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4159",
+    "plannedArrivalTime": "2025-11-10T15:27:00+0100",
+    "actualArrivalTime": "2025-11-10T15:27:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "3959",
+    "plannedArrivalTime": "2025-11-10T15:33:00+0100",
+    "actualArrivalTime": "2025-11-10T15:33:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4146",
+    "plannedArrivalTime": "2025-11-10T15:33:00+0100",
+    "actualArrivalTime": "2025-11-10T15:33:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "3948",
+    "plannedArrivalTime": "2025-11-10T15:51:00+0100",
+    "actualArrivalTime": "2025-11-10T15:51:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4855",
+    "plannedArrivalTime": "2025-11-10T15:54:00+0100",
+    "actualArrivalTime": "2025-11-10T15:54:00+0100",
+    "origin": "Amsterdam Centraal",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4161",
+    "plannedArrivalTime": "2025-11-10T15:57:00+0100",
+    "actualArrivalTime": "2025-11-10T15:57:00+0100",
+    "origin": "Hoorn Kersenboogerd",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "3961",
+    "plannedArrivalTime": "2025-11-10T16:03:00+0100",
+    "actualArrivalTime": "2025-11-10T16:03:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
+  },
+  {
+    "trainNumber": "4148",
+    "plannedArrivalTime": "2025-11-10T16:03:00+0100",
+    "actualArrivalTime": "2025-11-10T16:03:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:21.904Z"
   }
 ]

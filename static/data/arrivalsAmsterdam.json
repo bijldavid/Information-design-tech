@@ -516,5 +516,761 @@
     "actualArrivalTime": "2025-11-10T00:51:00+0100",
     "origin": "Brussel-Zuid",
     "loggedAt": "2025-11-09T22:23:33.909Z"
+  },
+  {
+    "trainNumber": "9321",
+    "plannedArrivalTime": "2025-11-10T12:50:00+0100",
+    "actualArrivalTime": "2025-11-10T13:12:38+0100",
+    "origin": "Paris-Nord",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "2747",
+    "plannedArrivalTime": "2025-11-10T13:02:00+0100",
+    "actualArrivalTime": "2025-11-10T13:02:00+0100",
+    "origin": "Alkmaar",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "1540",
+    "plannedArrivalTime": "2025-11-10T13:02:00+0100",
+    "actualArrivalTime": "2025-11-10T13:02:00+0100",
+    "origin": "Deventer",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "8438",
+    "plannedArrivalTime": "2025-11-10T13:05:00+0100",
+    "actualArrivalTime": "2025-11-10T13:05:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "4832",
+    "plannedArrivalTime": "2025-11-10T13:06:00+0100",
+    "actualArrivalTime": "2025-11-10T13:06:00+0100",
+    "origin": "Hoorn",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "3038",
+    "plannedArrivalTime": "2025-11-10T13:06:00+0100",
+    "actualArrivalTime": "2025-11-10T13:06:00+0100",
+    "origin": "Nijmegen",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "4638",
+    "plannedArrivalTime": "2025-11-10T13:07:00+0100",
+    "actualArrivalTime": "2025-11-10T13:07:00+0100",
+    "origin": "Almere Oostvaarders",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "8238",
+    "plannedArrivalTime": "2025-11-10T13:09:00+0100",
+    "actualArrivalTime": "2025-11-10T13:09:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T11:59:46.778Z"
+  },
+  {
+    "trainNumber": "2134",
+    "plannedArrivalTime": "2025-11-10T13:10:00+0100",
+    "actualArrivalTime": "2025-11-10T13:10:00+0100",
+    "origin": "Den Haag Centraal",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "3947",
+    "plannedArrivalTime": "2025-11-10T13:11:00+0100",
+    "actualArrivalTime": "2025-11-10T13:11:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "4038",
+    "plannedArrivalTime": "2025-11-10T13:11:00+0100",
+    "actualArrivalTime": "2025-11-10T13:15:19+0100",
+    "origin": "Rotterdam Centraal",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "3940",
+    "plannedArrivalTime": "2025-11-10T13:15:00+0100",
+    "actualArrivalTime": "2025-11-10T13:16:47+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "8340",
+    "plannedArrivalTime": "2025-11-10T13:16:00+0100",
+    "actualArrivalTime": "2025-11-10T13:16:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "4049",
+    "plannedArrivalTime": "2025-11-10T13:17:00+0100",
+    "actualArrivalTime": "2025-11-10T13:17:00+0100",
+    "origin": "Uitgeest",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "5840",
+    "plannedArrivalTime": "2025-11-10T13:19:00+0100",
+    "actualArrivalTime": "2025-11-10T13:20:22+0100",
+    "origin": "Amersfoort Vathorst",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "5434",
+    "plannedArrivalTime": "2025-11-10T13:19:00+0100",
+    "actualArrivalTime": "2025-11-10T13:19:00+0100",
+    "origin": "Zandvoort aan Zee",
+    "loggedAt": "2025-11-10T12:09:55.473Z"
+  },
+  {
+    "trainNumber": "3047",
+    "plannedArrivalTime": "2025-11-10T13:21:00+0100",
+    "actualArrivalTime": "2025-11-10T13:21:00+0100",
+    "origin": "Den Helder",
+    "loggedAt": "2025-11-10T12:19:55.414Z"
+  },
+  {
+    "trainNumber": "2640",
+    "plannedArrivalTime": "2025-11-10T13:22:00+0100",
+    "actualArrivalTime": "2025-11-10T13:22:00+0100",
+    "origin": "Almere Centrum",
+    "loggedAt": "2025-11-10T12:19:55.414Z"
+  },
+  {
+    "trainNumber": "8140",
+    "plannedArrivalTime": "2025-11-10T13:25:00+0100",
+    "actualArrivalTime": "2025-11-10T13:25:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:19:55.414Z"
+  },
+  {
+    "trainNumber": "2740",
+    "plannedArrivalTime": "2025-11-10T13:25:00+0100",
+    "actualArrivalTime": "2025-11-10T13:25:00+0100",
+    "origin": "Maastricht",
+    "loggedAt": "2025-11-10T12:19:55.414Z"
+  },
+  {
+    "trainNumber": "2245",
+    "plannedArrivalTime": "2025-11-10T13:25:00+0100",
+    "actualArrivalTime": "2025-11-10T13:26:04+0100",
+    "origin": "Vlissingen",
+    "loggedAt": "2025-11-10T12:19:55.414Z"
+  },
+  {
+    "trainNumber": "1542",
+    "plannedArrivalTime": "2025-11-10T13:29:00+0100",
+    "actualArrivalTime": "2025-11-10T13:29:00+0100",
+    "origin": "Amersfoort Centraal",
+    "loggedAt": "2025-11-10T12:19:55.414Z"
+  },
+  {
+    "trainNumber": "128",
+    "plannedArrivalTime": "2025-11-10T13:29:00+0100",
+    "actualArrivalTime": "2025-11-10T13:38:29+0100",
+    "origin": "Frankfurt (M) Hbf",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "2749",
+    "plannedArrivalTime": "2025-11-10T13:32:00+0100",
+    "actualArrivalTime": "2025-11-10T13:32:00+0100",
+    "origin": "Alkmaar",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "8440",
+    "plannedArrivalTime": "2025-11-10T13:34:00+0100",
+    "actualArrivalTime": "2025-11-10T13:34:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "4834",
+    "plannedArrivalTime": "2025-11-10T13:35:00+0100",
+    "actualArrivalTime": "2025-11-10T13:35:00+0100",
+    "origin": "Hoorn",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "3040",
+    "plannedArrivalTime": "2025-11-10T13:36:00+0100",
+    "actualArrivalTime": "2025-11-10T13:37:19+0100",
+    "origin": "Nijmegen",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "4640",
+    "plannedArrivalTime": "2025-11-10T13:37:00+0100",
+    "actualArrivalTime": "2025-11-10T13:37:00+0100",
+    "origin": "Almere Oostvaarders",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "8240",
+    "plannedArrivalTime": "2025-11-10T13:39:00+0100",
+    "actualArrivalTime": "2025-11-10T13:39:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "2136",
+    "plannedArrivalTime": "2025-11-10T13:40:00+0100",
+    "actualArrivalTime": "2025-11-10T13:40:00+0100",
+    "origin": "Den Haag Centraal",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "3949",
+    "plannedArrivalTime": "2025-11-10T13:41:00+0100",
+    "actualArrivalTime": "2025-11-10T13:41:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "4040",
+    "plannedArrivalTime": "2025-11-10T13:41:00+0100",
+    "actualArrivalTime": "2025-11-10T13:41:00+0100",
+    "origin": "Rotterdam Centraal",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "3942",
+    "plannedArrivalTime": "2025-11-10T13:45:00+0100",
+    "actualArrivalTime": "2025-11-10T13:45:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "8342",
+    "plannedArrivalTime": "2025-11-10T13:46:00+0100",
+    "actualArrivalTime": "2025-11-10T13:48:16+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "4051",
+    "plannedArrivalTime": "2025-11-10T13:47:00+0100",
+    "actualArrivalTime": "2025-11-10T13:47:00+0100",
+    "origin": "Uitgeest",
+    "loggedAt": "2025-11-10T12:29:55.387Z"
+  },
+  {
+    "trainNumber": "5842",
+    "plannedArrivalTime": "2025-11-10T13:49:00+0100",
+    "actualArrivalTime": "2025-11-10T13:49:00+0100",
+    "origin": "Amersfoort Vathorst",
+    "loggedAt": "2025-11-10T12:47:22.987Z"
+  },
+  {
+    "trainNumber": "5436",
+    "plannedArrivalTime": "2025-11-10T13:49:00+0100",
+    "actualArrivalTime": "2025-11-10T13:50:23+0100",
+    "origin": "Zandvoort aan Zee",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "9327",
+    "plannedArrivalTime": "2025-11-10T13:50:00+0100",
+    "actualArrivalTime": "2025-11-10T13:50:00+0100",
+    "origin": "Paris-Nord",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "3049",
+    "plannedArrivalTime": "2025-11-10T13:51:00+0100",
+    "actualArrivalTime": "2025-11-10T13:51:00+0100",
+    "origin": "Den Helder",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "2642",
+    "plannedArrivalTime": "2025-11-10T13:52:00+0100",
+    "actualArrivalTime": "2025-11-10T13:52:00+0100",
+    "origin": "Almere Centrum",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "8142",
+    "plannedArrivalTime": "2025-11-10T13:55:00+0100",
+    "actualArrivalTime": "2025-11-10T13:55:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "2742",
+    "plannedArrivalTime": "2025-11-10T13:55:00+0100",
+    "actualArrivalTime": "2025-11-10T13:56:10+0100",
+    "origin": "Maastricht",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "2347",
+    "plannedArrivalTime": "2025-11-10T13:55:00+0100",
+    "actualArrivalTime": "2025-11-10T13:55:00+0100",
+    "origin": "Vlissingen",
+    "loggedAt": "2025-11-10T12:49:23.402Z"
+  },
+  {
+    "trainNumber": "148",
+    "plannedArrivalTime": "2025-11-10T13:59:00+0100",
+    "actualArrivalTime": "2025-11-10T13:59:00+0100",
+    "origin": "Berlin Ostbahnhof",
+    "loggedAt": "2025-11-10T12:57:22.372Z"
+  },
+  {
+    "trainNumber": "2751",
+    "plannedArrivalTime": "2025-11-10T14:02:00+0100",
+    "actualArrivalTime": "2025-11-10T14:02:00+0100",
+    "origin": "Alkmaar",
+    "loggedAt": "2025-11-10T12:57:22.372Z"
+  },
+  {
+    "trainNumber": "8442",
+    "plannedArrivalTime": "2025-11-10T14:04:00+0100",
+    "actualArrivalTime": "2025-11-10T14:04:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T12:57:22.372Z"
+  },
+  {
+    "trainNumber": "4836",
+    "plannedArrivalTime": "2025-11-10T14:05:00+0100",
+    "actualArrivalTime": "2025-11-10T14:05:00+0100",
+    "origin": "Hoorn",
+    "loggedAt": "2025-11-10T12:57:22.372Z"
+  },
+  {
+    "trainNumber": "3042",
+    "plannedArrivalTime": "2025-11-10T14:06:00+0100",
+    "actualArrivalTime": "2025-11-10T14:06:00+0100",
+    "origin": "Nijmegen",
+    "loggedAt": "2025-11-10T12:57:22.372Z"
+  },
+  {
+    "trainNumber": "4642",
+    "plannedArrivalTime": "2025-11-10T14:07:00+0100",
+    "actualArrivalTime": "2025-11-10T14:08:50+0100",
+    "origin": "Almere Oostvaarders",
+    "loggedAt": "2025-11-10T13:07:22.297Z"
+  },
+  {
+    "trainNumber": "8242",
+    "plannedArrivalTime": "2025-11-10T14:09:00+0100",
+    "actualArrivalTime": "2025-11-10T14:09:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "2138",
+    "plannedArrivalTime": "2025-11-10T14:10:00+0100",
+    "actualArrivalTime": "2025-11-10T14:10:00+0100",
+    "origin": "Den Haag Centraal",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "3951",
+    "plannedArrivalTime": "2025-11-10T14:11:00+0100",
+    "actualArrivalTime": "2025-11-10T14:11:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "4042",
+    "plannedArrivalTime": "2025-11-10T14:11:00+0100",
+    "actualArrivalTime": "2025-11-10T14:12:20+0100",
+    "origin": "Rotterdam Centraal",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "3944",
+    "plannedArrivalTime": "2025-11-10T14:15:00+0100",
+    "actualArrivalTime": "2025-11-10T14:16:22+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "8344",
+    "plannedArrivalTime": "2025-11-10T14:16:00+0100",
+    "actualArrivalTime": "2025-11-10T14:16:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "4053",
+    "plannedArrivalTime": "2025-11-10T14:17:00+0100",
+    "actualArrivalTime": "2025-11-10T14:17:00+0100",
+    "origin": "Uitgeest",
+    "loggedAt": "2025-11-10T13:07:22.298Z"
+  },
+  {
+    "trainNumber": "5844",
+    "plannedArrivalTime": "2025-11-10T14:19:00+0100",
+    "actualArrivalTime": "2025-11-10T14:19:00+0100",
+    "origin": "Amersfoort Vathorst",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "5438",
+    "plannedArrivalTime": "2025-11-10T14:19:00+0100",
+    "actualArrivalTime": "2025-11-10T14:19:00+0100",
+    "origin": "Zandvoort aan Zee",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "3051",
+    "plannedArrivalTime": "2025-11-10T14:21:00+0100",
+    "actualArrivalTime": "2025-11-10T14:21:00+0100",
+    "origin": "Den Helder",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "2644",
+    "plannedArrivalTime": "2025-11-10T14:22:00+0100",
+    "actualArrivalTime": "2025-11-10T14:22:00+0100",
+    "origin": "Almere Centrum",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "8144",
+    "plannedArrivalTime": "2025-11-10T14:25:00+0100",
+    "actualArrivalTime": "2025-11-10T14:26:13+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "2744",
+    "plannedArrivalTime": "2025-11-10T14:25:00+0100",
+    "actualArrivalTime": "2025-11-10T14:26:58+0100",
+    "origin": "Maastricht",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "2249",
+    "plannedArrivalTime": "2025-11-10T14:25:00+0100",
+    "actualArrivalTime": "2025-11-10T14:25:00+0100",
+    "origin": "Vlissingen",
+    "loggedAt": "2025-11-10T13:17:22.299Z"
+  },
+  {
+    "trainNumber": "1546",
+    "plannedArrivalTime": "2025-11-10T14:29:00+0100",
+    "actualArrivalTime": "2025-11-10T14:29:00+0100",
+    "origin": "Amersfoort Centraal",
+    "loggedAt": "2025-11-10T13:27:22.360Z"
+  },
+  {
+    "trainNumber": "2753",
+    "plannedArrivalTime": "2025-11-10T14:31:00+0100",
+    "actualArrivalTime": "2025-11-10T14:32:23+0100",
+    "origin": "Alkmaar",
+    "loggedAt": "2025-11-10T13:27:22.360Z"
+  },
+  {
+    "trainNumber": "8444",
+    "plannedArrivalTime": "2025-11-10T14:34:00+0100",
+    "actualArrivalTime": "2025-11-10T14:34:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:27:22.360Z"
+  },
+  {
+    "trainNumber": "4838",
+    "plannedArrivalTime": "2025-11-10T14:35:00+0100",
+    "actualArrivalTime": "2025-11-10T14:35:00+0100",
+    "origin": "Hoorn",
+    "loggedAt": "2025-11-10T13:27:22.360Z"
+  },
+  {
+    "trainNumber": "3044",
+    "plannedArrivalTime": "2025-11-10T14:36:00+0100",
+    "actualArrivalTime": "2025-11-10T14:36:00+0100",
+    "origin": "Nijmegen",
+    "loggedAt": "2025-11-10T13:27:22.360Z"
+  },
+  {
+    "trainNumber": "4644",
+    "plannedArrivalTime": "2025-11-10T14:37:00+0100",
+    "actualArrivalTime": "2025-11-10T14:38:15+0100",
+    "origin": "Almere Oostvaarders",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8244",
+    "plannedArrivalTime": "2025-11-10T14:39:00+0100",
+    "actualArrivalTime": "2025-11-10T14:39:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2140",
+    "plannedArrivalTime": "2025-11-10T14:40:00+0100",
+    "actualArrivalTime": "2025-11-10T14:41:59+0100",
+    "origin": "Den Haag Centraal",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3953",
+    "plannedArrivalTime": "2025-11-10T14:41:00+0100",
+    "actualArrivalTime": "2025-11-10T14:41:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "4044",
+    "plannedArrivalTime": "2025-11-10T14:41:00+0100",
+    "actualArrivalTime": "2025-11-10T14:42:03+0100",
+    "origin": "Rotterdam Centraal",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3946",
+    "plannedArrivalTime": "2025-11-10T14:45:00+0100",
+    "actualArrivalTime": "2025-11-10T14:45:00+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8346",
+    "plannedArrivalTime": "2025-11-10T14:46:00+0100",
+    "actualArrivalTime": "2025-11-10T14:46:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "4055",
+    "plannedArrivalTime": "2025-11-10T14:47:00+0100",
+    "actualArrivalTime": "2025-11-10T14:47:00+0100",
+    "origin": "Uitgeest",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "5846",
+    "plannedArrivalTime": "2025-11-10T14:49:00+0100",
+    "actualArrivalTime": "2025-11-10T14:49:00+0100",
+    "origin": "Amersfoort Vathorst",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "5440",
+    "plannedArrivalTime": "2025-11-10T14:49:00+0100",
+    "actualArrivalTime": "2025-11-10T14:49:00+0100",
+    "origin": "Zandvoort aan Zee",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3053",
+    "plannedArrivalTime": "2025-11-10T14:51:00+0100",
+    "actualArrivalTime": "2025-11-10T14:51:00+0100",
+    "origin": "Den Helder",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2646",
+    "plannedArrivalTime": "2025-11-10T14:52:00+0100",
+    "actualArrivalTime": "2025-11-10T14:52:00+0100",
+    "origin": "Almere Centrum",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8146",
+    "plannedArrivalTime": "2025-11-10T14:55:00+0100",
+    "actualArrivalTime": "2025-11-10T14:55:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2746",
+    "plannedArrivalTime": "2025-11-10T14:55:00+0100",
+    "actualArrivalTime": "2025-11-10T14:55:00+0100",
+    "origin": "Maastricht",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2351",
+    "plannedArrivalTime": "2025-11-10T14:55:00+0100",
+    "actualArrivalTime": "2025-11-10T14:55:00+0100",
+    "origin": "Vlissingen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "1548",
+    "plannedArrivalTime": "2025-11-10T14:59:00+0100",
+    "actualArrivalTime": "2025-11-10T14:59:00+0100",
+    "origin": "Deventer",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2755",
+    "plannedArrivalTime": "2025-11-10T15:02:00+0100",
+    "actualArrivalTime": "2025-11-10T15:05:51+0100",
+    "origin": "Alkmaar",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8446",
+    "plannedArrivalTime": "2025-11-10T15:05:00+0100",
+    "actualArrivalTime": "2025-11-10T15:05:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "4840",
+    "plannedArrivalTime": "2025-11-10T15:05:00+0100",
+    "actualArrivalTime": "2025-11-10T15:05:00+0100",
+    "origin": "Hoorn",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3046",
+    "plannedArrivalTime": "2025-11-10T15:06:00+0100",
+    "actualArrivalTime": "2025-11-10T15:06:00+0100",
+    "origin": "Nijmegen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "7455",
+    "plannedArrivalTime": "2025-11-10T15:06:00+0100",
+    "actualArrivalTime": "2025-11-10T15:06:00+0100",
+    "origin": "Uitgeest",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "4646",
+    "plannedArrivalTime": "2025-11-10T15:07:00+0100",
+    "actualArrivalTime": "2025-11-10T15:07:00+0100",
+    "origin": "Almere Oostvaarders",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8246",
+    "plannedArrivalTime": "2025-11-10T15:09:00+0100",
+    "actualArrivalTime": "2025-11-10T15:09:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2142",
+    "plannedArrivalTime": "2025-11-10T15:10:00+0100",
+    "actualArrivalTime": "2025-11-10T15:10:00+0100",
+    "origin": "Den Haag Centraal",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3955",
+    "plannedArrivalTime": "2025-11-10T15:11:00+0100",
+    "actualArrivalTime": "2025-11-10T15:11:00+0100",
+    "origin": "Enkhuizen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "4046",
+    "plannedArrivalTime": "2025-11-10T15:11:00+0100",
+    "actualArrivalTime": "2025-11-10T15:11:00+0100",
+    "origin": "Rotterdam Centraal",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3948",
+    "plannedArrivalTime": "2025-11-10T15:15:00+0100",
+    "actualArrivalTime": "2025-11-10T15:18:18+0100",
+    "origin": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8348",
+    "plannedArrivalTime": "2025-11-10T15:16:00+0100",
+    "actualArrivalTime": "2025-11-10T15:16:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "4057",
+    "plannedArrivalTime": "2025-11-10T15:17:00+0100",
+    "actualArrivalTime": "2025-11-10T15:17:00+0100",
+    "origin": "Uitgeest",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "5848",
+    "plannedArrivalTime": "2025-11-10T15:19:00+0100",
+    "actualArrivalTime": "2025-11-10T15:19:00+0100",
+    "origin": "Amersfoort Vathorst",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "5442",
+    "plannedArrivalTime": "2025-11-10T15:19:00+0100",
+    "actualArrivalTime": "2025-11-10T15:19:00+0100",
+    "origin": "Zandvoort aan Zee",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "7446",
+    "plannedArrivalTime": "2025-11-10T15:20:00+0100",
+    "actualArrivalTime": "2025-11-10T15:20:00+0100",
+    "origin": "Utrecht Centraal",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "3055",
+    "plannedArrivalTime": "2025-11-10T15:21:00+0100",
+    "actualArrivalTime": "2025-11-10T15:21:00+0100",
+    "origin": "Den Helder",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2648",
+    "plannedArrivalTime": "2025-11-10T15:22:00+0100",
+    "actualArrivalTime": "2025-11-10T15:22:00+0100",
+    "origin": "Almere Centrum",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "8148",
+    "plannedArrivalTime": "2025-11-10T15:25:00+0100",
+    "actualArrivalTime": "2025-11-10T15:25:00+0100",
+    "origin": "Hoofddorp",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2748",
+    "plannedArrivalTime": "2025-11-10T15:25:00+0100",
+    "actualArrivalTime": "2025-11-10T15:25:00+0100",
+    "origin": "Maastricht",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2253",
+    "plannedArrivalTime": "2025-11-10T15:25:00+0100",
+    "actualArrivalTime": "2025-11-10T15:25:00+0100",
+    "origin": "Vlissingen",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "1550",
+    "plannedArrivalTime": "2025-11-10T15:29:00+0100",
+    "actualArrivalTime": "2025-11-10T15:29:00+0100",
+    "origin": "Amersfoort Centraal",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "126",
+    "plannedArrivalTime": "2025-11-10T15:29:00+0100",
+    "actualArrivalTime": "2025-11-10T15:38:16+0100",
+    "origin": "Frankfurt (M) Hbf",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
+  },
+  {
+    "trainNumber": "2757",
+    "plannedArrivalTime": "2025-11-10T15:32:00+0100",
+    "actualArrivalTime": "2025-11-10T15:32:00+0100",
+    "origin": "Alkmaar",
+    "loggedAt": "2025-11-10T13:37:22.424Z"
   }
 ]

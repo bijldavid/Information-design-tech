@@ -26,5 +26,47 @@
     "actualDepartureTime": "2025-11-09T23:05:00+0100",
     "direction": "'s-Hertogenbosch",
     "loggedAt": "2025-11-09T21:42:32.378Z"
+  },
+  {
+    "trainNumber": "3949",
+    "plannedDepartureTime": "2025-11-10T13:10:00+0100",
+    "actualDepartureTime": "2025-11-10T13:10:00+0100",
+    "direction": "Heerlen",
+    "loggedAt": "2025-11-10T12:09:55.021Z"
+  },
+  {
+    "trainNumber": "3951",
+    "plannedDepartureTime": "2025-11-10T13:40:00+0100",
+    "actualDepartureTime": "2025-11-10T13:40:00+0100",
+    "direction": "Heerlen",
+    "loggedAt": "2025-11-10T12:29:55.077Z"
+  },
+  {
+    "trainNumber": "3953",
+    "plannedDepartureTime": "2025-11-10T14:10:00+0100",
+    "actualDepartureTime": "2025-11-10T14:10:00+0100",
+    "direction": "Heerlen",
+    "loggedAt": "2025-11-10T13:07:21.994Z"
+  },
+  {
+    "trainNumber": "3955",
+    "plannedDepartureTime": "2025-11-10T14:40:00+0100",
+    "actualDepartureTime": "2025-11-10T14:40:00+0100",
+    "direction": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:22.228Z"
+  },
+  {
+    "trainNumber": "3957",
+    "plannedDepartureTime": "2025-11-10T15:10:00+0100",
+    "actualDepartureTime": "2025-11-10T15:10:00+0100",
+    "direction": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:22.228Z"
+  },
+  {
+    "trainNumber": "3959",
+    "plannedDepartureTime": "2025-11-10T15:40:00+0100",
+    "actualDepartureTime": "2025-11-10T15:40:00+0100",
+    "direction": "Heerlen",
+    "loggedAt": "2025-11-10T13:37:22.228Z"
   }
 ]

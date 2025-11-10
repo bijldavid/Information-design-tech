@@ -55,5 +55,5 @@ export async function GET() {
     const updatedJson = JSON.stringify(existingData, null, 2);
     await writeFile("static/data/departuresAmsterdam.json", updatedJson, "utf8");
 
-    return new Response(JSON.stringify(mappedData));
+    return new Response(JSON.stringify(data));
 }
