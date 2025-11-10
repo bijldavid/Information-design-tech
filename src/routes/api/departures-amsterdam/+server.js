@@ -32,6 +32,7 @@ export async function GET() {
         plannedDepartureTime: item.plannedDateTime,
         actualDepartureTime: item.actualDateTime,
         direction: item.direction,
+        isCancelled: item.cancelled,
         loggedAt: new Date().toISOString()
     }));
 
@@ -55,5 +56,5 @@ export async function GET() {
     const updatedJson = JSON.stringify(existingData, null, 2);
     await writeFile("static/data/departuresAmsterdam.json", updatedJson, "utf8");
 
-    return new Response(JSON.stringify(data));
+    return new Response(JSON.stringify(mappedData));
 }

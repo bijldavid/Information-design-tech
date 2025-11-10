@@ -32,6 +32,7 @@ export async function GET() {
         plannedDepartureTime: item.plannedDateTime,
         actualDepartureTime: item.actualDateTime,
         direction: item.direction,
+        isCancelled: item.cancelled,
         loggedAt: new Date().toISOString()
     }));
 

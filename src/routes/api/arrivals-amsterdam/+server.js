@@ -20,7 +20,7 @@ export async function GET() {
     const arrivals = data.payload.arrivals;
 
     const filteredData = arrivals.filter((arrival) => {
-        arrival.origin === "Heerlen"
+        return arrival.origin === "Enkhuizen"
     });
 
     const mappedData = filteredData.map(item => ({
@@ -28,6 +28,7 @@ export async function GET() {
         plannedArrivalTime: item.plannedDateTime,
         actualArrivalTime: item.actualDateTime,
         origin: item.origin,
+        isCancelled: item.cancelled,
         loggedAt: new Date().toISOString()
     }));
 
@@ -51,5 +52,5 @@ export async function GET() {
     const updatedJson = JSON.stringify(existingData, null, 2);
     await writeFile("static/data/arrivalsAmsterdam.json", updatedJson, "utf8");
 
-    return new Response(JSON.stringify(filteredData));
+    return new Response(JSON.stringify(mappedData));
 }

@@ -19,11 +19,21 @@ export async function GET() {
     const data = await getArrivals();
     const arrivals = data.payload.arrivals;
 
-    const mappedData = arrivals.map(item => ({
+    const filteredData = arrivals.filter((arrival) => {
+
+        const origins = [
+            "Heerlen", "Maastricht", "Eindhoven Centraal", "Roosendaal", "Vlissingen", "Tilburg", "Den Bosch", "Arnhem Centraal", "Nijmegen", "Zwolle", "Groningen", "Leeuwarden", "Haarlem", "Hoorn"
+        ];
+
+        return origins.includes(arrival.origin);
+    })
+
+    const mappedData = filteredData.map(item => ({
         trainNumber: item.product.number,
         plannedArrivalTime: item.plannedDateTime,
         actualArrivalTime: item.actualDateTime,
         origin: item.origin,
+        isCancelled: item.cancelled,
         loggedAt: new Date().toISOString()
     }));
 
@@ -47,5 +57,5 @@ export async function GET() {
     const updatedJson = JSON.stringify(existingData, null, 2);
     await writeFile("static/data/arrivalsHoorn.json", updatedJson, "utf8");
 
-    return new Response(JSON.stringify(mappedData));
+    return new Response(JSON.stringify(filteredData));
 }
