@@ -50,18 +50,18 @@
   {
     "trainNumber": "3969",
     "plannedArrivalTime": "2025-11-10T18:42:00+0100",
-    "actualArrivalTime": "2025-11-10T19:21:46+0100",
+    "actualArrivalTime": "2025-11-10T19:40:03+0100",
     "origin": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-10T18:17:21.561Z"
+    "loggedAt": "2025-11-10T18:37:21.569Z"
   },
   {
     "trainNumber": "2971",
     "plannedArrivalTime": "2025-11-10T19:08:00+0100",
-    "actualArrivalTime": "2025-11-10T19:22:31+0100",
+    "actualArrivalTime": "2025-11-10T19:42:31+0100",
     "origin": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-10T18:17:21.561Z"
+    "loggedAt": "2025-11-10T18:37:21.569Z"
   },
   {
     "trainNumber": "2973",
@@ -69,6 +69,270 @@
     "actualArrivalTime": "2025-11-10T19:38:00+0100",
     "origin": "Enkhuizen",
     "isCancelled": true,
-    "loggedAt": "2025-11-10T18:17:21.561Z"
+    "loggedAt": "2025-11-10T18:37:21.569Z"
+  },
+  {
+    "trainNumber": "2975",
+    "plannedArrivalTime": "2025-11-10T20:08:00+0100",
+    "actualArrivalTime": "2025-11-10T20:08:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T19:07:23.641Z"
+  },
+  {
+    "trainNumber": "2977",
+    "plannedArrivalTime": "2025-11-10T20:38:00+0100",
+    "actualArrivalTime": "2025-11-10T20:38:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T19:37:23.771Z"
+  },
+  {
+    "trainNumber": "2979",
+    "plannedArrivalTime": "2025-11-10T21:08:00+0100",
+    "actualArrivalTime": "2025-11-10T21:08:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": true,
+    "loggedAt": "2025-11-10T20:07:29.856Z"
+  },
+  {
+    "trainNumber": "2981",
+    "plannedArrivalTime": "2025-11-10T21:38:00+0100",
+    "actualArrivalTime": "2025-11-10T21:38:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T20:37:30.240Z"
+  },
+  {
+    "trainNumber": "2983",
+    "plannedArrivalTime": "2025-11-10T22:08:00+0100",
+    "actualArrivalTime": "2025-11-10T22:11:18+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T21:00:20.986Z"
+  },
+  {
+    "trainNumber": "2985",
+    "plannedArrivalTime": "2025-11-10T22:38:00+0100",
+    "actualArrivalTime": "2025-11-10T22:38:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T21:20:27.595Z"
+  },
+  {
+    "trainNumber": "2987",
+    "plannedArrivalTime": "2025-11-10T23:08:00+0100",
+    "actualArrivalTime": "2025-11-10T23:11:52+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T21:38:32.148Z"
+  },
+  {
+    "trainNumber": "2989",
+    "plannedArrivalTime": "2025-11-10T23:38:00+0100",
+    "actualArrivalTime": "2025-11-10T23:38:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T22:29:11.546Z"
+  },
+  {
+    "trainNumber": "2993",
+    "plannedArrivalTime": "2025-11-11T00:46:00+0100",
+    "actualArrivalTime": "2025-11-11T00:46:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T23:38:16.567Z"
+  },
+  {
+    "trainNumber": "2919",
+    "plannedArrivalTime": "2025-11-11T06:08:00+0100",
+    "actualArrivalTime": "2025-11-11T06:08:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T04:43:22.324Z"
+  },
+  {
+    "trainNumber": "2921",
+    "plannedArrivalTime": "2025-11-11T06:38:00+0100",
+    "actualArrivalTime": "2025-11-11T06:38:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T05:34:34.287Z"
+  },
+  {
+    "trainNumber": "3923",
+    "plannedArrivalTime": "2025-11-11T07:11:00+0100",
+    "actualArrivalTime": "2025-11-11T07:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T05:34:34.287Z"
+  },
+  {
+    "trainNumber": "3925",
+    "plannedArrivalTime": "2025-11-11T07:41:00+0100",
+    "actualArrivalTime": "2025-11-11T07:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T06:25:02.229Z"
+  },
+  {
+    "trainNumber": "3727",
+    "plannedArrivalTime": "2025-11-11T07:54:00+0100",
+    "actualArrivalTime": "2025-11-11T07:55:22+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T06:42:04.063Z"
+  },
+  {
+    "trainNumber": "3927",
+    "plannedArrivalTime": "2025-11-11T08:11:00+0100",
+    "actualArrivalTime": "2025-11-11T08:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T06:58:42.752Z"
+  },
+  {
+    "trainNumber": "3729",
+    "plannedArrivalTime": "2025-11-11T08:24:00+0100",
+    "actualArrivalTime": "2025-11-11T08:28:50+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T06:58:42.752Z"
+  },
+  {
+    "trainNumber": "3929",
+    "plannedArrivalTime": "2025-11-11T08:41:00+0100",
+    "actualArrivalTime": "2025-11-11T08:42:16+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T07:35:41.175Z"
+  },
+  {
+    "trainNumber": "3931",
+    "plannedArrivalTime": "2025-11-11T09:11:00+0100",
+    "actualArrivalTime": "2025-11-11T09:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T07:51:21.404Z"
+  },
+  {
+    "trainNumber": "3933",
+    "plannedArrivalTime": "2025-11-11T09:41:00+0100",
+    "actualArrivalTime": "2025-11-11T09:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T08:36:37.656Z"
+  },
+  {
+    "trainNumber": "3935",
+    "plannedArrivalTime": "2025-11-11T10:11:00+0100",
+    "actualArrivalTime": "2025-11-11T10:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T08:59:23.802Z"
+  },
+  {
+    "trainNumber": "3937",
+    "plannedArrivalTime": "2025-11-11T10:41:00+0100",
+    "actualArrivalTime": "2025-11-11T10:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T09:33:00.114Z"
+  },
+  {
+    "trainNumber": "3939",
+    "plannedArrivalTime": "2025-11-11T11:11:00+0100",
+    "actualArrivalTime": "2025-11-11T11:13:06+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T10:11:20.087Z"
+  },
+  {
+    "trainNumber": "3941",
+    "plannedArrivalTime": "2025-11-11T11:41:00+0100",
+    "actualArrivalTime": "2025-11-11T11:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T10:38:35.866Z"
+  },
+  {
+    "trainNumber": "3943",
+    "plannedArrivalTime": "2025-11-11T12:11:00+0100",
+    "actualArrivalTime": "2025-11-11T12:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T10:55:46.846Z"
+  },
+  {
+    "trainNumber": "3945",
+    "plannedArrivalTime": "2025-11-11T12:41:00+0100",
+    "actualArrivalTime": "2025-11-11T12:42:14+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T11:34:55.613Z"
+  },
+  {
+    "trainNumber": "3947",
+    "plannedArrivalTime": "2025-11-11T13:11:00+0100",
+    "actualArrivalTime": "2025-11-11T13:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T12:06:09.070Z"
+  },
+  {
+    "trainNumber": "3949",
+    "plannedArrivalTime": "2025-11-11T13:41:00+0100",
+    "actualArrivalTime": "2025-11-11T13:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T12:20:27.144Z"
+  },
+  {
+    "trainNumber": "3951",
+    "plannedArrivalTime": "2025-11-11T14:11:00+0100",
+    "actualArrivalTime": "2025-11-11T14:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T12:20:27.144Z"
+  },
+  {
+    "trainNumber": "3953",
+    "plannedArrivalTime": "2025-11-11T14:41:00+0100",
+    "actualArrivalTime": "2025-11-11T14:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T13:35:32.502Z"
+  },
+  {
+    "trainNumber": "3955",
+    "plannedArrivalTime": "2025-11-11T15:11:00+0100",
+    "actualArrivalTime": "2025-11-11T15:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T13:48:57.926Z"
+  },
+  {
+    "trainNumber": "3959",
+    "plannedArrivalTime": "2025-11-11T16:11:00+0100",
+    "actualArrivalTime": "2025-11-11T16:16:13+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T15:15:09.453Z"
+  },
+  {
+    "trainNumber": "3961",
+    "plannedArrivalTime": "2025-11-11T16:41:00+0100",
+    "actualArrivalTime": "2025-11-11T16:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T15:30:09.468Z"
+  },
+  {
+    "trainNumber": "3963",
+    "plannedArrivalTime": "2025-11-11T17:11:00+0100",
+    "actualArrivalTime": "2025-11-11T17:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T15:30:09.468Z"
   }
 ]

@@ -14,7 +14,7 @@ export async function GET() {
         const departureTime = new Date(departure.plannedDepartureTime);
         arrivalsAmsterdam.forEach(arrival => {
             const arrivingTrainNumber = arrival.trainNumber;
-            const arrivalTime = new Date(arrival.plannedDepartureTime);
+            const arrivalTime = new Date(arrival.plannedArrivalTime);
 
             const differenceInMinutes = (arrivalTime - departureTime) / 1000 / 60;
 
@@ -25,7 +25,8 @@ export async function GET() {
                     actualDeparture: departure.actualDepartureTime,
                     plannedArrival: arrival.plannedArrivalTime,
                     actualArrival: arrival.actualArrivalTime,
-                    delayMinutes: differenceInMinutes
+                    delayMinutes: differenceInMinutes,
+                    isCancelled: arrival.isCancelled
                 }
                 hoornToAmsterdamTrips.push(trip);
             }
@@ -39,7 +40,7 @@ export async function GET() {
         const departureTime = new Date(departure.plannedDepartureTime);
         arrivalsHoorn.forEach(arrival => {
             const arrivingTrainNumber = arrival.trainNumber;
-            const arrivalTime = new Date(arrival.plannedDepartureTime);
+            const arrivalTime = new Date(arrival.plannedArrivalTime);
 
             const differenceInMinutes = (arrivalTime - departureTime) / 1000 / 60;
 
@@ -50,7 +51,8 @@ export async function GET() {
                     actualDeparture: departure.actualDepartureTime,
                     plannedArrival: arrival.plannedArrivalTime,
                     actualArrival: arrival.actualArrivalTime,
-                    delayMinutes: differenceInMinutes
+                    delayMinutes: differenceInMinutes,
+                    isCancelled: arrival.isCancelled
                 }
                 amsterdamToHoornTrips.push(trip);
             }
@@ -58,7 +60,6 @@ export async function GET() {
     });
 
     return new Response(JSON.stringify({
-        hoornToAmsterdamTrips,
-        amsterdamToHoornTrips
+        hoornToAmsterdamTrips
     }));
 }

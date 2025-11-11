@@ -32,7 +32,7 @@
 
 console.log("🔥 hooks.server.js loaded");
 
-const TEN_MINUTES = 10 * 60 * 1000; // 10 minutes
+const INTERVAL = 3 * 60 * 1000; // 3 minutes
 
 setInterval(async () => {
     try {
@@ -47,7 +47,7 @@ setInterval(async () => {
     } catch (err) {
         console.error("❌ Error during scheduled fetch:", err);
     }
-}, TEN_MINUTES);
+}, INTERVAL);
 
 export async function handle({ event, resolve }) {
     return resolve(event);
