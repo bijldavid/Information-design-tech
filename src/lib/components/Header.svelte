@@ -14,14 +14,15 @@
 
 <style>
     header {
-        border: 1px solid var(--border);
-        padding: 1rem;
         max-width: 1000px;
         margin-inline: auto;
         margin-block: 2rem;
+        padding: 1rem;
     }
 
     header nav {
+        border: 1px solid var(--border);
+        padding: 1rem;
         display: flex;
         justify-content: space-between;
         align-items: center;

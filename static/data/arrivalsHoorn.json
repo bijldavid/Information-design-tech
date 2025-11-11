@@ -332,7 +332,7 @@
     "actualArrivalTime": "2025-11-11T17:22:03+0100",
     "origin": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-11T16:13:13.065Z"
+    "loggedAt": "2025-11-11T16:16:47.115Z"
   },
   {
     "trainNumber": "3956",
@@ -340,7 +340,7 @@
     "actualArrivalTime": "2025-11-11T17:51:00+0100",
     "origin": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-11T16:13:13.065Z"
+    "loggedAt": "2025-11-11T16:43:43.406Z"
   },
   {
     "trainNumber": "3958",
@@ -348,6 +348,102 @@
     "actualArrivalTime": "2025-11-11T18:21:00+0100",
     "origin": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-11T16:13:13.065Z"
+    "loggedAt": "2025-11-11T17:09:22.258Z"
+  },
+  {
+    "trainNumber": "3960",
+    "plannedArrivalTime": "2025-11-11T18:51:00+0100",
+    "actualArrivalTime": "2025-11-11T18:51:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T17:42:46.268Z"
+  },
+  {
+    "trainNumber": "3962",
+    "plannedArrivalTime": "2025-11-11T19:21:00+0100",
+    "actualArrivalTime": "2025-11-11T19:21:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T18:19:46.631Z"
+  },
+  {
+    "trainNumber": "3964",
+    "plannedArrivalTime": "2025-11-11T19:51:00+0100",
+    "actualArrivalTime": "2025-11-11T19:51:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T18:39:22.546Z"
+  },
+  {
+    "trainNumber": "2966",
+    "plannedArrivalTime": "2025-11-11T20:24:00+0100",
+    "actualArrivalTime": "2025-11-11T20:38:29+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T19:36:38.135Z"
+  },
+  {
+    "trainNumber": "2968",
+    "plannedArrivalTime": "2025-11-11T20:54:00+0100",
+    "actualArrivalTime": "2025-11-11T21:06:07+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T20:03:13.774Z"
+  },
+  {
+    "trainNumber": "2970",
+    "plannedArrivalTime": "2025-11-11T21:24:00+0100",
+    "actualArrivalTime": "2025-11-11T21:26:38+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T20:23:27.738Z"
+  },
+  {
+    "trainNumber": "2972",
+    "plannedArrivalTime": "2025-11-11T21:54:00+0100",
+    "actualArrivalTime": "2025-11-11T21:56:29+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T20:53:27.679Z"
+  },
+  {
+    "trainNumber": "2974",
+    "plannedArrivalTime": "2025-11-11T22:24:00+0100",
+    "actualArrivalTime": "2025-11-11T22:27:44+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T21:26:27.784Z"
+  },
+  {
+    "trainNumber": "2976",
+    "plannedArrivalTime": "2025-11-11T22:54:00+0100",
+    "actualArrivalTime": "2025-11-11T22:55:16+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T21:53:27.926Z"
+  },
+  {
+    "trainNumber": "2978",
+    "plannedArrivalTime": "2025-11-11T23:24:00+0100",
+    "actualArrivalTime": "2025-11-11T23:24:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T22:23:27.747Z"
+  },
+  {
+    "trainNumber": "2980",
+    "plannedArrivalTime": "2025-11-11T23:54:00+0100",
+    "actualArrivalTime": "2025-11-11T23:56:38+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T22:23:27.747Z"
+  },
+  {
+    "trainNumber": "2982",
+    "plannedArrivalTime": "2025-11-12T00:24:00+0100",
+    "actualArrivalTime": "2025-11-12T00:24:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-11T22:23:27.747Z"
   }
 ]
