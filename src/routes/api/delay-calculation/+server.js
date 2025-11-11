@@ -25,7 +25,10 @@ export async function GET() {
                     actualDeparture: departure.actualDepartureTime,
                     plannedArrival: arrival.plannedArrivalTime,
                     actualArrival: arrival.actualArrivalTime,
-                    delayMinutes: differenceInMinutes,
+                    plannedTripDuration: differenceInMinutes,
+                    delay:  (new Date(arrival.actualArrivalTime) - new Date(departure.actualDepartureTime)) / 1000 / 60
+                            -
+                            (new Date(arrival.plannedArrivalTime) - new Date(departure.plannedDepartureTime)) / 1000 / 60,
                     isCancelled: arrival.isCancelled
                 }
                 hoornToAmsterdamTrips.push(trip);
@@ -51,8 +54,11 @@ export async function GET() {
                     actualDeparture: departure.actualDepartureTime,
                     plannedArrival: arrival.plannedArrivalTime,
                     actualArrival: arrival.actualArrivalTime,
-                    delayMinutes: differenceInMinutes,
-                    isCancelled: arrival.isCancelled
+                    tripDuration: differenceInMinutes,
+                    delay:  (new Date(arrival.actualArrivalTime) - new Date(departure.actualDepartureTime)) / 1000 / 60
+                            -
+                            (new Date(arrival.plannedArrivalTime) - new Date(departure.plannedDepartureTime)) / 1000 / 60,
+                            isCancelled: arrival.isCancelled
                 }
                 amsterdamToHoornTrips.push(trip);
             }
