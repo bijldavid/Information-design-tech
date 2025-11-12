@@ -450,9 +450,65 @@
   {
     "trainNumber": "2982",
     "plannedDepartureTime": "2025-11-11T23:52:00+0100",
-    "actualDepartureTime": "2025-11-11T23:53:16+0100",
+    "actualDepartureTime": "2025-11-11T23:55:16+0100",
     "direction": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-11T22:23:27.573Z"
+    "loggedAt": "2025-11-11T22:41:36.629Z"
+  },
+  {
+    "trainNumber": "2912",
+    "plannedDepartureTime": "2025-11-12T06:22:00+0100",
+    "actualDepartureTime": "2025-11-12T06:22:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T05:19:25.458Z"
+  },
+  {
+    "trainNumber": "2914",
+    "plannedDepartureTime": "2025-11-12T06:51:00+0100",
+    "actualDepartureTime": "2025-11-12T06:53:32+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T05:50:59.494Z"
+  },
+  {
+    "trainNumber": "2916",
+    "plannedDepartureTime": "2025-11-12T07:21:00+0100",
+    "actualDepartureTime": "2025-11-12T07:21:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T06:06:47.597Z"
+  },
+  {
+    "trainNumber": "3918",
+    "plannedDepartureTime": "2025-11-12T07:49:00+0100",
+    "actualDepartureTime": "2025-11-12T07:49:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T06:40:16.705Z"
+  },
+  {
+    "trainNumber": "3920",
+    "plannedDepartureTime": "2025-11-12T08:19:00+0100",
+    "actualDepartureTime": "2025-11-12T08:19:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T06:40:16.705Z"
+  },
+  {
+    "trainNumber": "3922",
+    "plannedDepartureTime": "2025-11-12T08:49:00+0100",
+    "actualDepartureTime": "2025-11-12T08:49:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T07:37:29.633Z"
+  },
+  {
+    "trainNumber": "3924",
+    "plannedDepartureTime": "2025-11-12T09:19:00+0100",
+    "actualDepartureTime": "2025-11-12T09:19:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T07:37:29.633Z"
   }
 ]
