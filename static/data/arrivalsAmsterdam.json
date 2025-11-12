@@ -506,17 +506,65 @@
   {
     "trainNumber": "3929",
     "plannedArrivalTime": "2025-11-12T08:41:00+0100",
-    "actualArrivalTime": "2025-11-12T08:43:10+0100",
+    "actualArrivalTime": "2025-11-12T08:44:03+0100",
     "origin": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-12T07:37:30.774Z"
+    "loggedAt": "2025-11-12T07:43:30.293Z"
   },
   {
     "trainNumber": "3931",
     "plannedArrivalTime": "2025-11-12T09:11:00+0100",
-    "actualArrivalTime": "2025-11-12T09:11:00+0100",
+    "actualArrivalTime": "2025-11-12T09:15:14+0100",
     "origin": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-12T07:37:30.774Z"
+    "loggedAt": "2025-11-12T08:13:30.009Z"
+  },
+  {
+    "trainNumber": "3933",
+    "plannedArrivalTime": "2025-11-12T09:41:00+0100",
+    "actualArrivalTime": "2025-11-12T09:59:56+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T08:58:30.203Z"
+  },
+  {
+    "trainNumber": "3935",
+    "plannedArrivalTime": "2025-11-12T10:11:00+0100",
+    "actualArrivalTime": "2025-11-12T10:13:48+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T09:13:30.104Z"
+  },
+  {
+    "trainNumber": "3937",
+    "plannedArrivalTime": "2025-11-12T10:41:00+0100",
+    "actualArrivalTime": "2025-11-12T10:43:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T09:40:30.139Z"
+  },
+  {
+    "trainNumber": "3939",
+    "plannedArrivalTime": "2025-11-12T11:11:00+0100",
+    "actualArrivalTime": "2025-11-12T11:12:55+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T10:10:29.797Z"
+  },
+  {
+    "trainNumber": "3941",
+    "plannedArrivalTime": "2025-11-12T11:41:00+0100",
+    "actualArrivalTime": "2025-11-12T11:42:46+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T10:40:30.779Z"
+  },
+  {
+    "trainNumber": "3943",
+    "plannedArrivalTime": "2025-11-12T12:11:00+0100",
+    "actualArrivalTime": "2025-11-12T12:11:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T10:46:30.201Z"
   }
 ]
