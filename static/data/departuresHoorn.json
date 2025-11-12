@@ -549,7 +549,7 @@
     "actualDepartureTime": "2025-11-12T14:10:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-12T12:55:30.167Z"
+    "loggedAt": "2025-11-12T13:07:16.822Z"
   },
   {
     "trainNumber": "3955",
@@ -557,7 +557,7 @@
     "actualDepartureTime": "2025-11-12T14:40:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-12T12:55:30.167Z"
+    "loggedAt": "2025-11-12T13:37:16.480Z"
   },
   {
     "trainNumber": "3957",
@@ -565,6 +565,46 @@
     "actualDepartureTime": "2025-11-12T15:10:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-12T12:55:30.167Z"
+    "loggedAt": "2025-11-12T13:49:16.851Z"
+  },
+  {
+    "trainNumber": "3959",
+    "plannedDepartureTime": "2025-11-12T15:40:00+0100",
+    "actualDepartureTime": "2025-11-12T15:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T14:04:16.264Z"
+  },
+  {
+    "trainNumber": "3961",
+    "plannedDepartureTime": "2025-11-12T16:10:00+0100",
+    "actualDepartureTime": "2025-11-12T16:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T15:10:16.535Z"
+  },
+  {
+    "trainNumber": "3963",
+    "plannedDepartureTime": "2025-11-12T16:40:00+0100",
+    "actualDepartureTime": "2025-11-12T16:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T15:13:16.679Z"
+  },
+  {
+    "trainNumber": "3965",
+    "plannedDepartureTime": "2025-11-12T17:10:00+0100",
+    "actualDepartureTime": "2025-11-12T17:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T15:13:16.679Z"
+  },
+  {
+    "trainNumber": "3967",
+    "plannedDepartureTime": "2025-11-12T17:40:00+0100",
+    "actualDepartureTime": "2025-11-12T17:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-12T15:13:16.679Z"
   }
 ]
