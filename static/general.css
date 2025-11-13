@@ -36,3 +36,9 @@ body {
     white-space: nowrap;
     width: 1px;
   }
+
+  hr {
+    border: none;
+    height: 1px;
+    background: var(--border);
+  }
