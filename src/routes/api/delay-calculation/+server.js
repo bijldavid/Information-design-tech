@@ -66,6 +66,6 @@ export async function GET() {
     });
 
     return new Response(JSON.stringify({
-        hoornToAmsterdamTrips
+        hoornToAmsterdamTrips, amsterdamToHoornTrips
     }));
 }

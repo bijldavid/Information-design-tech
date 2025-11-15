@@ -1,8 +1,6 @@
 <script>
 </script>
 
-<!-- <section>
-    <h2>Select your rail route</h2> -->
 <form action="">
   <fieldset>
     <legend>Select your rail route:</legend>
