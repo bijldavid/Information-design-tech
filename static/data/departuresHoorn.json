@@ -1157,7 +1157,7 @@
     "actualDepartureTime": "2025-11-15T22:35:00+0100",
     "direction": "Utrecht Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-15T21:10:59.406Z"
+    "loggedAt": "2025-11-15T21:25:59.504Z"
   },
   {
     "trainNumber": "4091",
@@ -1165,7 +1165,7 @@
     "actualDepartureTime": "2025-11-15T22:37:00+0100",
     "direction": "Rotterdam Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-15T21:10:59.406Z"
+    "loggedAt": "2025-11-15T21:25:59.504Z"
   },
   {
     "trainNumber": "2989",
@@ -1173,7 +1173,7 @@
     "actualDepartureTime": "2025-11-15T23:05:00+0100",
     "direction": "Utrecht Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-15T21:10:59.406Z"
+    "loggedAt": "2025-11-15T21:25:59.504Z"
   },
   {
     "trainNumber": "4093",
@@ -1181,7 +1181,7 @@
     "actualDepartureTime": "2025-11-15T23:07:00+0100",
     "direction": "Utrecht Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-15T21:10:59.406Z"
+    "loggedAt": "2025-11-15T21:25:59.504Z"
   },
   {
     "trainNumber": "4095",
@@ -1189,6 +1189,918 @@
     "actualDepartureTime": "2025-11-15T23:37:00+0100",
     "direction": "Utrecht Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-15T21:10:59.406Z"
+    "loggedAt": "2025-11-15T22:26:37.869Z"
+  },
+  {
+    "trainNumber": "2925",
+    "plannedDepartureTime": "2025-11-16T07:05:00+0100",
+    "actualDepartureTime": "2025-11-16T07:05:00+0100",
+    "direction": "Utrecht Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T05:46:20.795Z"
+  },
+  {
+    "trainNumber": "4029",
+    "plannedDepartureTime": "2025-11-16T07:07:00+0100",
+    "actualDepartureTime": "2025-11-16T07:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T05:46:20.795Z"
+  },
+  {
+    "trainNumber": "4031",
+    "plannedDepartureTime": "2025-11-16T07:37:00+0100",
+    "actualDepartureTime": "2025-11-16T07:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T06:20:02.751Z"
+  },
+  {
+    "trainNumber": "2929",
+    "plannedDepartureTime": "2025-11-16T08:05:00+0100",
+    "actualDepartureTime": "2025-11-16T08:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T06:54:12.144Z"
+  },
+  {
+    "trainNumber": "4033",
+    "plannedDepartureTime": "2025-11-16T08:07:00+0100",
+    "actualDepartureTime": "2025-11-16T08:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T06:54:12.144Z"
+  },
+  {
+    "trainNumber": "1529",
+    "plannedDepartureTime": "2025-11-16T08:11:00+0100",
+    "actualDepartureTime": "2025-11-16T08:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T06:54:12.144Z"
+  },
+  {
+    "trainNumber": "2931",
+    "plannedDepartureTime": "2025-11-16T08:35:00+0100",
+    "actualDepartureTime": "2025-11-16T08:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T07:28:02.195Z"
+  },
+  {
+    "trainNumber": "4035",
+    "plannedDepartureTime": "2025-11-16T08:37:00+0100",
+    "actualDepartureTime": "2025-11-16T08:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T07:28:02.195Z"
+  },
+  {
+    "trainNumber": "1531",
+    "plannedDepartureTime": "2025-11-16T08:41:00+0100",
+    "actualDepartureTime": "2025-11-16T08:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T07:28:02.195Z"
+  },
+  {
+    "trainNumber": "2933",
+    "plannedDepartureTime": "2025-11-16T09:05:00+0100",
+    "actualDepartureTime": "2025-11-16T09:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T08:02:11.698Z"
+  },
+  {
+    "trainNumber": "4037",
+    "plannedDepartureTime": "2025-11-16T09:07:00+0100",
+    "actualDepartureTime": "2025-11-16T09:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T08:02:11.698Z"
+  },
+  {
+    "trainNumber": "2935",
+    "plannedDepartureTime": "2025-11-16T09:35:00+0100",
+    "actualDepartureTime": "2025-11-16T09:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T08:30:36.713Z"
+  },
+  {
+    "trainNumber": "4039",
+    "plannedDepartureTime": "2025-11-16T09:37:00+0100",
+    "actualDepartureTime": "2025-11-16T09:47:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T08:46:10.587Z"
+  },
+  {
+    "trainNumber": "1535",
+    "plannedDepartureTime": "2025-11-16T09:41:00+0100",
+    "actualDepartureTime": "2025-11-16T09:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T08:30:36.713Z"
+  },
+  {
+    "trainNumber": "2937",
+    "plannedDepartureTime": "2025-11-16T10:05:00+0100",
+    "actualDepartureTime": "2025-11-16T10:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "4041",
+    "plannedDepartureTime": "2025-11-16T10:07:00+0100",
+    "actualDepartureTime": "2025-11-16T10:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "1537",
+    "plannedDepartureTime": "2025-11-16T10:11:00+0100",
+    "actualDepartureTime": "2025-11-16T10:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "2939",
+    "plannedDepartureTime": "2025-11-16T10:35:00+0100",
+    "actualDepartureTime": "2025-11-16T10:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "4043",
+    "plannedDepartureTime": "2025-11-16T10:37:00+0100",
+    "actualDepartureTime": "2025-11-16T10:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "1539",
+    "plannedDepartureTime": "2025-11-16T10:41:00+0100",
+    "actualDepartureTime": "2025-11-16T10:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "2941",
+    "plannedDepartureTime": "2025-11-16T11:05:00+0100",
+    "actualDepartureTime": "2025-11-16T11:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T09:02:21.171Z"
+  },
+  {
+    "trainNumber": "4045",
+    "plannedDepartureTime": "2025-11-16T11:07:00+0100",
+    "actualDepartureTime": "2025-11-16T11:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T10:04:50.321Z"
+  },
+  {
+    "trainNumber": "2943",
+    "plannedDepartureTime": "2025-11-16T11:35:00+0100",
+    "actualDepartureTime": "2025-11-16T11:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T10:32:42.779Z"
+  },
+  {
+    "trainNumber": "4047",
+    "plannedDepartureTime": "2025-11-16T11:37:00+0100",
+    "actualDepartureTime": "2025-11-16T11:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T10:32:42.779Z"
+  },
+  {
+    "trainNumber": "1543",
+    "plannedDepartureTime": "2025-11-16T11:41:00+0100",
+    "actualDepartureTime": "2025-11-16T11:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T10:32:42.779Z"
+  },
+  {
+    "trainNumber": "2945",
+    "plannedDepartureTime": "2025-11-16T12:05:00+0100",
+    "actualDepartureTime": "2025-11-16T12:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T10:48:54.762Z"
+  },
+  {
+    "trainNumber": "4049",
+    "plannedDepartureTime": "2025-11-16T12:07:00+0100",
+    "actualDepartureTime": "2025-11-16T12:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T10:48:54.762Z"
+  },
+  {
+    "trainNumber": "1545",
+    "plannedDepartureTime": "2025-11-16T12:11:00+0100",
+    "actualDepartureTime": "2025-11-16T12:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T11:06:32.416Z"
+  },
+  {
+    "trainNumber": "2947",
+    "plannedDepartureTime": "2025-11-16T12:35:00+0100",
+    "actualDepartureTime": "2025-11-16T12:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T11:32:33.181Z"
+  },
+  {
+    "trainNumber": "4051",
+    "plannedDepartureTime": "2025-11-16T12:37:00+0100",
+    "actualDepartureTime": "2025-11-16T12:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T11:32:33.182Z"
+  },
+  {
+    "trainNumber": "1547",
+    "plannedDepartureTime": "2025-11-16T12:41:00+0100",
+    "actualDepartureTime": "2025-11-16T12:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T11:32:33.182Z"
+  },
+  {
+    "trainNumber": "2949",
+    "plannedDepartureTime": "2025-11-16T13:05:00+0100",
+    "actualDepartureTime": "2025-11-16T13:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T11:50:50.182Z"
+  },
+  {
+    "trainNumber": "4053",
+    "plannedDepartureTime": "2025-11-16T13:07:00+0100",
+    "actualDepartureTime": "2025-11-16T13:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T12:05:50.451Z"
+  },
+  {
+    "trainNumber": "2951",
+    "plannedDepartureTime": "2025-11-16T13:35:00+0100",
+    "actualDepartureTime": "2025-11-16T13:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T12:33:27.367Z"
+  },
+  {
+    "trainNumber": "4055",
+    "plannedDepartureTime": "2025-11-16T13:37:00+0100",
+    "actualDepartureTime": "2025-11-16T13:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T12:36:27.241Z"
+  },
+  {
+    "trainNumber": "1551",
+    "plannedDepartureTime": "2025-11-16T13:41:00+0100",
+    "actualDepartureTime": "2025-11-16T13:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T12:39:27.321Z"
+  },
+  {
+    "trainNumber": "2953",
+    "plannedDepartureTime": "2025-11-16T14:05:00+0100",
+    "actualDepartureTime": "2025-11-16T14:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T13:03:27.312Z"
+  },
+  {
+    "trainNumber": "4057",
+    "plannedDepartureTime": "2025-11-16T14:07:00+0100",
+    "actualDepartureTime": "2025-11-16T14:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T13:06:27.419Z"
+  },
+  {
+    "trainNumber": "1553",
+    "plannedDepartureTime": "2025-11-16T14:11:00+0100",
+    "actualDepartureTime": "2025-11-16T14:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T13:09:27.349Z"
+  },
+  {
+    "trainNumber": "2955",
+    "plannedDepartureTime": "2025-11-16T14:35:00+0100",
+    "actualDepartureTime": "2025-11-16T14:36:30+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T13:33:29.939Z"
+  },
+  {
+    "trainNumber": "4059",
+    "plannedDepartureTime": "2025-11-16T14:37:00+0100",
+    "actualDepartureTime": "2025-11-16T14:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T13:33:29.939Z"
+  },
+  {
+    "trainNumber": "1555",
+    "plannedDepartureTime": "2025-11-16T14:41:00+0100",
+    "actualDepartureTime": "2025-11-16T14:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T13:33:29.939Z"
+  },
+  {
+    "trainNumber": "2957",
+    "plannedDepartureTime": "2025-11-16T15:05:00+0100",
+    "actualDepartureTime": "2025-11-16T15:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T14:04:43.155Z"
+  },
+  {
+    "trainNumber": "4061",
+    "plannedDepartureTime": "2025-11-16T15:07:00+0100",
+    "actualDepartureTime": "2025-11-16T15:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T14:04:43.155Z"
+  },
+  {
+    "trainNumber": "2959",
+    "plannedDepartureTime": "2025-11-16T15:35:00+0100",
+    "actualDepartureTime": "2025-11-16T15:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T14:26:55.851Z"
+  },
+  {
+    "trainNumber": "4063",
+    "plannedDepartureTime": "2025-11-16T15:37:00+0100",
+    "actualDepartureTime": "2025-11-16T15:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T14:26:55.851Z"
+  },
+  {
+    "trainNumber": "1559",
+    "plannedDepartureTime": "2025-11-16T15:41:00+0100",
+    "actualDepartureTime": "2025-11-16T15:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T14:39:27.541Z"
+  },
+  {
+    "trainNumber": "2961",
+    "plannedDepartureTime": "2025-11-16T16:05:00+0100",
+    "actualDepartureTime": "2025-11-16T16:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T15:03:26.604Z"
+  },
+  {
+    "trainNumber": "4065",
+    "plannedDepartureTime": "2025-11-16T16:07:00+0100",
+    "actualDepartureTime": "2025-11-16T16:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T15:06:27.069Z"
+  },
+  {
+    "trainNumber": "1561",
+    "plannedDepartureTime": "2025-11-16T16:11:00+0100",
+    "actualDepartureTime": "2025-11-16T16:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T15:09:27.166Z"
+  },
+  {
+    "trainNumber": "2963",
+    "plannedDepartureTime": "2025-11-16T16:35:00+0100",
+    "actualDepartureTime": "2025-11-16T16:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T15:34:04.136Z"
+  },
+  {
+    "trainNumber": "4067",
+    "plannedDepartureTime": "2025-11-16T16:37:00+0100",
+    "actualDepartureTime": "2025-11-16T16:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T15:34:04.136Z"
+  },
+  {
+    "trainNumber": "1563",
+    "plannedDepartureTime": "2025-11-16T16:41:00+0100",
+    "actualDepartureTime": "2025-11-16T16:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T15:40:04.097Z"
+  },
+  {
+    "trainNumber": "2965",
+    "plannedDepartureTime": "2025-11-16T17:05:00+0100",
+    "actualDepartureTime": "2025-11-16T17:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T16:02:15.267Z"
+  },
+  {
+    "trainNumber": "4069",
+    "plannedDepartureTime": "2025-11-16T17:07:00+0100",
+    "actualDepartureTime": "2025-11-16T17:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T16:05:15.185Z"
+  },
+  {
+    "trainNumber": "2967",
+    "plannedDepartureTime": "2025-11-16T17:35:00+0100",
+    "actualDepartureTime": "2025-11-16T17:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T16:32:15.136Z"
+  },
+  {
+    "trainNumber": "4071",
+    "plannedDepartureTime": "2025-11-16T17:37:00+0100",
+    "actualDepartureTime": "2025-11-16T17:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T16:35:14.994Z"
+  },
+  {
+    "trainNumber": "1567",
+    "plannedDepartureTime": "2025-11-16T17:41:00+0100",
+    "actualDepartureTime": "2025-11-16T17:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T16:38:15.412Z"
+  },
+  {
+    "trainNumber": "2969",
+    "plannedDepartureTime": "2025-11-16T18:05:00+0100",
+    "actualDepartureTime": "2025-11-16T18:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T17:05:14.676Z"
+  },
+  {
+    "trainNumber": "4073",
+    "plannedDepartureTime": "2025-11-16T18:07:00+0100",
+    "actualDepartureTime": "2025-11-16T18:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T17:05:14.676Z"
+  },
+  {
+    "trainNumber": "1569",
+    "plannedDepartureTime": "2025-11-16T18:11:00+0100",
+    "actualDepartureTime": "2025-11-16T18:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T17:08:15.103Z"
+  },
+  {
+    "trainNumber": "2971",
+    "plannedDepartureTime": "2025-11-16T18:35:00+0100",
+    "actualDepartureTime": "2025-11-16T18:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T17:20:15.339Z"
+  },
+  {
+    "trainNumber": "4075",
+    "plannedDepartureTime": "2025-11-16T18:37:00+0100",
+    "actualDepartureTime": "2025-11-16T18:54:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T17:20:15.339Z"
+  },
+  {
+    "trainNumber": "1571",
+    "plannedDepartureTime": "2025-11-16T18:41:00+0100",
+    "actualDepartureTime": "2025-11-16T18:46:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T17:43:07.569Z"
+  },
+  {
+    "trainNumber": "2973",
+    "plannedDepartureTime": "2025-11-16T19:05:00+0100",
+    "actualDepartureTime": "2025-11-16T19:06:12+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T18:00:48.548Z"
+  },
+  {
+    "trainNumber": "4077",
+    "plannedDepartureTime": "2025-11-16T19:07:00+0100",
+    "actualDepartureTime": "2025-11-16T19:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T18:00:48.548Z"
+  },
+  {
+    "trainNumber": "1573",
+    "plannedDepartureTime": "2025-11-16T19:11:00+0100",
+    "actualDepartureTime": "2025-11-16T19:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T18:00:48.548Z"
+  },
+  {
+    "trainNumber": "2975",
+    "plannedDepartureTime": "2025-11-16T19:35:00+0100",
+    "actualDepartureTime": "2025-11-16T19:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T18:34:24.712Z"
+  },
+  {
+    "trainNumber": "4079",
+    "plannedDepartureTime": "2025-11-16T19:37:00+0100",
+    "actualDepartureTime": "2025-11-16T19:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T18:34:24.713Z"
+  },
+  {
+    "trainNumber": "1575",
+    "plannedDepartureTime": "2025-11-16T19:41:00+0100",
+    "actualDepartureTime": "2025-11-16T19:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T18:34:24.713Z"
+  },
+  {
+    "trainNumber": "2977",
+    "plannedDepartureTime": "2025-11-16T20:05:00+0100",
+    "actualDepartureTime": "2025-11-16T20:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T19:04:46.280Z"
+  },
+  {
+    "trainNumber": "4081",
+    "plannedDepartureTime": "2025-11-16T20:07:00+0100",
+    "actualDepartureTime": "2025-11-16T20:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T19:04:46.280Z"
+  },
+  {
+    "trainNumber": "1577",
+    "plannedDepartureTime": "2025-11-16T20:11:00+0100",
+    "actualDepartureTime": "2025-11-16T20:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T19:10:47.003Z"
+  },
+  {
+    "trainNumber": "2979",
+    "plannedDepartureTime": "2025-11-16T20:35:00+0100",
+    "actualDepartureTime": "2025-11-16T20:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T19:34:50.380Z"
+  },
+  {
+    "trainNumber": "4083",
+    "plannedDepartureTime": "2025-11-16T20:37:00+0100",
+    "actualDepartureTime": "2025-11-16T20:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T19:34:50.380Z"
+  },
+  {
+    "trainNumber": "1579",
+    "plannedDepartureTime": "2025-11-16T20:41:00+0100",
+    "actualDepartureTime": "2025-11-16T20:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T19:34:50.380Z"
+  },
+  {
+    "trainNumber": "2981",
+    "plannedDepartureTime": "2025-11-16T21:05:00+0100",
+    "actualDepartureTime": "2025-11-16T21:05:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T20:00:55.420Z"
+  },
+  {
+    "trainNumber": "4085",
+    "plannedDepartureTime": "2025-11-16T21:07:00+0100",
+    "actualDepartureTime": "2025-11-16T21:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T20:06:38.546Z"
+  },
+  {
+    "trainNumber": "1581",
+    "plannedDepartureTime": "2025-11-16T21:11:00+0100",
+    "actualDepartureTime": "2025-11-16T21:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T20:09:38.509Z"
+  },
+  {
+    "trainNumber": "2983",
+    "plannedDepartureTime": "2025-11-16T21:35:00+0100",
+    "actualDepartureTime": "2025-11-16T21:35:00+0100",
+    "direction": "Nijmegen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T20:33:38.400Z"
+  },
+  {
+    "trainNumber": "4087",
+    "plannedDepartureTime": "2025-11-16T21:37:00+0100",
+    "actualDepartureTime": "2025-11-16T21:37:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T20:36:38.564Z"
+  },
+  {
+    "trainNumber": "1583",
+    "plannedDepartureTime": "2025-11-16T21:41:00+0100",
+    "actualDepartureTime": "2025-11-16T21:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T20:39:38.616Z"
+  },
+  {
+    "trainNumber": "2985",
+    "plannedDepartureTime": "2025-11-16T22:05:00+0100",
+    "actualDepartureTime": "2025-11-16T22:05:00+0100",
+    "direction": "Utrecht Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T21:03:36.133Z"
+  },
+  {
+    "trainNumber": "4089",
+    "plannedDepartureTime": "2025-11-16T22:07:00+0100",
+    "actualDepartureTime": "2025-11-16T22:07:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T21:06:36.175Z"
+  },
+  {
+    "trainNumber": "1585",
+    "plannedDepartureTime": "2025-11-16T22:11:00+0100",
+    "actualDepartureTime": "2025-11-16T22:11:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T21:09:36.157Z"
+  },
+  {
+    "trainNumber": "2987",
+    "plannedDepartureTime": "2025-11-16T22:35:00+0100",
+    "actualDepartureTime": "2025-11-16T22:35:00+0100",
+    "direction": "Utrecht Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T21:27:36.170Z"
+  },
+  {
+    "trainNumber": "4091",
+    "plannedDepartureTime": "2025-11-16T22:37:00+0100",
+    "actualDepartureTime": "2025-11-16T22:47:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T21:44:59.817Z"
+  },
+  {
+    "trainNumber": "1587",
+    "plannedDepartureTime": "2025-11-16T22:41:00+0100",
+    "actualDepartureTime": "2025-11-16T22:41:00+0100",
+    "direction": "Amersfoort Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T21:27:36.170Z"
+  },
+  {
+    "trainNumber": "2989",
+    "plannedDepartureTime": "2025-11-16T23:05:00+0100",
+    "actualDepartureTime": "2025-11-16T23:05:00+0100",
+    "direction": "Utrecht Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T22:02:56.457Z"
+  },
+  {
+    "trainNumber": "4093",
+    "plannedDepartureTime": "2025-11-16T23:07:00+0100",
+    "actualDepartureTime": "2025-11-16T23:07:00+0100",
+    "direction": "Utrecht Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T22:02:56.457Z"
+  },
+  {
+    "trainNumber": "204095",
+    "plannedDepartureTime": "2025-11-16T23:37:00+0100",
+    "actualDepartureTime": "2025-11-16T23:37:00+0100",
+    "direction": "Breukelen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-16T22:02:56.458Z"
+  },
+  {
+    "trainNumber": "2919",
+    "plannedDepartureTime": "2025-11-17T05:35:00+0100",
+    "actualDepartureTime": "2025-11-17T05:35:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T04:26:35.844Z"
+  },
+  {
+    "trainNumber": "2921",
+    "plannedDepartureTime": "2025-11-17T06:05:00+0100",
+    "actualDepartureTime": "2025-11-17T06:05:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T05:01:03.748Z"
+  },
+  {
+    "trainNumber": "4025",
+    "plannedDepartureTime": "2025-11-17T06:06:00+0100",
+    "actualDepartureTime": "2025-11-17T06:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T05:01:03.748Z"
+  },
+  {
+    "trainNumber": "4027",
+    "plannedDepartureTime": "2025-11-17T06:36:00+0100",
+    "actualDepartureTime": "2025-11-17T06:36:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T05:35:52.903Z"
+  },
+  {
+    "trainNumber": "3923",
+    "plannedDepartureTime": "2025-11-17T06:40:00+0100",
+    "actualDepartureTime": "2025-11-17T06:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T05:38:52.887Z"
+  },
+  {
+    "trainNumber": "4029",
+    "plannedDepartureTime": "2025-11-17T07:06:00+0100",
+    "actualDepartureTime": "2025-11-17T07:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T06:05:53.116Z"
+  },
+  {
+    "trainNumber": "3925",
+    "plannedDepartureTime": "2025-11-17T07:10:00+0100",
+    "actualDepartureTime": "2025-11-17T07:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T06:08:53.244Z"
+  },
+  {
+    "trainNumber": "4031",
+    "plannedDepartureTime": "2025-11-17T07:36:00+0100",
+    "actualDepartureTime": "2025-11-17T07:36:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T06:27:35.437Z"
+  },
+  {
+    "trainNumber": "3927",
+    "plannedDepartureTime": "2025-11-17T07:40:00+0100",
+    "actualDepartureTime": "2025-11-17T07:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T06:27:35.437Z"
+  },
+  {
+    "trainNumber": "4033",
+    "plannedDepartureTime": "2025-11-17T08:06:00+0100",
+    "actualDepartureTime": "2025-11-17T08:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T06:41:19.890Z"
+  },
+  {
+    "trainNumber": "3929",
+    "plannedDepartureTime": "2025-11-17T08:10:00+0100",
+    "actualDepartureTime": "2025-11-17T08:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T06:41:19.890Z"
+  },
+  {
+    "trainNumber": "4035",
+    "plannedDepartureTime": "2025-11-17T08:36:00+0100",
+    "actualDepartureTime": "2025-11-17T08:42:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T07:41:09.266Z"
+  },
+  {
+    "trainNumber": "3931",
+    "plannedDepartureTime": "2025-11-17T08:40:00+0100",
+    "actualDepartureTime": "2025-11-17T08:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T07:38:09.246Z"
+  },
+  {
+    "trainNumber": "4037",
+    "plannedDepartureTime": "2025-11-17T09:06:00+0100",
+    "actualDepartureTime": "2025-11-17T09:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:05:32.837Z"
+  },
+  {
+    "trainNumber": "3933",
+    "plannedDepartureTime": "2025-11-17T09:10:00+0100",
+    "actualDepartureTime": "2025-11-17T09:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:08:33.036Z"
+  },
+  {
+    "trainNumber": "4039",
+    "plannedDepartureTime": "2025-11-17T09:36:00+0100",
+    "actualDepartureTime": "2025-11-17T09:36:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:35:32.709Z"
+  },
+  {
+    "trainNumber": "3935",
+    "plannedDepartureTime": "2025-11-17T09:40:00+0100",
+    "actualDepartureTime": "2025-11-17T09:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:35:32.709Z"
+  },
+  {
+    "trainNumber": "4041",
+    "plannedDepartureTime": "2025-11-17T10:06:00+0100",
+    "actualDepartureTime": "2025-11-17T10:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:26:32.881Z"
+  },
+  {
+    "trainNumber": "3937",
+    "plannedDepartureTime": "2025-11-17T10:10:00+0100",
+    "actualDepartureTime": "2025-11-17T10:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:55:35.754Z"
+  },
+  {
+    "trainNumber": "4043",
+    "plannedDepartureTime": "2025-11-17T10:36:00+0100",
+    "actualDepartureTime": "2025-11-17T10:36:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:55:35.754Z"
+  },
+  {
+    "trainNumber": "3939",
+    "plannedDepartureTime": "2025-11-17T10:40:00+0100",
+    "actualDepartureTime": "2025-11-17T10:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:55:35.754Z"
+  },
+  {
+    "trainNumber": "4045",
+    "plannedDepartureTime": "2025-11-17T11:06:00+0100",
+    "actualDepartureTime": "2025-11-17T11:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:55:35.754Z"
+  },
+  {
+    "trainNumber": "3941",
+    "plannedDepartureTime": "2025-11-17T11:10:00+0100",
+    "actualDepartureTime": "2025-11-17T11:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-17T08:55:35.754Z"
   }
 ]

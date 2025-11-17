@@ -1,4 +1,13 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+
+
+  const dispatch = createEventDispatcher();
+  let selectedDate = '2025-11-11';
+  
+  function handleChange() {
+    dispatch('changeDate', selectedDate);
+  }
 </script>
 
 <form action="">
@@ -28,19 +37,40 @@
     <legend class="visually-hidden">Options to filter your visualisation</legend>
 
     <fieldset>
-      <legend>Filter your data.</legend>
+      <legend>Choose a date to visualize.</legend>
 
-      <label for="option1"
-        >Option 1
-        <input id="option1" name="options" type="checkbox" />
+      <label for="date1"
+        >11 November 2025
+        <input 
+        id="date1" 
+        name="date" 
+        type="radio" 
+        value="2025-11-11"
+        bind:group={selectedDate}
+        on:change={handleChange}
+        />
       </label>
-      <label for="option2"
-        >Option 2
-        <input id="option2" name="options" type="checkbox" />
+      <label for="date2"
+        >12 November 2025
+        <input 
+        id="date2" 
+        name="date" 
+        type="radio" 
+        value="2025-11-12"
+        bind:group={selectedDate}
+        on:change={handleChange}
+        />
       </label>
-      <label for="option3"
-        >Option 3
-        <input id="option3" name="options" type="checkbox" />
+      <label for="date3">
+        13 November 2025
+        <input 
+        id="date3" 
+        name="date" 
+        type="radio" 
+        value="2025-11-13"
+        bind:group={selectedDate}
+        on:change={handleChange}
+        />
       </label>
     </fieldset>
 
@@ -219,6 +249,10 @@
     border: 1px solid var(--border);
   }
 
+  fieldset:nth-of-type(2) fieldset label input[type="radio"] {
+    border-radius: 50%;
+  }
+
   fieldset:nth-of-type(2) fieldset label input:checked::after {
     position: absolute;
     content: "";
@@ -228,5 +262,9 @@
     left: 50%;
     translate: -50% -50%;
     background: var(--NS-blue);
+  }
+
+  fieldset:nth-of-type(2) fieldset label input[type="radio"]:checked::after {
+    border-radius: 50%;
   }
 </style>
