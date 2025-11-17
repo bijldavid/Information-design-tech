@@ -27,7 +27,7 @@
       </div>
       <span class="rail-route"></span>
       <p>Heerlen</p>
-      <small>100+ entries</small>
+      <small>100+</small>
     </div>
   </fieldset>
 
@@ -74,7 +74,7 @@
       </label>
     </fieldset>
 
-    <fieldset>
+    <!-- <fieldset>
       <legend>Filter your data.</legend>
 
       <label for="option1"
@@ -89,7 +89,7 @@
         >Option 3
         <input id="option3" name="options" type="checkbox" />
       </label>
-    </fieldset>
+    </fieldset> -->
   </fieldset>
 </form>
 

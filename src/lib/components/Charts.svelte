@@ -6,6 +6,9 @@
   export let amsterdamToHoorn = [];
   export let selectedDate = "2025-11-11";
 
+  export { className as class };
+
+  let className = '';
   let svg;
   let shouldAnimate = false;
 
@@ -64,11 +67,11 @@
     const svgWidth = svg.getBoundingClientRect().width;
     const svgHeight = svg.getBoundingClientRect().height;
 
-    const margin = { top: 15, right: 10, bottom: 15, left: 45 };
+    const margin = { top: 25, right: 20, bottom: 25, left: 55 };
     const chartWidth = svgWidth - margin.left - margin.right;
     const chartHeight = svgHeight - margin.top - margin.bottom;
 
-    const barWidth = (chartWidth / filteredTrips.length) * 0.8;
+    const barWidth = (chartWidth / filteredTrips.length) * 0.7;
 
     // x SCALE
     const xScale = d3
@@ -90,7 +93,7 @@
     // x AXIS
     const xAxis = d3
       .axisBottom(xScale)
-      .ticks(d3.timeHour.every(4))
+      .ticks(d3.timeHour.every(3))
       .tickFormat(d3.timeFormat("%H:%M"));
 
     d3.select(".x-axis")
@@ -129,34 +132,67 @@
   }
 </script>
 
-<section>
-  <svg id="delays" width="200" height="400">
-    <g class="x-axis"></g>
-    <g class="y-axis"></g>
-  </svg>
+
+<section class={className}>
+  <div class="svg-container">
+    <svg id="delays" width="200" height="400">
+      <g class="x-axis"></g>
+      <g class="y-axis"></g>
+    </svg>
+    <small class="x-label">Delay in minutes →</small>
+    <small class="y-label">Time in hours (1 day) →</small>
+  </div>
 </section>
 
 <style>
   section {
+    --chart-font-size: 12px;
+
     border: 1px solid var(--border);
     padding: 1rem 1.5rem;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 1rem;
   }
 
-  section svg {
+  section .svg-container {
+    position: relative;
+    overflow: hidden;
+  }
+
+  section .svg-container small {
+    position: absolute;
+    font-size: var(--chart-font-size);
+    color: #666;
+    white-space: nowrap;
+  }
+
+  section .svg-container .x-label {
+    top: 10px;
+    left: 0;
+    rotate: z -90deg;
+    translate: 8px 16ch;
+    transform-origin: left;
+  }
+
+  section .svg-container .y-label {
+    bottom: 0;
+    right: 10px;
+  }
+
+  section .svg-container svg {
     width: 100%;
-    height: calc(70vh / 3 - 1rem);
+    height: calc(70vh / 2 - 1rem);
     background-color: var(--NS-gray-150);
   }
+  
 
   :global * {
     font-family: "gg-mono";
   }
 
   :global(.x-axis text) {
-    font-size: 8px;
+    font-size: var(--chart-font-size);
     fill: #666;
   }
 
@@ -167,7 +203,7 @@
   }
 
   :global(.y-axis text) {
-    font-size: 8px;
+    font-size: var(--chart-font-size);
     fill: #666;
   }
 
