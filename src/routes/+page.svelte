@@ -47,7 +47,7 @@
   section:has(:global(details[open])) :global(form) {
     flex-basis: 85%;
   }
-
+    
   section :global(.charts) {
     flex-basis: 100%;
   }
