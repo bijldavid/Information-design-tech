@@ -1797,6 +1797,14 @@
     "actualArrivalTime": "2025-11-18T09:11:00+0100",
     "origin": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.438Z"
+    "loggedAt": "2025-11-18T07:53:49.857Z"
+  },
+  {
+    "trainNumber": "3933",
+    "plannedArrivalTime": "2025-11-18T09:41:00+0100",
+    "actualArrivalTime": "2025-11-18T09:41:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-18T07:53:49.857Z"
   }
 ]

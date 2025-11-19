@@ -2573,7 +2573,7 @@
     "actualDepartureTime": "2025-11-18T09:06:00+0100",
     "direction": "Rotterdam Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.317Z"
+    "loggedAt": "2025-11-18T07:53:49.630Z"
   },
   {
     "trainNumber": "3933",
@@ -2581,7 +2581,7 @@
     "actualDepartureTime": "2025-11-18T09:10:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.317Z"
+    "loggedAt": "2025-11-18T07:53:49.630Z"
   },
   {
     "trainNumber": "4039",
@@ -2589,7 +2589,7 @@
     "actualDepartureTime": "2025-11-18T09:36:00+0100",
     "direction": "Rotterdam Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.317Z"
+    "loggedAt": "2025-11-18T07:53:49.630Z"
   },
   {
     "trainNumber": "3935",
@@ -2597,7 +2597,7 @@
     "actualDepartureTime": "2025-11-18T09:40:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.317Z"
+    "loggedAt": "2025-11-18T07:53:49.630Z"
   },
   {
     "trainNumber": "4041",
@@ -2605,7 +2605,7 @@
     "actualDepartureTime": "2025-11-18T10:06:00+0100",
     "direction": "Rotterdam Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.317Z"
+    "loggedAt": "2025-11-18T07:53:49.630Z"
   },
   {
     "trainNumber": "3937",
@@ -2613,6 +2613,6 @@
     "actualDepartureTime": "2025-11-18T10:10:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.317Z"
+    "loggedAt": "2025-11-18T07:53:49.630Z"
   }
 ]

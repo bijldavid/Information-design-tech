@@ -1725,6 +1725,14 @@
     "actualDepartureTime": "2025-11-18T09:19:00+0100",
     "direction": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-18T07:44:45.027Z"
+    "loggedAt": "2025-11-18T07:53:49.289Z"
+  },
+  {
+    "trainNumber": "3926",
+    "plannedDepartureTime": "2025-11-18T09:49:00+0100",
+    "actualDepartureTime": "2025-11-18T09:49:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-18T07:53:49.289Z"
   }
 ]
