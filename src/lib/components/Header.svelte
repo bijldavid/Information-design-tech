@@ -51,7 +51,7 @@
         translate: 0 -50%;
         height: 1rem;
         aspect-ratio: 1;
-        background-image: url(./src/lib/assets/external-arrow.svg);
+        background-image: url(/static/assets/external-arrow.svg);
         background-repeat: no-repeat;
         background-size: 60%;
         background-position: center;

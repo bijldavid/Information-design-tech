@@ -51,7 +51,7 @@
         </select>
       </div>
       <span class="rail-route"></span>
-      <p>Heerlen2</p>
+      <p>Heerlen</p>
       <small>100+</small>
     </div>
   </fieldset>
@@ -147,7 +147,7 @@
     translate: 0 -50%;
     height: 10px;
     aspect-ratio: 1;
-    background-image: url(./src/lib/assets/select-icon.svg);
+    background-image: url(/static/assets/select-icon.svg);
     background-size: 80%;
     background-position: center 80%;
     background-repeat: no-repeat;
@@ -158,7 +158,7 @@
     width: min(225px, 100%);
     height: 22.5px;
     display: block;
-    background-image: url(./src/lib/assets/rail-direction-icon.svg),
+    background-image: url(/static/assets/rail-direction-icon.svg),
       linear-gradient(
         180deg,
         transparent 47%,
@@ -256,7 +256,7 @@
     top: 50%;
     left: calc(12px + 1rem);
     translate: 0 -50%;
-    background-image: url(./src/lib/assets/compare-icon.svg);
+    background-image: url(/static/assets/compare-icon.svg);
     background-size: 80%;
     background-repeat: no-repeat;
     background-position: center;
