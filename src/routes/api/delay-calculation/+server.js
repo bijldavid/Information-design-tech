@@ -3,7 +3,7 @@ import { readFile } from "fs/promises";
 export async function GET() {
 
     const arrivalsHoorn = JSON.parse(await readFile("static/data/arrivalsHoorn.json"));
-    const arrivalsAmsterdam = JSON.parse(await readFile('$lib/data/arrivalsAmsterdam.json'));
+    const arrivalsAmsterdam = JSON.parse(await readFile("static/data/arrivalsAmsterdam.json"));
     const departuresHoorn = JSON.parse(await readFile("static/data/departuresHoorn.json"));
     const departuresAmsterdam = JSON.parse(await readFile("static/data/departuresAmsterdam.json"));
 
