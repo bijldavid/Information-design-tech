@@ -1,13 +1,38 @@
 <script>
-  import { createEventDispatcher } from "svelte";
-
+  import { createEventDispatcher, onMount } from "svelte";
 
   const dispatch = createEventDispatcher();
-  let selectedDate = '2025-11-11';
-  
+  let selectedDate = "2025-11-11";
+  let compareDate = null;
+
   function handleChange() {
-    dispatch('changeDate', selectedDate);
+    dispatch("changeDate", selectedDate);
   }
+
+  function handleCompareDateChange() {
+    dispatch("changeCompareDate", compareDate);
+  }
+
+  onMount(() => {
+    const checkboxElement = document.querySelector("#compare");
+    const compareDateElement = document.querySelector("#compare-date");
+
+    function updateState() {
+      compareDateElement.classList.toggle("disabled", !checkboxElement.checked);
+    }
+
+    checkboxElement.addEventListener("change", () => {
+      updateState();
+
+      // Clear compare date when toggled off
+      if (!checkboxElement.checked) {
+        compareDate = null;
+        dispatch("changeCompareDate", null);
+      }
+    });
+
+    updateState();
+  });
 </script>
 
 <form action="">
@@ -34,62 +59,32 @@
   <hr />
 
   <fieldset>
-    <legend class="visually-hidden">Options to filter your visualisation</legend>
+    <legend>Choose a date to visualize.</legend>
 
-    <fieldset>
-      <legend>Choose a date to visualize.</legend>
+    <label for="initial-date" class="visually-hidden"
+      >Select your first date to visualize</label
+    >
+    <input
+      id="initial-date"
+      type="date"
+      bind:value={selectedDate}
+      on:change={handleChange}
+    />
 
-      <label for="date1"
-        >11 November 2025
-        <input 
-        id="date1" 
-        name="date" 
-        type="radio" 
-        value="2025-11-11"
-        bind:group={selectedDate}
-        on:change={handleChange}
-        />
-      </label>
-      <label for="date2"
-        >12 November 2025
-        <input 
-        id="date2" 
-        name="date" 
-        type="radio" 
-        value="2025-11-12"
-        bind:group={selectedDate}
-        on:change={handleChange}
-        />
-      </label>
-      <label for="date3">
-        13 November 2025
-        <input 
-        id="date3" 
-        name="date" 
-        type="radio" 
-        value="2025-11-13"
-        bind:group={selectedDate}
-        on:change={handleChange}
-        />
-      </label>
-    </fieldset>
+    <label for="compare"
+      >Compare
+      <input id="compare" type="checkbox" />
+    </label>
 
-    <!-- <fieldset>
-      <legend>Filter your data.</legend>
-
-      <label for="option1"
-        >Option 1
-        <input id="option1" name="options" type="checkbox" />
-      </label>
-      <label for="option2"
-        >Option 2
-        <input id="option2" name="options" type="checkbox" />
-      </label>
-      <label for="option3"
-        >Option 3
-        <input id="option3" name="options" type="checkbox" />
-      </label>
-    </fieldset> -->
+    <label for="compare-date" class="visually-hidden"
+      >Select a date to compare</label
+    >
+    <input
+      id="compare-date"
+      type="date"
+      bind:value={compareDate}
+      on:change={handleCompareDateChange}
+    />
   </fieldset>
 </form>
 
@@ -224,22 +219,77 @@
   form > fieldset:nth-of-type(2) {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
   }
 
-  fieldset:nth-of-type(2) fieldset {
+  fieldset:nth-of-type(2) {
     display: flex;
     flex-direction: column;
   }
 
-  fieldset:nth-of-type(2) fieldset label {
+  fieldset:nth-of-type(2) label {
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 2.5rem;
     width: max-content;
   }
 
-  fieldset:nth-of-type(2) fieldset label input {
+  fieldset:nth-of-type(2) input[type="date"] {
+    appearance: none;
+    padding: .5rem;
+    background: var(--NS-gray-200);
+    border: none;
+    width: max-content;
+  }
+
+  fieldset:nth-of-type(2) input[type="date"]:focus {
+    outline: 1px dashed var(--NS-blue);
+  }
+
+  fieldset:nth-of-type(2) label[for="compare"] {
+    position: relative;
+  }
+
+  fieldset:nth-of-type(2) label[for="compare"]::before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: calc(12px + 1rem);
+    translate: 0 -50%;
+    background-image: url(./src/lib/assets/compare-icon.svg);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 1rem;
+    width: 1rem;
+  }
+
+  fieldset:nth-of-type(2) #compare-date {
+    color: var(--border);
+    background: transparent;
+    outline: 1px solid var(--border);
+  }
+
+  fieldset:nth-of-type(2):has(#compare:checked) #compare-date {
+    color: var(--text);
+    background: var(--NS-gray-200);
+    border: none;
+    outline: none;
+  }
+
+  fieldset:nth-of-type(2) #compare-date::-webkit-calendar-picker-indicator {
+    opacity: .3;
+  }
+
+  fieldset:nth-of-type(2):has(#compare:checked) #compare-date::-webkit-calendar-picker-indicator {
+    opacity: 1;
+  }
+
+  fieldset:nth-of-type(2):has(#compare:checked) #compare-date:focus {
+    outline: 1px dashed var(--NS-blue);
+  }
+
+  fieldset:nth-of-type(2) label input[type="checkbox"] {
     position: relative;
     order: -1;
     /* accent-color: var(--NS-yellow); */
@@ -249,11 +299,7 @@
     border: 1px solid var(--border);
   }
 
-  fieldset:nth-of-type(2) fieldset label input[type="radio"] {
-    border-radius: 50%;
-  }
-
-  fieldset:nth-of-type(2) fieldset label input:checked::after {
+  fieldset:nth-of-type(2) label input:checked::after {
     position: absolute;
     content: "";
     height: 6px;
@@ -262,9 +308,5 @@
     left: 50%;
     translate: -50% -50%;
     background: var(--NS-blue);
-  }
-
-  fieldset:nth-of-type(2) fieldset label input[type="radio"]:checked::after {
-    border-radius: 50%;
   }
 </style>

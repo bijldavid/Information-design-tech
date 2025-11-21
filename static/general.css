@@ -18,6 +18,10 @@
     --NS-gray-100: #E0E0E8;
 }
 
+::selection {
+    background: var(--NS-gray-200);
+}
+
 html {
     interpolate-size: allow-keywords;
 }
@@ -42,4 +46,9 @@ body {
     border: none;
     height: 1px;
     background: var(--border);
+  }
+
+  .disabled {
+    pointer-events: none;
+    filter: grayscale(1);
   }

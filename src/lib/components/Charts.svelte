@@ -5,10 +5,11 @@
   export let hoornToAmsterdam = [];
   export let amsterdamToHoorn = [];
   export let selectedDate = "2025-11-11";
+  export let compareDate;
 
   export { className as class };
 
-  let className = '';
+  let className = "";
   let svg;
   let shouldAnimate = false;
 
@@ -25,19 +26,20 @@
     filterAndDraw();
   });
 
-  $: if (svg && selectedDate) {
+  $: if (svg && (selectedDate || compareDate)) {
     shouldAnimate = true;
     filterAndDraw();
   }
 
-  function filterAndDraw() {
+  function filterTrips(trips, dateString) {
+    if (!dateString) return [];
 
-    const arrayDate = selectedDate.split("-");
+    const arrayDate = dateString.split("-");
     const year = Number(arrayDate[0]);
-    const month =  Number(arrayDate[1]);
-    const date =  Number(arrayDate[2]);
+    const month = Number(arrayDate[1]);
+    const date = Number(arrayDate[2]);
 
-    const filteredTrips = hoornToAmsterdam.filter((trip) => {
+    const filteredTrips = trips.filter((trip) => {
       const tripDateObject = new Date(trip.plannedDeparture);
       const tripYear = tripDateObject.getFullYear();
       const tripMonth = tripDateObject.getMonth();
@@ -60,10 +62,28 @@
       }
     });
 
-    drawChart(filteredTrips);
+    return filteredTrips;
   }
 
-  function drawChart(filteredTrips) {
+  function filterAndDraw() {
+    const filteredA = filterTrips(hoornToAmsterdam, selectedDate);
+    const filteredB = filterTrips(hoornToAmsterdam, compareDate);
+
+    drawChart(filteredA, filteredB);
+  }
+
+  function timeOfDay(dateObj) {
+    return new Date(
+      0,
+      0,
+      0,
+      dateObj.getHours(),
+      dateObj.getMinutes(),
+      dateObj.getSeconds()
+    );
+  }
+
+  function drawChart(filteredA, filteredB) {
     const svgWidth = svg.getBoundingClientRect().width;
     const svgHeight = svg.getBoundingClientRect().height;
 
@@ -71,15 +91,27 @@
     const chartWidth = svgWidth - margin.left - margin.right;
     const chartHeight = svgHeight - margin.top - margin.bottom;
 
-    const barWidth = (chartWidth / filteredTrips.length) * 0.7;
+    const maxCount = Math.max(filteredA.length, filteredB.length);
+    const barWidth = (chartWidth / 48) * 0.8;
+
+    // Convert plannedDeparture → time-only values
+    const filteredAtime = filteredA.map((d) => ({
+      ...d,
+      timeOnly: timeOfDay(d.plannedDeparture),
+    }));
+
+    const filteredBtime = filteredB.map((d) => ({
+      ...d,
+      timeOnly: timeOfDay(d.plannedDeparture),
+    }));
 
     // x SCALE
+    const startOfDay = new Date(0, 0, 0, 5, 0);
+    const endOfDay = new Date(0, 0, 0, 24, 0);
+
     const xScale = d3
       .scaleTime()
-      .domain([
-        filteredTrips[0].plannedDeparture,
-        filteredTrips[filteredTrips.length - 1].plannedDeparture,
-      ])
+      .domain([startOfDay, endOfDay])
       .range([margin.left, svgWidth - margin.right - barWidth]);
 
     // y SCALE
@@ -110,34 +142,54 @@
       .attr("transform", `translate(${margin.left}, 0)`)
       .call(yAxis);
 
-    // drawing BARS
-    const bars = d3.select("#delays")
+    // drawing BAR A
+    const barsA = d3
+      .select(".bars-a")
       .selectAll("rect")
-      .data(filteredTrips)
+      .data(filteredAtime)
       .join("rect");
 
-    // Conditionally add transition
-    const barsWithTransition = shouldAnimate 
-      ? bars.transition().duration(500)
-      : bars;
+    const barsWithTransition = shouldAnimate
+      ? barsA.transition().duration(500)
+      : barsA;
 
     barsWithTransition
-      .attr("x", (d) => xScale(d.plannedDeparture))
+      .attr("x", (d) => xScale(d.timeOnly))
       .attr("y", (d) => (d.delay >= 0 ? yScale(d.delay) : zeroY))
       .attr("height", (d) => Math.abs(yScale(d.delay) - zeroY))
       .attr("width", barWidth)
-      .attr("fill", (d) =>
-        d.delay >= 0 ? "var(--NS-negative)" : "var(--NS-positive)"
-      );
+      .attr("fill", "var(--NS-positive)")
+      .attr("opacity", 0.5);
+
+
+    // drawing BAR B
+    const barsB = d3
+      .select(".bars-b")
+      .selectAll("rect")
+      .data(filteredBtime)
+      .join("rect");
+
+    const barsBWithTransition = shouldAnimate
+      ? barsB.transition().duration(500)
+      : barsB;
+
+    barsBWithTransition
+      .attr("x", (d) => xScale(d.timeOnly))
+      .attr("y", (d) => (d.delay >= 0 ? yScale(d.delay) : zeroY))
+      .attr("height", (d) => Math.abs(yScale(d.delay) - zeroY))
+      .attr("width", barWidth)
+      .attr("fill", "var(--NS-negative)")
+      .attr("opacity", 0.5);
   }
 </script>
-
 
 <section class={className}>
   <div class="svg-container">
     <svg id="delays" width="200" height="400">
       <g class="x-axis"></g>
       <g class="y-axis"></g>
+      <g class="bars-a"></g>
+      <g class="bars-b"></g>
     </svg>
     <small class="x-label">Delay in minutes →</small>
     <small class="y-label">Time in hours (1 day) →</small>
@@ -185,7 +237,6 @@
     height: calc(70vh / 2 - 1rem);
     background-color: var(--NS-gray-150);
   }
-  
 
   :global * {
     font-family: "gg-mono";

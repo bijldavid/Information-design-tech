@@ -5,6 +5,7 @@ Deze week was even inkomen op het gebied van JavaScript. We hebben geoefend met 
 
 
 ``` js
+
 // map
 let formattedCountries2 = countries.map(country => { ... })
 
@@ -17,21 +18,18 @@ let southAsianMaxLifeExpectancy = southAsianCountries.reduce((highest, current) 
 ```
 
 <br>
-
----
+<br>
 
 ## <mark><samp> Herfst vakantie **<sub><sup>:: Vrij</sup></sub>** </samp></mark>
 **<sub><sup>20 okt t/m 24 okt</sup></sub>** <br>
 
 <br>
-
----
+<br>
 
 ## <mark><samp> Week 2 **<sub><sup>:: Concept selectie</sup></sub>** </samp></mark>
 **<sub><sup>27 okt t/m 31 okt</sup></sub>** <br>
 
 ### <samp>Progressie</samp>
----
 Deze week hebben we voorbeeldwerk van Bink te zien gekregen. Dit gaf veel inzicht in waar we naartoe werken en hoe het eindresultaat er ongeveer uit kan zien. Ook gaf Laura een uitleg over documentatie.
 
 Verder heb ik nagedacht over mijn concept. Uit mijn brainstormsessie kwamen de volgende ideeën:
@@ -71,7 +69,7 @@ Verder heb ik nagedacht over mijn concept. Uit mijn brainstormsessie kwamen de v
 <br>
 
 ### <samp>Concept</samp>
----
+<br
 Uit deze selectie heb ik gekozen voor optie 3: de NS API. <br>
 
 Uitwerking: Het plan is om uit de API de geplande vertrektijden te vergelijken met de daadwerkelijke aankomsttijden. Als de tijden overeenkomen, is er geen vertraging. Als er een verschil is, betekent dat dat er vertraging was. Ik focus me op de trein die ik elke ochtend neem: Hoorn → Amsterdam Centraal (Enkhuizen → Heerlen).
@@ -79,14 +77,13 @@ Uitwerking: Het plan is om uit de API de geplande vertrektijden te vergelijken m
 Ik moet een script schrijven dat elk uur een API-call maakt en de resultaten opslaat in een JSON-bestand. Zo creëer ik als het ware mijn eigen dataset waarmee ik de vertraging over de afgelopen periode kan visualiseren met d3. Lees hier in meer detail over mijn concept: [Concept uitleg](Concept)
 
 <br>
-
----
+<br>
 
 ## <mark><samp> Week 3 **<sub><sup>:: D3 progressie</sup></sub>** </samp></mark>
 **<sub><sup>3 nov t/m 7 nov</sup></sub>**
 
 ### <samp>Progressie</samp>
----
+<br
 Deze week stond in het teken van D3 leren en begrijpen. Dit deden we in 3 stappen:
 
 <ol>
@@ -111,7 +108,7 @@ Naast de D3 voortgang heb ik ook aardig wat vooruitgang geboekt op gebied van da
 <br>
 
 ### <samp>Data verwerken & JSON opslag</samp>
----
+<br
 Ik kan inmiddels de data opslaan in mijn eigen JSON-bestanden en ik verwerk deze data om uiteindelijk de vertraging te berekenen (mits die aanwezig is).
 
 De flow die ik nu doorloop: ik maak vier verschillende API-calls →
@@ -194,8 +191,34 @@ De combinatie:
 kan in principe maar één keer voorkomen en dus kan ik er vanuit gaan dat de departure en arrival bij elkaar horen.
 
 <br>
-
----
+<br>
 
 ## <mark><samp> Week 4 **<sub><sup>:: D3 progressie</sup></sub>** </samp></mark>
 **<sub><sup>10 nov t/m 14 nov</sup></sub>**
+
+### <samp>Progressie</samp>
+<br
+In week 4 hebben we nagedacht over wat technisch onderzoek is en hoe wij dat gaan documenteren voor de eindbeoordeling. Daarnaast hebben we geoefent en uitleg gehad over javascript Date objecten. Ik heb geleerd dat javascript sinds ... is begonnen met tellen van mili seconden. Hiermee kan je dus wereldwijd ongeacht van de verschillende datum tellingen die er bestaan, toch een consistente tijdsweergeving tonen.
+
+Verder heb ik deze week gewerkt aan het implementeren van de daadwerkelijke d3 visualistatie. Ik ben begonnen met een simpele barchart, deze is gekoppeld aan een aantal inputs in een ander component en zo kun je de d3 visualisatie met een klik op de knop dynamisch laten veranderen.<br>
+<!-- <img src="/src/lib/assets/rail-direction-icon.svg"> -->
+
+<br>
+<br>
+
+## <mark><samp> Week 5 **<sub><sup>:: D3 progressie</sup></sub>** </samp></mark>
+**<sub><sup>10 nov t/m 14 nov</sup></sub>**
+
+### <samp>Progressie</samp>
+<br
+We naderen nu het einde! Deze week hebben we user tests uitgevoerd en waaruit we onderling elkaar wat feedback gaven en op de woensdag hebben wij code reviews uitgevoerd. Een medestudent bepaalde aan de hand van een beoordelingsformulier of ik voldoe aan de code standards (die de dag ervoor in de klas waren besproken). Hieruit kwam het volgende:
+
+| Onderdeel | Beoordeling |
+|----------|-------------|
+| Is alle code geschreven in ES6, D3 en Svelte | Ja |
+| Respecteert de code onze conventies? (names functions of arrow functions, vormgeving in CSS of, bij data dependency, in D3) | Ja |
+| Wordt de code toegelicht door middel van comments? | Nee, maar dat komt nog |
+| Hoe is de kwaliteit van de naamgeving van variabelen en functies, is het duidelijk wat hun rol is in de code? | Extreem goed |
+| Kan reviewer in de code vinden:<br>- Data fetching<br>- Hoe de UI wordt opgebouwd<br>- Hoe de charts worden opgebouwd | Ja, het is opgedeeld in 4 bestanden wat prima is, maar de folder heet API |
+| Zou de reviewer bereid zijn om de verantwoordelijkheid over dit project over te nemen in geval van nood? | 100% |
+| Heeft reviewer tips over de code? | Voeg commentaar toe |

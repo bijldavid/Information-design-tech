@@ -6,9 +6,14 @@
   import Charts from "$lib/components/Charts.svelte";
 
   let selectedDate = "2025-11-11";
+  let compareDate = null;
 
   function handleDateChange(event) {
     selectedDate = event.detail;
+  }
+
+  function handleCompareDateChange(event) {
+    compareDate = event.detail;
   }
 </script>
 
@@ -16,12 +21,16 @@
   <h2 class="visually-hidden">Titel voor deze section</h2>
 
   <Details />
-  <Form on:changeDate={handleDateChange} />
+  <Form
+    on:changeDate={handleDateChange}
+    on:changeCompareDate={handleCompareDateChange}
+  />
   <Charts
     class="charts"
     hoornToAmsterdam={data.hoornToAmsterdam}
     amsterdamToHoorn={data.amsterdamToHoorn}
     {selectedDate}
+    {compareDate}
   />
 </section>
 
@@ -41,13 +50,13 @@
 
   section :global(form) {
     flex-basis: 65%;
-    transition: flex-basis .3s ease;
+    transition: flex-basis 0.3s ease;
   }
 
   section:has(:global(details[open])) :global(form) {
     flex-basis: 85%;
   }
-    
+
   section :global(.charts) {
     flex-basis: 100%;
   }
