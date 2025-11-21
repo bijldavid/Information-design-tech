@@ -3213,7 +3213,7 @@
     "actualDepartureTime": "2025-11-21T15:05:00+0100",
     "direction": "Maastricht",
     "isCancelled": false,
-    "loggedAt": "2025-11-21T13:08:00.803Z"
+    "loggedAt": "2025-11-21T14:04:21.290Z"
   },
   {
     "trainNumber": "4061",
@@ -3221,7 +3221,7 @@
     "actualDepartureTime": "2025-11-21T15:06:00+0100",
     "direction": "Rotterdam Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-21T13:08:00.803Z"
+    "loggedAt": "2025-11-21T14:04:21.290Z"
   },
   {
     "trainNumber": "2959",
@@ -3229,7 +3229,7 @@
     "actualDepartureTime": "2025-11-21T15:35:00+0100",
     "direction": "Maastricht",
     "isCancelled": false,
-    "loggedAt": "2025-11-21T13:08:00.803Z"
+    "loggedAt": "2025-11-21T14:04:21.290Z"
   },
   {
     "trainNumber": "4063",
@@ -3237,6 +3237,22 @@
     "actualDepartureTime": "2025-11-21T15:36:00+0100",
     "direction": "Rotterdam Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-21T13:08:00.803Z"
+    "loggedAt": "2025-11-21T14:04:21.290Z"
+  },
+  {
+    "trainNumber": "2961",
+    "plannedDepartureTime": "2025-11-21T16:05:00+0100",
+    "actualDepartureTime": "2025-11-21T16:05:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T14:04:21.290Z"
+  },
+  {
+    "trainNumber": "4065",
+    "plannedDepartureTime": "2025-11-21T16:06:00+0100",
+    "actualDepartureTime": "2025-11-21T16:06:00+0100",
+    "direction": "Rotterdam Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T14:04:21.290Z"
   }
 ]

@@ -1,10 +1,14 @@
-import adapter from '@sveltejs/adapter-vercel';
+import adapter from '@sveltejs/adapter-node';
 
-/** @type {import('@sveltejs/kit').Config} */
 const config = {
-	kit: {
-		adapter: adapter()
-	}
+  kit: {
+    adapter: adapter({
+      // optional:
+      out: 'build',
+      precompress: false,
+      envPrefix: 'PUBLIC_'
+    })
+  }
 };
 
 export default config;

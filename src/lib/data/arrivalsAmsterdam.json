@@ -2125,6 +2125,14 @@
     "actualArrivalTime": "2025-11-21T15:08:00+0100",
     "origin": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-21T13:08:01.022Z"
+    "loggedAt": "2025-11-21T14:04:21.473Z"
+  },
+  {
+    "trainNumber": "2957",
+    "plannedArrivalTime": "2025-11-21T15:38:00+0100",
+    "actualArrivalTime": "2025-11-21T15:38:00+0100",
+    "origin": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T14:04:21.473Z"
   }
 ]
