@@ -2921,18 +2921,18 @@
   {
     "trainNumber": "2966",
     "plannedArrivalTime": "2025-11-22T20:25:00+0100",
-    "actualArrivalTime": "2025-11-22T20:26:28+0100",
+    "actualArrivalTime": "2025-11-22T20:26:10+0100",
     "origin": "Eindhoven Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-22T19:09:59.094Z"
+    "loggedAt": "2025-11-22T19:15:59.124Z"
   },
   {
     "trainNumber": "2968",
     "plannedArrivalTime": "2025-11-22T20:55:00+0100",
-    "actualArrivalTime": "2025-11-22T21:01:22+0100",
+    "actualArrivalTime": "2025-11-22T21:01:46+0100",
     "origin": "Eindhoven Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-22T19:09:59.094Z"
+    "loggedAt": "2025-11-22T19:15:59.124Z"
   },
   {
     "trainNumber": "2970",
@@ -2940,6 +2940,6 @@
     "actualArrivalTime": "2025-11-22T21:25:00+0100",
     "origin": "Eindhoven Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-22T19:09:59.094Z"
+    "loggedAt": "2025-11-22T19:15:59.124Z"
   }
 ]

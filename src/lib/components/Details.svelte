@@ -26,7 +26,7 @@
 
 <style>
   details {
-    --details-size: 350px;
+    --details-size: 250px;
   }
 
   details {
