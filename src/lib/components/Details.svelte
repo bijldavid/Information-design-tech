@@ -7,7 +7,7 @@
     <h2>Description</h2>
     <p>How it works.</p>
     <p>
-      A brief explenation about what this filter entails to help the user better
+      A brief explanation about what this filter entails to help the user better
       understand whether or not it is relevant for their data fetch.
     </p>
     <p>This is a 3 step process.</p>
@@ -26,7 +26,7 @@
 
 <style>
   details {
-    --details-size: 250px;
+    --details-size: 350px;
   }
 
   details {
