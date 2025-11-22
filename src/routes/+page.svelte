@@ -7,6 +7,11 @@
 
   let selectedDate = "2025-11-11";
   let compareDate = null;
+  let isHoornToAmsterdam = false;
+
+  function handleRouteChange(event) {
+    isHoornToAmsterdam = event.detail;
+  }
 
   function handleDateChange(event) {
     selectedDate = event.detail;
@@ -24,11 +29,13 @@
   <Form
     on:changeDate={handleDateChange}
     on:changeCompareDate={handleCompareDateChange}
+    on:routeChange={handleRouteChange}
   />
   <Charts
     class="charts"
     hoornToAmsterdam={data.hoornToAmsterdam}
     amsterdamToHoorn={data.amsterdamToHoorn}
+    {isHoornToAmsterdam}
     {selectedDate}
     {compareDate}
   />
@@ -54,7 +61,7 @@
   }
 
   section:has(:global(details[open])) :global(form) {
-    flex-basis: 85%;
+    flex-basis: 90%;
   }
 
   section :global(.charts) {

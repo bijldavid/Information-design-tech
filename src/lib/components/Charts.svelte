@@ -2,10 +2,12 @@
   import { onMount } from "svelte";
   import * as d3 from "d3";
 
+  // props
   export let hoornToAmsterdam = [];
   export let amsterdamToHoorn = [];
   export let selectedDate = "2025-11-11";
   export let compareDate;
+  export let isHoornToAmsterdam = false;
 
   export { className as class };
 
@@ -27,6 +29,13 @@
   });
 
   $: if (svg && (selectedDate || compareDate)) {
+    shouldAnimate = true;
+    filterAndDraw();
+  }
+
+  $: tripDirection = isHoornToAmsterdam ? hoornToAmsterdam : amsterdamToHoorn;
+
+  $: if (svg && tripDirection) {
     shouldAnimate = true;
     filterAndDraw();
   }
@@ -66,8 +75,8 @@
   }
 
   function filterAndDraw() {
-    const filteredA = filterTrips(hoornToAmsterdam, selectedDate);
-    const filteredB = filterTrips(hoornToAmsterdam, compareDate);
+    const filteredA = filterTrips(tripDirection, selectedDate);
+    const filteredB = filterTrips(tripDirection, compareDate);
 
     drawChart(filteredA, filteredB);
   }
@@ -117,7 +126,7 @@
     // y SCALE
     const yScale = d3
       .scaleLinear()
-      .domain([-10, 20])
+      .domain([-5, 30])
       .range([svgHeight - margin.bottom, margin.top]);
 
     const zeroY = yScale(0);
@@ -155,12 +164,21 @@
 
     barsWithTransition
       .attr("x", (d) => xScale(d.timeOnly))
-      .attr("y", (d) => (d.delay >= 0 ? yScale(d.delay) : zeroY))
-      .attr("height", (d) => Math.abs(yScale(d.delay) - zeroY))
+      .attr("y", (d) => {
+        if (d.isCancelled) return margin.top;
+        return d.delay >= 0 ? yScale(d.delay) : zeroY;
+      })
+      .attr("height", (d) => {
+        if (d.isCancelled) return svgHeight - margin.top - margin.bottom;
+        return Math.abs(yScale(d.delay) - zeroY);
+      })
       .attr("width", barWidth)
       .attr("fill", "var(--NS-positive)")
-      .attr("opacity", 0.5);
-
+      .attr("opacity", 0.5)
+      .style("fill", (d) => {
+        if (d.isCancelled) return "url(#diagonalHatch-positive)";
+        return "var(--NS-positive)";
+      });
 
     // drawing BAR B
     const barsB = d3
@@ -175,17 +193,61 @@
 
     barsBWithTransition
       .attr("x", (d) => xScale(d.timeOnly))
-      .attr("y", (d) => (d.delay >= 0 ? yScale(d.delay) : zeroY))
-      .attr("height", (d) => Math.abs(yScale(d.delay) - zeroY))
+      .attr("y", (d) => {
+        if (d.isCancelled) return margin.top;
+        return d.delay >= 0 ? yScale(d.delay) : zeroY;
+      })
+      .attr("height", (d) => {
+        if (d.isCancelled) return svgHeight - margin.top - margin.bottom;
+        return Math.abs(yScale(d.delay) - zeroY);
+      })
       .attr("width", barWidth)
       .attr("fill", "var(--NS-negative)")
-      .attr("opacity", 0.5);
+      .attr("opacity", 0.5)
+      .style("fill", (d) => {
+        if (d.isCancelled) return "url(#diagonalHatch-negative)";
+        return "var(--NS-negative)";
+      });
   }
 </script>
 
 <section class={className}>
   <div class="svg-container">
     <svg id="delays" width="200" height="400">
+      <defs>
+        <pattern
+          id="diagonalHatch-positive"
+          patternUnits="userSpaceOnUse"
+          width="6"
+          height="6"
+          patternTransform="rotate(45)"
+        >
+          <line
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="6"
+            stroke="var(--NS-positive)"
+            stroke-width="3"
+          />
+        </pattern>
+        <pattern
+          id="diagonalHatch-negative"
+          patternUnits="userSpaceOnUse"
+          width="6"
+          height="6"
+          patternTransform="rotate(45)"
+        >
+          <line
+            x1="0"
+            y1="0"
+            x2="0"
+            y2="6"
+            stroke="var(--NS-negative)"
+            stroke-width="3"
+          />
+        </pattern>
+      </defs>
       <g class="x-axis"></g>
       <g class="y-axis"></g>
       <g class="bars-a"></g>

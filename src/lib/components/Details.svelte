@@ -26,14 +26,21 @@
 
 <style>
   details {
-    --details-size: 375px;
+    --details-size: 350px;
   }
 
   details {
+    position: relative;
     border: 1px solid var(--border);
     display: flex;
     max-width: var(--details-size);
-    overflow: hidden;
+    overflow-x: hidden;
+    overscroll-behavior-block: contain;
+    scrollbar-color: var(--NS-gray-400) transparent;
+  } 
+
+  details:has(:focus-visible) {
+    outline: 1px dashed var(--NS-blue);
   }
 
   details::details-content {
@@ -48,12 +55,13 @@
   }
 
   details summary {
-    position: relative;
+    position: sticky;
+    top: 0;
     list-style: none;
     padding: 1rem;
     display: grid;
     place-items: center;
-    height: 100%;
+    height: calc(70vh - 2px);
   }
 
   details summary::after {
@@ -140,7 +148,7 @@
 
     details {
       flex-direction: column;
-      min-width: 100%;
+      min-width: 100% !important;
       overflow: hidden;
     }
 
@@ -155,6 +163,10 @@
     details:open::details-content {
       block-size: var(--details-size);
       min-width: 100%;
+    }
+
+    details summary {
+      height: auto;
     }
 
     details summary::after {

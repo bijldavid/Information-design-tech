@@ -5,7 +5,11 @@
   let selectedDate = "2025-11-11";
   let compareDate = null;
 
-  function handleChange() {
+  function handleRouteChange(event) {
+    dispatch("routeChange", event.target.checked);
+  }
+
+  function handleSelectedDateChange() {
     dispatch("changeDate", selectedDate);
   }
 
@@ -14,18 +18,18 @@
   }
 
   onMount(() => {
-    const checkboxElement = document.querySelector("#compare");
-    const compareDateElement = document.querySelector("#compare-date");
+    const compareCheckbox = document.querySelector("#compare");
+    const compareDateInput = document.querySelector("#compare-date");
 
     function updateState() {
-      compareDateElement.classList.toggle("disabled", !checkboxElement.checked);
+      compareDateInput.classList.toggle("disabled", !compareCheckbox.checked);
     }
 
-    checkboxElement.addEventListener("change", () => {
+    compareCheckbox.addEventListener("change", () => {
       updateState();
 
       // Clear compare date when toggled off
-      if (!checkboxElement.checked) {
+      if (!compareCheckbox.checked) {
         compareDate = null;
         dispatch("changeCompareDate", null);
       }
@@ -40,7 +44,7 @@
     <legend>Select your rail route:</legend>
 
     <div>
-      <label class="visually-hidden" for="pet-select"
+      <label class="visually-hidden" for="origin-select"
         >This select allows you to change which rail route is visualised.</label
       >
       <div>
@@ -50,7 +54,9 @@
           <option value="Den Helder">Den Helder</option>
         </select>
       </div>
-      <span class="rail-route"></span>
+      <label class="rail-route" for="rail-route">
+        <input id="rail-route" type="checkbox" on:change={handleRouteChange} />
+      </label>
       <p>Heerlen</p>
       <small>100+</small>
     </div>
@@ -68,7 +74,7 @@
       id="initial-date"
       type="date"
       bind:value={selectedDate}
-      on:change={handleChange}
+      on:change={handleSelectedDateChange}
     />
 
     <label for="compare"
@@ -121,7 +127,15 @@
     gap: 1rem;
   }
 
-  fieldset:nth-of-type(1) > div select {
+  fieldset:nth-of-type(1) > div:has(.rail-route input:checked) div {
+    order: 3;
+  }
+
+  fieldset:nth-of-type(1) > div:has(.rail-route input:checked) p {
+    order: 1;
+  }
+
+  fieldset:nth-of-type(1) > div div select {
     font-family: "gg-mono";
     appearance: none;
     background: var(--NS-gray-200);
@@ -131,12 +145,17 @@
     padding-inline-end: 1.5rem;
   }
 
-  fieldset:nth-of-type(1) > div select:focus {
+  fieldset:nth-of-type(1) > div div select:focus {
     outline: none;
+  }
+
+  fieldset:nth-of-type(1) > div div select:focus-visible {
+    outline: 1px dashed var(--NS-blue);
   }
 
   fieldset:nth-of-type(1) > div div {
     position: relative;
+    order: 1;
   }
 
   fieldset:nth-of-type(1) > div div::after {
@@ -153,45 +172,76 @@
     background-repeat: no-repeat;
   }
 
-  fieldset:nth-of-type(1) > div span {
+  fieldset:nth-of-type(1) > div .rail-route {
     position: relative;
     width: min(225px, 100%);
-    height: 22.5px;
+    height: 1.5px;
     display: block;
-    background-image: url(/static/assets/rail-direction-icon.svg),
-      linear-gradient(
-        180deg,
-        transparent 47%,
-        var(--border) 47%,
-        var(--border) 53%,
-        transparent 53%
-      );
-    background-size: 12.5px, 100%;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: linear-gradient(
+      90deg,
+      var(--NS-gray-400) 0,
+      transparent 30%,
+      transparent 70%,
+      var(--NS-gray-400) 100%
+    );
+    order: 2;
   }
 
-  fieldset:nth-of-type(1) > div span::before,
-  fieldset:nth-of-type(1) > div span::after {
+  fieldset:nth-of-type(1) > div .rail-route::before,
+  fieldset:nth-of-type(1) > div .rail-route::after {
     content: "";
     position: absolute;
     height: 10px;
     width: 10px;
-    background: var(--border);
+    background: var(--NS-gray-400);
     translate: 0 -50%;
     top: 50%;
   }
 
-  fieldset:nth-of-type(1) > div span::before {
+  fieldset:nth-of-type(1) > div .rail-route::before {
     left: -10px;
   }
 
-  fieldset:nth-of-type(1) > div span::after {
+  fieldset:nth-of-type(1) > div .rail-route::after {
     right: -10px;
+  }
+
+  fieldset:nth-of-type(1) > div .rail-route input {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+
+    appearance: none;
+    height: 16px;
+    aspect-ratio: 1;
+    background-color: var(--NS-gray-100);
+    /* border: solid 1px var(--text); */
+  }
+
+  fieldset:nth-of-type(1) > div .rail-route input::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    height: 100%;
+    width: 100%;
+    background-image: url(/static/assets/rail-route-icon2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 75%;
+    rotate: z 0;
+    transition: 0.5s ease rotate;
+  }
+
+  fieldset:nth-of-type(1) > div .rail-route input:checked::after {
+    rotate: z 180deg;
   }
 
   fieldset:nth-of-type(1) > div p {
     margin-inline-end: auto;
+    order: 3;
   }
 
   fieldset:nth-of-type(1) > div small {
@@ -199,6 +249,7 @@
     font-size: 0.65rem;
     padding-inline-start: 1rem;
     white-space: nowrap;
+    order: 4;
   }
 
   fieldset:nth-of-type(1) > div small::before {
@@ -236,7 +287,7 @@
 
   fieldset:nth-of-type(2) input[type="date"] {
     appearance: none;
-    padding: .5rem;
+    padding: 0.5rem;
     background: var(--NS-gray-200);
     border: none;
     width: max-content;
@@ -252,7 +303,7 @@
 
   fieldset:nth-of-type(2) label[for="compare"]::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 50%;
     left: calc(12px + 1rem);
     translate: 0 -50%;
@@ -278,10 +329,11 @@
   }
 
   fieldset:nth-of-type(2) #compare-date::-webkit-calendar-picker-indicator {
-    opacity: .3;
+    opacity: 0.3;
   }
 
-  fieldset:nth-of-type(2):has(#compare:checked) #compare-date::-webkit-calendar-picker-indicator {
+  fieldset:nth-of-type(2):has(#compare:checked)
+    #compare-date::-webkit-calendar-picker-indicator {
     opacity: 1;
   }
 

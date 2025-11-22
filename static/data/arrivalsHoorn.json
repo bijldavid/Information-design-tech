@@ -1,5 +1,317 @@
 [
   {
+    "trainNumber": "3820",
+    "plannedArrivalTime": "2025-11-09T08:35:00+0100",
+    "actualArrivalTime": "2025-11-09T08:35:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T07:05:12.551Z"
+  },
+  {
+    "trainNumber": "3822",
+    "plannedArrivalTime": "2025-11-09T09:02:00+0100",
+    "actualArrivalTime": "2025-11-09T09:08:24+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T07:30:55.004Z"
+  },
+  {
+    "trainNumber": "3826",
+    "plannedArrivalTime": "2025-11-09T10:04:00+0100",
+    "actualArrivalTime": "2025-11-09T10:07:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T08:30:14.200Z"
+  },
+  {
+    "trainNumber": "3828",
+    "plannedArrivalTime": "2025-11-09T10:36:00+0100",
+    "actualArrivalTime": "2025-11-09T10:40:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T09:08:55.910Z"
+  },
+  {
+    "trainNumber": "3830",
+    "plannedArrivalTime": "2025-11-09T11:07:00+0100",
+    "actualArrivalTime": "2025-11-09T11:10:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T09:34:21.110Z"
+  },
+  {
+    "trainNumber": "3832",
+    "plannedArrivalTime": "2025-11-09T11:35:00+0100",
+    "actualArrivalTime": "2025-11-09T11:35:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T10:05:39.002Z"
+  },
+  {
+    "trainNumber": "3834",
+    "plannedArrivalTime": "2025-11-09T12:08:00+0100",
+    "actualArrivalTime": "2025-11-09T12:08:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T10:35:42.889Z"
+  },
+  {
+    "trainNumber": "3836",
+    "plannedArrivalTime": "2025-11-09T12:34:00+0100",
+    "actualArrivalTime": "2025-11-09T12:34:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T11:05:17.117Z"
+  },
+  {
+    "trainNumber": "3838",
+    "plannedArrivalTime": "2025-11-09T13:03:00+0100",
+    "actualArrivalTime": "2025-11-09T13:06:33+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T11:28:07.515Z"
+  },
+  {
+    "trainNumber": "3840",
+    "plannedArrivalTime": "2025-11-09T13:36:00+0100",
+    "actualArrivalTime": "2025-11-09T13:38:40+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T12:06:12.002Z"
+  },
+  {
+    "trainNumber": "3842",
+    "plannedArrivalTime": "2025-11-09T14:04:00+0100",
+    "actualArrivalTime": "2025-11-09T14:03:30+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T12:30:33.991Z"
+  },
+  {
+    "trainNumber": "3846",
+    "plannedArrivalTime": "2025-11-09T15:04:00+0100",
+    "actualArrivalTime": "2025-11-09T15:07:44+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T13:30:18.144Z"
+  },
+  {
+    "trainNumber": "3848",
+    "plannedArrivalTime": "2025-11-09T15:33:00+0100",
+    "actualArrivalTime": "2025-11-09T15:43:44+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T14:09:33.004Z"
+  },
+  {
+    "trainNumber": "3850",
+    "plannedArrivalTime": "2025-11-09T16:04:00+0100",
+    "actualArrivalTime": "2025-11-09T16:13:23+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T14:32:41.994Z"
+  },
+  {
+    "trainNumber": "3852",
+    "plannedArrivalTime": "2025-11-09T16:36:00+0100",
+    "actualArrivalTime": "2025-11-09T16:38:10+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T15:09:59.009Z"
+  },
+  {
+    "trainNumber": "3854",
+    "plannedArrivalTime": "2025-11-09T17:03:00+0100",
+    "actualArrivalTime": "2025-11-09T17:20:54+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T15:30:44.887Z"
+  },
+  {
+    "trainNumber": "3856",
+    "plannedArrivalTime": "2025-11-09T17:34:00+0100",
+    "actualArrivalTime": "2025-11-09T17:34:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T16:05:40.771Z"
+  },
+  {
+    "trainNumber": "3858",
+    "plannedArrivalTime": "2025-11-09T18:03:00+0100",
+    "actualArrivalTime": "2025-11-09T18:03:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T16:31:18.501Z"
+  },
+  {
+    "trainNumber": "3860",
+    "plannedArrivalTime": "2025-11-09T18:34:00+0100",
+    "actualArrivalTime": "2025-11-09T18:34:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T17:05:33.772Z"
+  },
+  {
+    "trainNumber": "3862",
+    "plannedArrivalTime": "2025-11-09T19:03:00+0100",
+    "actualArrivalTime": "2025-11-09T19:06:44+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T17:30:08.711Z"
+  },
+  {
+    "trainNumber": "3864",
+    "plannedArrivalTime": "2025-11-09T19:36:00+0100",
+    "actualArrivalTime": "2025-11-09T19:36:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T18:06:44.339Z"
+  },
+  {
+    "trainNumber": "3866",
+    "plannedArrivalTime": "2025-11-09T20:04:00+0100",
+    "actualArrivalTime": "2025-11-09T20:07:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T18:30:55.887Z"
+  },
+  {
+    "trainNumber": "3868",
+    "plannedArrivalTime": "2025-11-09T20:36:00+0100",
+    "actualArrivalTime": "2025-11-09T20:36:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T19:08:12.002Z"
+  },
+  {
+    "trainNumber": "3870",
+    "plannedArrivalTime": "2025-11-09T21:03:00+0100",
+    "actualArrivalTime": "2025-11-09T21:06:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T19:29:07.003Z"
+  },
+  {
+    "trainNumber": "3872",
+    "plannedArrivalTime": "2025-11-09T21:35:00+0100",
+    "actualArrivalTime": "2025-11-09T21:37:23+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T20:05:40.771Z"
+  },
+  {
+    "trainNumber": "3874",
+    "plannedArrivalTime": "2025-11-09T22:04:00+0100",
+    "actualArrivalTime": "2025-11-09T22:07:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T20:28:14.200Z"
+  },
+  {
+    "trainNumber": "3876",
+    "plannedArrivalTime": "2025-11-09T22:35:00+0100",
+    "actualArrivalTime": "2025-11-09T22:35:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T21:05:12.551Z"
+  },
+  {
+    "trainNumber": "3878",
+    "plannedArrivalTime": "2025-11-09T23:04:00+0100",
+    "actualArrivalTime": "2025-11-09T23:07:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-09T21:30:44.887Z"
+  },
+  {
+    "trainNumber": "3948",
+    "plannedArrivalTime": "2025-11-10T09:21:00+0100",
+    "actualArrivalTime": "2025-11-10T09:24:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T8:47:21.685Z"
+  },
+  {
+    "trainNumber": "3850",
+    "plannedArrivalTime": "2025-11-10T09:43:00+0100",
+    "actualArrivalTime": "2025-11-10T09:46:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T08:12:18.100Z"
+  },
+  {
+    "trainNumber": "3852",
+    "plannedArrivalTime": "2025-11-10T10:09:00+0100",
+    "actualArrivalTime": "2025-11-10T10:13:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T08:39:54.402Z"
+  },
+  {
+    "trainNumber": "3854",
+    "plannedArrivalTime": "2025-11-10T10:36:00+0100",
+    "actualArrivalTime": "2025-11-10T10:36:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T09:11:12.991Z"
+  },
+  {
+    "trainNumber": "3856",
+    "plannedArrivalTime": "2025-11-10T11:03:00+0100",
+    "actualArrivalTime": "2025-11-10T11:09:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T09:31:47.220Z"
+  },
+  {
+    "trainNumber": "3858",
+    "plannedArrivalTime": "2025-11-10T11:33:00+0100",
+    "actualArrivalTime": "2025-11-10T11:37:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T10:05:08.515Z"
+  },
+  {
+    "trainNumber": "3860",
+    "plannedArrivalTime": "2025-11-10T11:59:00+0100",
+    "actualArrivalTime": "2025-11-10T11:59:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T10:24:33.772Z"
+  },
+  {
+    "trainNumber": "3862",
+    "plannedArrivalTime": "2025-11-10T12:34:00+0100",
+    "actualArrivalTime": "2025-11-10T12:40:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T11:05:11.903Z"
+  },
+  {
+    "trainNumber": "3864",
+    "plannedArrivalTime": "2025-11-10T13:08:00+0100",
+    "actualArrivalTime": "2025-11-10T13:11:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T11:32:41.004Z"
+  },
+  {
+    "trainNumber": "3866",
+    "plannedArrivalTime": "2025-11-10T13:35:00+0100",
+    "actualArrivalTime": "2025-11-10T13:41:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T12:08:55.887Z"
+  },
+  {
+    "trainNumber": "3868",
+    "plannedArrivalTime": "2025-11-10T14:03:00+0100",
+    "actualArrivalTime": "2025-11-10T14:05:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-10T12:29:07.003Z"
+  },
+  {
     "trainNumber": "3950",
     "plannedArrivalTime": "2025-11-10T16:21:00+0100",
     "actualArrivalTime": "2025-11-10T16:21:00+0100",
@@ -1001,7 +1313,7 @@
   {
     "trainNumber": "2978",
     "plannedArrivalTime": "2025-11-13T23:24:00+0100",
-    "actualArrivalTime": "2025-11-13T23:36:02+0100",
+    "actualArrivalTime": "2025-11-13T23:30:02+0100",
     "origin": "Maastricht",
     "isCancelled": false,
     "loggedAt": "2025-11-13T22:00:35.026Z"
@@ -1015,12 +1327,228 @@
     "loggedAt": "2025-11-13T22:00:35.026Z"
   },
   {
-    "trainNumber": "2982",
-    "plannedArrivalTime": "2025-11-14T00:24:00+0100",
-    "actualArrivalTime": "2025-11-14T00:24:00+0100",
-    "origin": "Maastricht",
+    "trainNumber": "4100",
+    "plannedArrivalTime": "2025-11-14T08:36:00+0100",
+    "actualArrivalTime": "2025-11-14T08:36:00+0100",
+    "origin": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-13T22:00:35.026Z"
+    "loggedAt": "2025-11-14T07:07:41.552Z"
+  },
+  {
+    "trainNumber": "4102",
+    "plannedArrivalTime": "2025-11-14T09:00:00+0100",
+    "actualArrivalTime": "2025-11-14T09:05:12+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T07:28:12.991Z"
+  },
+  {
+    "trainNumber": "4104",
+    "plannedArrivalTime": "2025-11-14T09:33:00+0100",
+    "actualArrivalTime": "2025-11-14T09:48:44+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T08:02:01.104Z"
+  },
+  {
+    "trainNumber": "4106",
+    "plannedArrivalTime": "2025-11-14T10:04:00+0100",
+    "actualArrivalTime": "2025-11-14T10:19:55+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T08:30:41.882Z"
+  },
+  {
+    "trainNumber": "4108",
+    "plannedArrivalTime": "2025-11-14T10:32:00+0100",
+    "actualArrivalTime": "2025-11-14T10:35:02+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T09:06:11.221Z"
+  },
+  {
+    "trainNumber": "4110",
+    "plannedArrivalTime": "2025-11-14T11:05:00+0100",
+    "actualArrivalTime": "2025-11-14T11:16:37+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T09:32:55.993Z"
+  },
+  {
+    "trainNumber": "4112",
+    "plannedArrivalTime": "2025-11-14T11:34:00+0100",
+    "actualArrivalTime": "2025-11-14T11:34:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T10:09:45.510Z"
+  },
+  {
+    "trainNumber": "4114",
+    "plannedArrivalTime": "2025-11-14T12:08:00+0100",
+    "actualArrivalTime": "2025-11-14T12:25:48+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T10:35:33.177Z"
+  },
+  {
+    "trainNumber": "4116",
+    "plannedArrivalTime": "2025-11-14T12:36:00+0100",
+    "actualArrivalTime": "2025-11-14T12:36:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T11:07:12.442Z"
+  },
+  {
+    "trainNumber": "4118",
+    "plannedArrivalTime": "2025-11-14T13:08:00+0100",
+    "actualArrivalTime": "2025-11-14T13:12:10+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T11:38:44.005Z"
+  },
+  {
+    "trainNumber": "4120",
+    "plannedArrivalTime": "2025-11-14T13:42:00+0100",
+    "actualArrivalTime": "2025-11-14T13:44:51+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T12:09:17.981Z"
+  },
+  {
+    "trainNumber": "4122",
+    "plannedArrivalTime": "2025-11-14T14:16:00+0100",
+    "actualArrivalTime": "2025-11-14T14:16:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T12:44:41.114Z"
+  },
+  {
+    "trainNumber": "4124",
+    "plannedArrivalTime": "2025-11-14T14:49:00+0100",
+    "actualArrivalTime": "2025-11-14T14:49:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T13:15:18.882Z"
+  },
+  {
+    "trainNumber": "4126",
+    "plannedArrivalTime": "2025-11-14T15:23:00+0100",
+    "actualArrivalTime": "2025-11-14T15:23:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T13:48:07.771Z"
+  },
+  {
+    "trainNumber": "4128",
+    "plannedArrivalTime": "2025-11-14T15:56:00+0100",
+    "actualArrivalTime": "2025-11-14T15:56:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T14:21:52.552Z"
+  },
+  {
+    "trainNumber": "4130",
+    "plannedArrivalTime": "2025-11-14T16:29:00+0100",
+    "actualArrivalTime": "2025-11-14T16:32:20+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T14:59:30.332Z"
+  },
+  {
+    "trainNumber": "4132",
+    "plannedArrivalTime": "2025-11-14T17:04:00+0100",
+    "actualArrivalTime": "2025-11-14T17:04:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T15:30:56.510Z"
+  },
+  {
+    "trainNumber": "4134",
+    "plannedArrivalTime": "2025-11-14T17:33:00+0100",
+    "actualArrivalTime": "2025-11-14T17:50:33+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T15:57:22.884Z"
+  },
+  {
+    "trainNumber": "4136",
+    "plannedArrivalTime": "2025-11-14T18:07:00+0100",
+    "actualArrivalTime": "2025-11-14T18:10:11+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T16:33:09.772Z"
+  },
+  {
+    "trainNumber": "4138",
+    "plannedArrivalTime": "2025-11-14T18:38:00+0100",
+    "actualArrivalTime": "2025-11-14T18:39:05+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T17:05:11.772Z"
+  },
+  {
+    "trainNumber": "4140",
+    "plannedArrivalTime": "2025-11-14T19:10:00+0100",
+    "actualArrivalTime": "2025-11-14T19:13:41+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T17:37:55.114Z"
+  },
+  {
+    "trainNumber": "4142",
+    "plannedArrivalTime": "2025-11-14T19:42:00+0100",
+    "actualArrivalTime": "2025-11-14T19:42:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T18:08:47.552Z"
+  },
+  {
+    "trainNumber": "4144",
+    "plannedArrivalTime": "2025-11-14T20:14:00+0100",
+    "actualArrivalTime": "2025-11-14T20:32:55+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T18:40:24.883Z"
+  },
+  {
+    "trainNumber": "4146",
+    "plannedArrivalTime": "2025-11-14T20:47:00+0100",
+    "actualArrivalTime": "2025-11-14T20:47:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T19:12:11.445Z"
+  },
+  {
+    "trainNumber": "4148",
+    "plannedArrivalTime": "2025-11-14T21:19:00+0100",
+    "actualArrivalTime": "2025-11-14T21:20:22+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T19:43:33.227Z"
+  },
+  {
+    "trainNumber": "4150",
+    "plannedArrivalTime": "2025-11-14T21:51:00+0100",
+    "actualArrivalTime": "2025-11-14T22:00:18+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T20:18:01.662Z"
+  },
+  {
+    "trainNumber": "4152",
+    "plannedArrivalTime": "2025-11-14T22:24:00+0100",
+    "actualArrivalTime": "2025-11-14T22:25:00+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T20:49:55.661Z"
+  },
+  {
+    "trainNumber": "4154",
+    "plannedArrivalTime": "2025-11-14T22:56:00+0100",
+    "actualArrivalTime": "2025-11-14T23:01:40+0100",
+    "origin": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-14T21:24:42.993Z"
   },
   {
     "trainNumber": "2954",
@@ -2060,6 +2588,350 @@
     "actualArrivalTime": "2025-11-21T16:24:00+0100",
     "origin": "Maastricht",
     "isCancelled": false,
-    "loggedAt": "2025-11-21T14:04:21.186Z"
+    "loggedAt": "2025-11-21T15:18:54.367Z"
+  },
+  {
+    "trainNumber": "2952",
+    "plannedArrivalTime": "2025-11-21T16:54:00+0100",
+    "actualArrivalTime": "2025-11-21T16:54:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T15:18:54.367Z"
+  },
+  {
+    "trainNumber": "2954",
+    "plannedArrivalTime": "2025-11-21T17:24:00+0100",
+    "actualArrivalTime": "2025-11-21T17:30:34+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T15:18:54.367Z"
+  },
+  {
+    "trainNumber": "2958",
+    "plannedArrivalTime": "2025-11-21T18:24:00+0100",
+    "actualArrivalTime": "2025-11-21T18:26:21+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T17:23:18.716Z"
+  },
+  {
+    "trainNumber": "2960",
+    "plannedArrivalTime": "2025-11-21T18:54:00+0100",
+    "actualArrivalTime": "2025-11-21T18:55:02+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T17:50:44.482Z"
+  },
+  {
+    "trainNumber": "2962",
+    "plannedArrivalTime": "2025-11-21T19:24:00+0100",
+    "actualArrivalTime": "2025-11-21T19:24:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T18:22:28.309Z"
+  },
+  {
+    "trainNumber": "2964",
+    "plannedArrivalTime": "2025-11-21T19:54:00+0100",
+    "actualArrivalTime": "2025-11-21T19:54:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T18:38:03.481Z"
+  },
+  {
+    "trainNumber": "2966",
+    "plannedArrivalTime": "2025-11-21T20:24:00+0100",
+    "actualArrivalTime": "2025-11-21T20:37:14+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T19:36:07.574Z"
+  },
+  {
+    "trainNumber": "2968",
+    "plannedArrivalTime": "2025-11-21T20:54:00+0100",
+    "actualArrivalTime": "2025-11-21T20:55:02+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T19:53:31.259Z"
+  },
+  {
+    "trainNumber": "2970",
+    "plannedArrivalTime": "2025-11-21T21:24:00+0100",
+    "actualArrivalTime": "2025-11-21T21:29:08+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T18:55:59.410Z"
+  },
+  {
+    "trainNumber": "302970",
+    "plannedArrivalTime": "2025-11-21T21:24:00+0100",
+    "actualArrivalTime": "2025-11-21T21:25:15+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T20:09:27.415Z"
+  },
+  {
+    "trainNumber": "2972",
+    "plannedArrivalTime": "2025-11-21T21:54:00+0100",
+    "actualArrivalTime": "2025-11-21T22:03:16+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T20:53:21.490Z"
+  },
+  {
+    "trainNumber": "2974",
+    "plannedArrivalTime": "2025-11-21T22:24:00+0100",
+    "actualArrivalTime": "2025-11-21T22:24:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T21:09:52.520Z"
+  },
+  {
+    "trainNumber": "2976",
+    "plannedArrivalTime": "2025-11-21T22:54:00+0100",
+    "actualArrivalTime": "2025-11-21T22:54:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T21:52:26.954Z"
+  },
+  {
+    "trainNumber": "2978",
+    "plannedArrivalTime": "2025-11-21T23:24:00+0100",
+    "actualArrivalTime": "2025-11-21T23:25:13+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T22:11:02.411Z"
+  },
+  {
+    "trainNumber": "2980",
+    "plannedArrivalTime": "2025-11-21T23:54:00+0100",
+    "actualArrivalTime": "2025-11-21T23:55:17+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T22:43:53.260Z"
+  },
+  {
+    "trainNumber": "2982",
+    "plannedArrivalTime": "2025-11-22T00:24:00+0100",
+    "actualArrivalTime": "2025-11-22T00:25:44+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T23:16:24.431Z"
+  },
+  {
+    "trainNumber": "2984",
+    "plannedArrivalTime": "2025-11-22T00:55:00+0100",
+    "actualArrivalTime": "2025-11-22T01:00:07+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-21T23:54:27.183Z"
+  },
+  {
+    "trainNumber": "302986",
+    "plannedArrivalTime": "2025-11-22T01:34:00+0100",
+    "actualArrivalTime": "2025-11-22T01:35:11+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T00:27:55.395Z"
+  },
+  {
+    "trainNumber": "2920",
+    "plannedArrivalTime": "2025-11-22T08:55:00+0100",
+    "actualArrivalTime": "2025-11-22T08:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T07:53:32.051Z"
+  },
+  {
+    "trainNumber": "2922",
+    "plannedArrivalTime": "2025-11-22T09:25:00+0100",
+    "actualArrivalTime": "2025-11-22T09:25:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T08:11:27.127Z"
+  },
+  {
+    "trainNumber": "2924",
+    "plannedArrivalTime": "2025-11-22T09:55:00+0100",
+    "actualArrivalTime": "2025-11-22T09:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T08:54:32.391Z"
+  },
+  {
+    "trainNumber": "2926",
+    "plannedArrivalTime": "2025-11-22T10:25:00+0100",
+    "actualArrivalTime": "2025-11-22T10:28:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T09:27:35.121Z"
+  },
+  {
+    "trainNumber": "2928",
+    "plannedArrivalTime": "2025-11-22T10:55:00+0100",
+    "actualArrivalTime": "2025-11-22T10:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T09:44:31.109Z"
+  },
+  {
+    "trainNumber": "2930",
+    "plannedArrivalTime": "2025-11-22T11:25:00+0100",
+    "actualArrivalTime": "2025-11-22T11:25:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T10:12:43.357Z"
+  },
+  {
+    "trainNumber": "2932",
+    "plannedArrivalTime": "2025-11-22T11:55:00+0100",
+    "actualArrivalTime": "2025-11-22T11:56:03+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T10:47:49.006Z"
+  },
+  {
+    "trainNumber": "2934",
+    "plannedArrivalTime": "2025-11-22T12:25:00+0100",
+    "actualArrivalTime": "2025-11-22T12:25:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T11:21:39.206Z"
+  },
+  {
+    "trainNumber": "2936",
+    "plannedArrivalTime": "2025-11-22T12:55:00+0100",
+    "actualArrivalTime": "2025-11-22T12:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T11:54:36.991Z"
+  },
+  {
+    "trainNumber": "2938",
+    "plannedArrivalTime": "2025-11-22T13:25:00+0100",
+    "actualArrivalTime": "2025-11-22T13:25:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T12:24:38.329Z"
+  },
+  {
+    "trainNumber": "2940",
+    "plannedArrivalTime": "2025-11-22T13:55:00+0100",
+    "actualArrivalTime": "2025-11-22T13:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T12:53:10.575Z"
+  },
+  {
+    "trainNumber": "2942",
+    "plannedArrivalTime": "2025-11-22T14:25:00+0100",
+    "actualArrivalTime": "2025-11-22T14:29:27+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T13:26:10.610Z"
+  },
+  {
+    "trainNumber": "2944",
+    "plannedArrivalTime": "2025-11-22T14:55:00+0100",
+    "actualArrivalTime": "2025-11-22T14:56:55+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T13:53:10.758Z"
+  },
+  {
+    "trainNumber": "2946",
+    "plannedArrivalTime": "2025-11-22T15:25:00+0100",
+    "actualArrivalTime": "2025-11-22T15:26:21+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T14:26:10.677Z"
+  },
+  {
+    "trainNumber": "2948",
+    "plannedArrivalTime": "2025-11-22T15:55:00+0100",
+    "actualArrivalTime": "2025-11-22T15:59:13+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T14:59:10.720Z"
+  },
+  {
+    "trainNumber": "2950",
+    "plannedArrivalTime": "2025-11-22T16:25:00+0100",
+    "actualArrivalTime": "2025-11-22T16:26:18+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T15:14:59.669Z"
+  },
+  {
+    "trainNumber": "2952",
+    "plannedArrivalTime": "2025-11-22T16:55:00+0100",
+    "actualArrivalTime": "2025-11-22T16:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T15:49:05.643Z"
+  },
+  {
+    "trainNumber": "2954",
+    "plannedArrivalTime": "2025-11-22T17:25:00+0100",
+    "actualArrivalTime": "2025-11-22T17:27:07+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T16:22:17.979Z"
+  },
+  {
+    "trainNumber": "2956",
+    "plannedArrivalTime": "2025-11-22T17:55:00+0100",
+    "actualArrivalTime": "2025-11-22T17:55:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T16:54:49.049Z"
+  },
+  {
+    "trainNumber": "2958",
+    "plannedArrivalTime": "2025-11-22T18:25:00+0100",
+    "actualArrivalTime": "2025-11-22T18:25:00+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T17:23:47.010Z"
+  },
+  {
+    "trainNumber": "2960",
+    "plannedArrivalTime": "2025-11-22T18:55:00+0100",
+    "actualArrivalTime": "2025-11-22T19:00:11+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T17:57:59.139Z"
+  },
+  {
+    "trainNumber": "2962",
+    "plannedArrivalTime": "2025-11-22T19:25:00+0100",
+    "actualArrivalTime": "2025-11-22T19:49:58+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T18:33:59.400Z"
+  },
+  {
+    "trainNumber": "2964",
+    "plannedArrivalTime": "2025-11-22T19:55:00+0100",
+    "actualArrivalTime": "2025-11-22T19:59:44+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T18:33:59.400Z"
+  },
+  {
+    "trainNumber": "2966",
+    "plannedArrivalTime": "2025-11-22T20:25:00+0100",
+    "actualArrivalTime": "2025-11-22T20:27:09+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T18:33:59.400Z"
+  },
+  {
+    "trainNumber": "2968",
+    "plannedArrivalTime": "2025-11-22T20:55:00+0100",
+    "actualArrivalTime": "2025-11-22T21:01:15+0100",
+    "origin": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T18:33:59.400Z"
   }
 ]
