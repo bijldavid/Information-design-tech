@@ -92,6 +92,22 @@
       on:change={handleCompareDateChange}
     />
   </fieldset>
+
+  <hr />
+
+  <fieldset>
+    <legend>Choose a category to visualize</legend>
+    <div>
+      <label for="total-delay">
+        What % of trains get delayed
+        <input id="total-delay" name="category" type="radio" checked/>
+      </label>
+      <label for="total-cancelled">
+        What % of trains get cancelled
+        <input id="total-cancelled" name="category" type="radio" />
+      </label>
+    </div>
+  </fieldset>
 </form>
 
 <style>
@@ -100,6 +116,8 @@
   /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 
   form {
+    --checkbox-size: 12px;
+
     border: 1px solid var(--border);
     padding: 1rem 1.5rem;
     display: flex;
@@ -143,6 +161,11 @@
     line-height: 1.4em;
     font-size: 1rem;
     padding-inline-end: 1.5rem;
+  }
+
+  fieldset:nth-of-type(1) > div div select:hover {
+    cursor: pointer;
+    background: var(--NS-gray-400);
   }
 
   fieldset:nth-of-type(1) > div div select:focus {
@@ -216,7 +239,11 @@
     height: 16px;
     aspect-ratio: 1;
     background-color: var(--NS-gray-100);
-    /* border: solid 1px var(--text); */
+    transition: rotate .3s ease;
+  }
+
+  fieldset:nth-of-type(1) > div .rail-route input:hover::after {
+    transform: rotateY(180deg);
   }
 
   fieldset:nth-of-type(1) > div .rail-route input::after {
@@ -232,7 +259,7 @@
     background-repeat: no-repeat;
     background-size: 75%;
     rotate: z 0;
-    transition: 0.5s ease rotate;
+    transition: 0.5s ease rotate, .3s ease transform;
   }
 
   fieldset:nth-of-type(1) > div .rail-route input:checked::after {
@@ -293,6 +320,10 @@
     width: max-content;
   }
 
+  fieldset:nth-of-type(2) input[type="date"]:hover {
+    background: var(--NS-gray-400);
+  }
+
   fieldset:nth-of-type(2) input[type="date"]:focus {
     outline: 1px dashed var(--NS-blue);
   }
@@ -337,6 +368,10 @@
     opacity: 1;
   }
 
+  fieldset:nth-of-type(2):has(#compare:checked) #compare-date:hover {
+    background: var(--NS-gray-400);
+  }
+
   fieldset:nth-of-type(2):has(#compare:checked) #compare-date:focus {
     outline: 1px dashed var(--NS-blue);
   }
@@ -346,7 +381,7 @@
     order: -1;
     /* accent-color: var(--NS-yellow); */
     appearance: none;
-    height: 12px;
+    height: var(--checkbox-size);
     aspect-ratio: 1;
     border: 1px solid var(--border);
   }
@@ -354,11 +389,50 @@
   fieldset:nth-of-type(2) label input:checked::after {
     position: absolute;
     content: "";
-    height: 6px;
+    height: calc(var(--checkbox-size) / 2);
     aspect-ratio: 1;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
     background: var(--NS-blue);
   }
+
+  /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+  /* FIELDSET 3 */
+  /* -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+
+  fieldset:nth-of-type(3) div {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+  }
+
+  fieldset:nth-of-type(3) div label {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  fieldset:nth-of-type(3) div label input {
+    position: relative;
+    order: -1;
+    appearance: none;
+    height: var(--checkbox-size);
+    aspect-ratio: 1;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+  }
+
+  fieldset:nth-of-type(3) div label input:checked::after {
+    position: absolute;
+    content: '';
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    height: calc(var(--checkbox-size) / 2);
+    aspect-ratio: 1;
+    background: var(--NS-blue);
+    border-radius: 50%;
+  }
+
 </style>

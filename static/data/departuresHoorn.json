@@ -4269,14 +4269,30 @@
     "actualDepartureTime": "2025-11-22T20:05:00+0100",
     "direction": "Eindhoven Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-22T18:33:59.744Z"
+    "loggedAt": "2025-11-22T19:03:59.291Z"
   },
   {
     "trainNumber": "2979",
     "plannedDepartureTime": "2025-11-22T20:35:00+0100",
-    "actualDepartureTime": "2025-11-22T20:41:13+0100",
+    "actualDepartureTime": "2025-11-22T20:44:04+0100",
     "direction": "Eindhoven Centraal",
     "isCancelled": false,
-    "loggedAt": "2025-11-22T18:33:59.744Z"
+    "loggedAt": "2025-11-22T19:09:59.575Z"
+  },
+  {
+    "trainNumber": "2981",
+    "plannedDepartureTime": "2025-11-22T21:05:00+0100",
+    "actualDepartureTime": "2025-11-22T21:05:00+0100",
+    "direction": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T19:09:59.575Z"
+  },
+  {
+    "trainNumber": "2983",
+    "plannedDepartureTime": "2025-11-22T21:35:00+0100",
+    "actualDepartureTime": "2025-11-22T21:35:00+0100",
+    "direction": "Eindhoven Centraal",
+    "isCancelled": false,
+    "loggedAt": "2025-11-22T19:09:59.575Z"
   }
 ]
