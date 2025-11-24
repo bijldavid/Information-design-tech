@@ -3285,6 +3285,14 @@
     "actualDepartureTime": "2025-11-24T16:19:00+0100",
     "direction": "Enkhuizen",
     "isCancelled": false,
-    "loggedAt": "2025-11-24T14:52:53.682Z"
+    "loggedAt": "2025-11-24T15:04:54.012Z"
+  },
+  {
+    "trainNumber": "3954",
+    "plannedDepartureTime": "2025-11-24T16:49:00+0100",
+    "actualDepartureTime": "2025-11-24T16:49:00+0100",
+    "direction": "Enkhuizen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T15:04:54.012Z"
   }
 ]

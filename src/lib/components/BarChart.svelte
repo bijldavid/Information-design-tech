@@ -161,7 +161,7 @@
         return d.delay >= 0 ? yScale(d.delay) : zeroY;
       })
       .attr("height", (d) => {
-        if (d.isCancelled) return svgHeight - margin.top - margin.bottom;
+        if (d.isCancelled) return zeroY - margin.top;
         return Math.abs(yScale(d.delay) - zeroY);
       })
       .attr("width", barWidth)
@@ -189,7 +189,7 @@
         return d.delay >= 0 ? yScale(d.delay) : zeroY;
       })
       .attr("height", (d) => {
-        if (d.isCancelled) return svgHeight - margin.top - margin.bottom;
+        if (d.isCancelled) return zeroY - margin.top;
         return Math.abs(yScale(d.delay) - zeroY);
       })
       .attr("width", barWidth)
