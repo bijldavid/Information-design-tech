@@ -61,7 +61,7 @@
     padding: 1rem;
     display: grid;
     place-items: center;
-    height: calc(70vh - 2px);
+    height: calc(70vh - 1rem - 2px);
   }
 
   details summary::after {
@@ -141,7 +141,7 @@
     padding: 1rem 1.5rem 0 1.5rem;
   }
 
-  @media (width < 800px) {
+  @media (width < 1225px) {
     details {
       --details-size: max-content;
     }

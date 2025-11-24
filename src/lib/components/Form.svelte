@@ -6,7 +6,7 @@
   let compareDate = null;
 
   function handleRouteChange(event) {
-    dispatch("routeChange", event.target.checked);
+    dispatch("changeRoute", event.target.checked);
   }
 
   function handleSelectedDateChange() {
@@ -15,6 +15,10 @@
 
   function handleCompareDateChange() {
     dispatch("changeCompareDate", compareDate);
+  }
+
+  function handleCategoryChange(event) {
+    dispatch("changeCategory", event.target.value);
   }
 
   onMount(() => {
@@ -100,11 +104,24 @@
     <div>
       <label for="total-delay">
         What % of trains get delayed
-        <input id="total-delay" name="category" type="radio" checked/>
+        <input
+          id="total-delay"
+          name="category"
+          type="radio"
+          value="delay"
+          on:change={handleCategoryChange}
+          checked
+        />
       </label>
       <label for="total-cancelled">
         What % of trains get cancelled
-        <input id="total-cancelled" name="category" type="radio" />
+        <input
+          id="total-cancelled"
+          name="category"
+          type="radio"
+          value="cancelled"
+          on:change={handleCategoryChange}
+        />
       </label>
     </div>
   </fieldset>
@@ -147,10 +164,12 @@
 
   fieldset:nth-of-type(1) > div:has(.rail-route input:checked) div {
     order: 3;
+    margin-inline-end: auto;
   }
 
   fieldset:nth-of-type(1) > div:has(.rail-route input:checked) p {
     order: 1;
+    margin-inline-end: 0;
   }
 
   fieldset:nth-of-type(1) > div div select {
@@ -193,11 +212,12 @@
     background-size: 80%;
     background-position: center 80%;
     background-repeat: no-repeat;
+    pointer-events: none;
   }
 
   fieldset:nth-of-type(1) > div .rail-route {
     position: relative;
-    width: min(225px, 100%);
+    width: min(125px, 100%);
     height: 1.5px;
     display: block;
     background: linear-gradient(
@@ -239,7 +259,7 @@
     height: 16px;
     aspect-ratio: 1;
     background-color: var(--NS-gray-100);
-    transition: rotate .3s ease;
+    transition: rotate 0.3s ease;
   }
 
   fieldset:nth-of-type(1) > div .rail-route input:hover::after {
@@ -259,7 +279,9 @@
     background-repeat: no-repeat;
     background-size: 75%;
     rotate: z 0;
-    transition: 0.5s ease rotate, .3s ease transform;
+    transition:
+      0.5s ease rotate,
+      0.3s ease transform;
   }
 
   fieldset:nth-of-type(1) > div .rail-route input:checked::after {
@@ -404,7 +426,7 @@
   fieldset:nth-of-type(3) div {
     display: flex;
     flex-direction: column;
-    gap: .5rem;
+    gap: 0.5rem;
   }
 
   fieldset:nth-of-type(3) div label {
@@ -425,7 +447,7 @@
 
   fieldset:nth-of-type(3) div label input:checked::after {
     position: absolute;
-    content: '';
+    content: "";
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -434,5 +456,4 @@
     background: var(--NS-blue);
     border-radius: 50%;
   }
-
 </style>

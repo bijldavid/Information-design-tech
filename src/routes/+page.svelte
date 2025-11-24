@@ -8,6 +8,7 @@
   let selectedDate = "2025-11-11";
   let compareDate = null;
   let isHoornToAmsterdam = false;
+  let selectedCategory = "delay";
 
   function handleRouteChange(event) {
     isHoornToAmsterdam = event.detail;
@@ -20,6 +21,10 @@
   function handleCompareDateChange(event) {
     compareDate = event.detail;
   }
+
+  function handleCategoryChange(event) {
+    selectedCategory = event.detail;
+  }
 </script>
 
 <section>
@@ -27,9 +32,10 @@
 
   <Details />
   <Form
+    on:changeRoute={handleRouteChange}
     on:changeDate={handleDateChange}
     on:changeCompareDate={handleCompareDateChange}
-    on:routeChange={handleRouteChange}
+    on:changeCategory={handleCategoryChange}
   />
   <Charts
     class="charts"
@@ -38,6 +44,7 @@
     {isHoornToAmsterdam}
     {selectedDate}
     {compareDate}
+    {selectedCategory}
   />
 </section>
 
@@ -48,6 +55,7 @@
     display: flex;
     gap: 2rem;
     padding-inline: 1rem;
+    padding-block-end: 1rem;
     height: 70vh;
   }
 
@@ -66,6 +74,19 @@
 
   section :global(.charts) {
     flex-basis: 100%;
+  }
+
+  @media (width < 1225px) {
+    section {
+      height: auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+
+    section > :global(details) {
+      grid-column: 1 / -1;
+    }
   }
 
   @media (width < 800px) {

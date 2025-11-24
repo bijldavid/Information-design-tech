@@ -4,8 +4,8 @@
   --border: #B4B4BC;
 
   --NS-yellow: #FFC917;
-  --NS-positive: #009A42;
-  --NS-negative: #DB0029;
+  --NS-positive: color-mix(in srgb, #009A42 70%, transparent 30%);
+  --NS-negative: color-mix(in srgb, #DB0029 70%, transparent 20%);
 
   --NS-blue: #003082;
   --NS-blue-accent: #0063D3;
@@ -16,6 +16,9 @@
   --NS-gray-200: #CDCDD3;
   --NS-gray-150: #d9d9df;
   --NS-gray-100: #E0E0E8;
+
+  scrollbar-color: var(--NS-gray-400) transparent;
+
 }
 
 ::selection {
