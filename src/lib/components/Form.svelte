@@ -289,7 +289,7 @@
 
     appearance: none;
     height: 16px;
-    aspect-ratio: 1;
+    width: 16px;
     background-color: var(--NS-gray-100);
     transition: rotate 0.3s ease;
   }
@@ -378,7 +378,6 @@
   }
 
   fieldset:nth-of-type(2) input[type="date"] {
-    appearance: none;
     padding: 0.5rem;
     background: var(--NS-gray-200);
     border: none;
@@ -447,15 +446,17 @@
     /* accent-color: var(--NS-yellow); */
     appearance: none;
     height: var(--checkbox-size);
-    aspect-ratio: 1;
+    width: var(--checkbox-size);
     border: 1px solid var(--border);
+    border-radius: 0;
   }
 
   fieldset:nth-of-type(2) label input:checked::after {
     position: absolute;
     content: "";
     height: calc(var(--checkbox-size) / 2);
-    aspect-ratio: 1;
+    height: calc(var(--checkbox-size) / 2);
+    border-radius: 0;
     top: 50%;
     left: 50%;
     translate: -50% -50%;
@@ -483,7 +484,7 @@
     order: -1;
     appearance: none;
     height: var(--checkbox-size);
-    aspect-ratio: 1;
+    width: var(--checkbox-size);
     border: 1px solid var(--border);
     border-radius: 50%;
   }
@@ -495,8 +496,14 @@
     left: 50%;
     translate: -50% -50%;
     height: calc(var(--checkbox-size) / 2);
-    aspect-ratio: 1;
+    width: calc(var(--checkbox-size) / 2);
     background: var(--NS-blue);
     border-radius: 50%;
+  }
+
+  @media (width < 450px) {
+    fieldset:nth-of-type(1) div small {
+      display: none;
+    }
   }
 </style>
