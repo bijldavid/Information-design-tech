@@ -134,6 +134,7 @@
       bind:value={compareDate}
       on:change={handleCompareDateChange}
       min="2025-11-09"
+      placeholder="YYYY-MM-DD"
     />
   </fieldset>
 
@@ -210,6 +211,7 @@
     line-height: 1.4em;
     font-size: 1rem;
     padding-inline-end: 1.5rem;
+    color: var(--text);
   }
 
   fieldset:nth-of-type(1) > div div select:hover {
@@ -382,6 +384,8 @@
     background: var(--NS-gray-200);
     border: none;
     width: max-content;
+    border-radius: 0;
+    color: var(--text);
   }
 
   fieldset:nth-of-type(2) input[type="date"]:hover {
