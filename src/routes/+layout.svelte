@@ -4,4 +4,4 @@
 
 <Header />
 
-<slot />
+<slot /> <!-- gebruikt +page.svelte hier -->

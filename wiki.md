@@ -170,6 +170,7 @@ Daarna volg ik exact dezelfde opslag-flow als hierboven (JSON lezen â†’ parsen â
 
 Dit proces herhaalt zich voor de omgekeerde versies op dezelfde manier (`arrivals Amsterdam` & `departures Hoorn`).
 
+<br>
 
 #### Delay logica
 Op dit punt heb ik vier JSON-bestanden die gevuld worden met relevante data.

@@ -1,10 +1,22 @@
 <script>
   import { createEventDispatcher, onMount } from "svelte";
 
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Met de event dispatcher kan het formulier events sturen naar de parent
+  // component (+page.svelte), zodat die de states kan bijwerken
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   const dispatch = createEventDispatcher();
+
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // States met default waardes (nodig voor UI)
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   let selectedDate = "2025-11-11";
   let compareDate = null;
 
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Deze event handlers worden aangeroepen door de formulier elementen en
+  // sturen de nieuwe waarde door naar de parent via dispatch()
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   function handleRouteChange(event) {
     dispatch("changeRoute", event.target.checked);
   }
@@ -21,18 +33,44 @@
     dispatch("changeCategory", event.target.value);
   }
 
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Alles binnen de onMount runned alleen wanneer het component ingeladen is
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   onMount(() => {
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // View transition API
+    // BRON: https://www.youtube.com/watch?v=P6Mk03isfZ8&t=254s
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    const railRouteCheckbox = document.querySelector("#rail-route");
+
+    railRouteCheckbox.addEventListener("click", (e) => {
+      e.preventDefault();
+
+      document.startViewTransition(() => {
+        railRouteCheckbox.checked = !railRouteCheckbox.checked;
+        railRouteCheckbox.dispatchEvent(new Event("change", { bubbles: true })); // AI hulp
+      });
+    });
+
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Schakelt de compare feature aan en uit
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // -=-=-=-=- visuele logica -=-=-=-=-
     const compareCheckbox = document.querySelector("#compare");
     const compareDateInput = document.querySelector("#compare-date");
 
     function updateState() {
-      compareDateInput.classList.toggle("disabled", !compareCheckbox.checked);
+      if (compareCheckbox.checked) {
+        compareDateInput.classList.remove("disabled");
+      } else {
+        compareDateInput.classList.add("disabled");
+      }
     }
 
+    // -=-=-=-=- data logica -=-=-=-=-
     compareCheckbox.addEventListener("change", () => {
       updateState();
 
-      // Clear compare date when toggled off
       if (!compareCheckbox.checked) {
         compareDate = null;
         dispatch("changeCompareDate", null);
@@ -79,6 +117,7 @@
       type="date"
       bind:value={selectedDate}
       on:change={handleSelectedDateChange}
+      min="2025-11-09"
     />
 
     <label for="compare"
@@ -94,6 +133,7 @@
       type="date"
       bind:value={compareDate}
       on:change={handleCompareDateChange}
+      min="2025-11-09"
     />
   </fieldset>
 
@@ -162,16 +202,6 @@
     gap: 1rem;
   }
 
-  fieldset:nth-of-type(1) > div:has(.rail-route input:checked) div {
-    order: 3;
-    margin-inline-end: auto;
-  }
-
-  fieldset:nth-of-type(1) > div:has(.rail-route input:checked) p {
-    order: 1;
-    margin-inline-end: 0;
-  }
-
   fieldset:nth-of-type(1) > div div select {
     font-family: "gg-mono";
     appearance: none;
@@ -198,6 +228,7 @@
   fieldset:nth-of-type(1) > div div {
     position: relative;
     order: 1;
+    view-transition-name: select;
   }
 
   fieldset:nth-of-type(1) > div div::after {
@@ -228,6 +259,7 @@
       var(--NS-gray-400) 100%
     );
     order: 2;
+    view-transition-name: rail-route;
   }
 
   fieldset:nth-of-type(1) > div .rail-route::before,
@@ -291,6 +323,17 @@
   fieldset:nth-of-type(1) > div p {
     margin-inline-end: auto;
     order: 3;
+    view-transition-name: paragraph;
+  }
+
+  fieldset:nth-of-type(1) > div:has(.rail-route input:checked) div {
+    order: 3;
+    margin-inline-end: auto;
+  }
+
+  fieldset:nth-of-type(1) > div:has(.rail-route input:checked) p {
+    order: 1;
+    margin-inline-end: 0;
   }
 
   fieldset:nth-of-type(1) > div small {

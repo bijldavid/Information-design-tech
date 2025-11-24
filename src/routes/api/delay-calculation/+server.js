@@ -1,5 +1,8 @@
 import { readFile } from "fs/promises";
 
+// --------------------------------------------------------------------------------------------
+// Trein vertragingen berekenen
+// --------------------------------------------------------------------------------------------
 export async function GET() {
 
     const arrivalsHoorn = JSON.parse(await readFile("static/data/arrivalsHoorn.json"));
@@ -9,6 +12,10 @@ export async function GET() {
 
     const hoornToAmsterdamTrips = [];
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Om de vertraging te kunnen berekenen moet ik de departure-tijd van Hoorn 
+    // vergelijken met de arrival-tijd van de corresponderende trein in Amsterdam
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     departuresHoorn.forEach(departure => {
         const departureTrainNumber = departure.trainNumber;
         const departureTime = new Date(departure.plannedDepartureTime);
@@ -36,6 +43,11 @@ export async function GET() {
 
     const amsterdamToHoornTrips = [];
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Om de vertraging te kunnen berekenen moet ik de departure-tijd van 
+    // Amsterdam vergelijken met de arrival-tijd van de corresponderende trein
+    // in Hoorn
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     departuresAmsterdam.forEach(departure => {
         const departureTrainNumber = departure.trainNumber;
         const departureTime = new Date(departure.plannedDepartureTime);
@@ -61,6 +73,9 @@ export async function GET() {
         })
     });
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Ik return een response met de 2 gevulde arrays 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     return new Response(JSON.stringify({
         hoornToAmsterdamTrips, amsterdamToHoornTrips
     }));

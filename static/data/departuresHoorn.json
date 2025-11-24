@@ -4605,7 +4605,7 @@
     "actualDepartureTime": "2025-11-24T16:10:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-24T15:04:54.290Z"
+    "loggedAt": "2025-11-24T15:07:54.245Z"
   },
   {
     "trainNumber": "3963",
@@ -4613,7 +4613,7 @@
     "actualDepartureTime": "2025-11-24T16:40:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-24T15:04:54.290Z"
+    "loggedAt": "2025-11-24T15:37:54.086Z"
   },
   {
     "trainNumber": "3965",
@@ -4621,6 +4621,62 @@
     "actualDepartureTime": "2025-11-24T17:10:00+0100",
     "direction": "Heerlen",
     "isCancelled": false,
-    "loggedAt": "2025-11-24T15:04:54.290Z"
+    "loggedAt": "2025-11-24T16:07:53.742Z"
+  },
+  {
+    "trainNumber": "3967",
+    "plannedDepartureTime": "2025-11-24T17:40:00+0100",
+    "actualDepartureTime": "2025-11-24T17:40:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T16:04:53.743Z"
+  },
+  {
+    "trainNumber": "3969",
+    "plannedDepartureTime": "2025-11-24T18:10:00+0100",
+    "actualDepartureTime": "2025-11-24T18:10:00+0100",
+    "direction": "Heerlen",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T17:07:52.284Z"
+  },
+  {
+    "trainNumber": "2971",
+    "plannedDepartureTime": "2025-11-24T18:35:00+0100",
+    "actualDepartureTime": "2025-11-24T18:35:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T17:34:54.215Z"
+  },
+  {
+    "trainNumber": "2973",
+    "plannedDepartureTime": "2025-11-24T19:05:00+0100",
+    "actualDepartureTime": "2025-11-24T19:05:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T18:04:54.377Z"
+  },
+  {
+    "trainNumber": "2975",
+    "plannedDepartureTime": "2025-11-24T19:35:00+0100",
+    "actualDepartureTime": "2025-11-24T19:35:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T18:25:54.282Z"
+  },
+  {
+    "trainNumber": "2977",
+    "plannedDepartureTime": "2025-11-24T20:05:00+0100",
+    "actualDepartureTime": "2025-11-24T20:05:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T18:25:54.282Z"
+  },
+  {
+    "trainNumber": "2979",
+    "plannedDepartureTime": "2025-11-24T20:35:00+0100",
+    "actualDepartureTime": "2025-11-24T20:35:00+0100",
+    "direction": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-24T18:25:54.282Z"
   }
 ]
