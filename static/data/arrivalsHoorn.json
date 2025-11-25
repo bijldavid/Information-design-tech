@@ -3665,17 +3665,33 @@
   {
     "trainNumber": "2968",
     "plannedArrivalTime": "2025-11-25T20:54:00+0100",
-    "actualArrivalTime": "2025-11-25T21:01:19+0100",
+    "actualArrivalTime": "2025-11-25T21:00:09+0100",
     "origin": "Maastricht",
     "isCancelled": false,
-    "loggedAt": "2025-11-25T19:21:23.998Z"
+    "loggedAt": "2025-11-25T19:57:24.067Z"
   },
   {
     "trainNumber": "2970",
     "plannedArrivalTime": "2025-11-25T21:24:00+0100",
-    "actualArrivalTime": "2025-11-25T21:24:00+0100",
+    "actualArrivalTime": "2025-11-25T21:25:15+0100",
     "origin": "Maastricht",
     "isCancelled": false,
-    "loggedAt": "2025-11-25T19:21:23.998Z"
+    "loggedAt": "2025-11-25T20:03:24.503Z"
+  },
+  {
+    "trainNumber": "2972",
+    "plannedArrivalTime": "2025-11-25T21:54:00+0100",
+    "actualArrivalTime": "2025-11-25T22:02:58+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-25T20:03:24.503Z"
+  },
+  {
+    "trainNumber": "2974",
+    "plannedArrivalTime": "2025-11-25T22:24:00+0100",
+    "actualArrivalTime": "2025-11-25T22:24:00+0100",
+    "origin": "Maastricht",
+    "isCancelled": false,
+    "loggedAt": "2025-11-25T20:03:24.503Z"
   }
 ]
