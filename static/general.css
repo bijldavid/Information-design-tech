@@ -5,7 +5,7 @@
 
   --NS-yellow: #FFC917;
   --NS-positive: color-mix(in srgb, #009A42 70%, transparent 30%);
-  --NS-negative: color-mix(in srgb, #DB0029 70%, transparent 20%);
+  --NS-negative: color-mix(in srgb, #DB0029 80%, transparent 20%);
 
   --NS-blue: #003082;
   --NS-blue-accent: #0063D3;
@@ -22,7 +22,7 @@
 }
 
 ::selection {
-  background: var(--NS-gray-200);
+  background: color-mix(in srgb, var(--NS-gray-600) 50%, transparent 50%);
 }
 
 html {

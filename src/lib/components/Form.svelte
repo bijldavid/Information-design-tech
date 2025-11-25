@@ -33,9 +33,9 @@
     dispatch("changeCategory", event.target.value);
   }
 
-  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // --------------------------------------------------------------------------------------------
   // Alles binnen de onMount runned alleen wanneer het component ingeladen is
-  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // --------------------------------------------------------------------------------------------
   onMount(() => {
     // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     // View transition API
@@ -459,7 +459,7 @@
     position: absolute;
     content: "";
     height: calc(var(--checkbox-size) / 2);
-    height: calc(var(--checkbox-size) / 2);
+    width: calc(var(--checkbox-size) / 2);
     border-radius: 0;
     top: 50%;
     left: 50%;

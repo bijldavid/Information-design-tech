@@ -1,7 +1,13 @@
 <script>
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Importeer componenten
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   import BarChart from "./BarChart.svelte";
   import PieChart from "./PieChart.svelte";
 
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Props vanuit de parent (+page.svelte)
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   export let hoornToAmsterdam;
   export let amsterdamToHoorn;
   export let selectedDate;
@@ -13,7 +19,11 @@
   export { className as class };
 </script>
 
+
 <div class={className}>
+  <!-- -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - -->
+  <!-- Barchart component met props die ik meegeef -->
+  <!-- -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - -->
   <BarChart
     class={className}
     {hoornToAmsterdam}
@@ -23,6 +33,9 @@
     {isHoornToAmsterdam}
   />
 
+  <!-- -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - -->
+  <!-- PieChart component met props die ik meegeef -->
+  <!-- -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  - -->
   <PieChart
     class={className}
     {hoornToAmsterdam}

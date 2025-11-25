@@ -6,7 +6,7 @@
     <nav>
         <a class="highlight" href="/">Find delay</a>
         <div>
-            <a href="#">Documentation</a>
+            <a href="https://github.com/bijldavid/Information-design-tech/wiki/Wekelijkse-progressie" target="_blank">Documentation</a>
         </div>
     </nav>
 </header>
@@ -33,9 +33,17 @@
         color: var(--text);
     }
 
+    header nav a:hover {
+        background: var(--NS-gray-200);
+    }
+
     header nav a.highlight {
         padding: .5rem 2.5rem .5rem .5rem;
         background: var(--NS-yellow);
+    }
+
+    header nav a.highlight:hover {
+        background: color-mix(in srgb, var(--NS-yellow) 92.5%, black 7.5%) 
     }
 
     header nav a {

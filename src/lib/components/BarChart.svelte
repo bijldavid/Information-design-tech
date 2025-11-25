@@ -2,7 +2,9 @@
   import { onMount } from "svelte";
   import * as d3 from "d3";
 
-  // props
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Props vanuit de parent (Charts.svelte)
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   export let hoornToAmsterdam = [];
   export let amsterdamToHoorn = [];
   export let selectedDate = "2025-11-11";
@@ -13,11 +15,27 @@
   let svg;
   let shouldAnimate = false;
 
+  // --------------------------------------------------------------------------------------------
+  // Reactive statements
+  // --------------------------------------------------------------------------------------------
+  // -=-=-=-=-=- Ternary operator, isHoorn is een boolean -=-=-=-=-=-
   $: tripDirection = isHoornToAmsterdam ? hoornToAmsterdam : amsterdamToHoorn;
 
+  // -=-=-=-=-=- Roept functie en veranderd shouldAnimate variabele waarde -=-=-=-=-=-
+  $: if (svg && tripDirection && (selectedDate || compareDate)) {
+  shouldAnimate = true;
+  filterAndDraw();
+  }
+
+  // --------------------------------------------------------------------------------------------
+  // Alles binnen de onMount runned alleen wanneer het component ingeladen is
+  // --------------------------------------------------------------------------------------------
   onMount(() => {
     svg = document.querySelector("#delays");
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Resize observer zorgt voor responsiveness
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const resizeObserver = new ResizeObserver(() => {
       shouldAnimate = false;
       filterAndDraw();
@@ -28,16 +46,12 @@
     filterAndDraw();
   });
 
-  $: if (svg && (selectedDate || compareDate)) {
-    shouldAnimate = true;
-    filterAndDraw();
-  }
-
-  $: if (svg && tripDirection) {
-    shouldAnimate = true;
-    filterAndDraw();
-  }
-
+  // --------------------------------------------------------------------------------------------
+  // Data klaarstomen voor gebruik in D3
+  // --------------------------------------------------------------------------------------------
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Functie verwacht twee argumenten: een array met data & een datum als string
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   function filterTrips(trips, dateString) {
     if (!dateString) return [];
 
@@ -46,6 +60,10 @@
     const month = Number(arrayDate[1]);
     const date = Number(arrayDate[2]);
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Trips bevat alle data van allerlij verschillende dagen, ik wil alleen de
+    // data van de geselecteerde datum in het Form component
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const filteredTrips = trips.filter((trip) => {
       const tripDateObject = new Date(trip.plannedDeparture);
       const tripYear = tripDateObject.getFullYear();
@@ -54,11 +72,18 @@
       return tripYear === year && tripMonth === month - 1 && tripDate === date;
     });
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Ik zet de waarde van een key om naar een Date object zodat d3 ermee
+    // kan werken
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     filteredTrips.forEach((trip) => {
       const plannedDepartureObject = new Date(trip.plannedDeparture);
       trip.plannedDeparture = plannedDepartureObject;
     });
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Ik sorteer de array op chronologische volgorde
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     filteredTrips.sort((trip1, trip2) => {
       if (trip1.plannedDeparture < trip2.plannedDeparture) {
         return -1;
@@ -72,13 +97,23 @@
     return filteredTrips;
   }
 
+  // --------------------------------------------------------------------------------------------
+  // Filter trips op de gekozen datums en teken de grafiek opnieuw
+  // --------------------------------------------------------------------------------------------
   function filterAndDraw() {
-    const filteredA = filterTrips(tripDirection, selectedDate);
-    const filteredB = filterTrips(tripDirection, compareDate);
+    const filteredAtrips = filterTrips(tripDirection, selectedDate);
+    const filteredBtrips = filterTrips(tripDirection, compareDate);
 
-    drawChart(filteredA, filteredB);
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Geeft beide gefilterde arrays door aan drawChart(), die de visualisatie
+    // tekent met d3
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    drawChart(filteredAtrips, filteredBtrips);
   }
 
+  // --------------------------------------------------------------------------------------------
+  // Functie om datum om te zetten naar alleen dag-tijd (nodig voor de compare feature)
+  // --------------------------------------------------------------------------------------------
   function timeOfDay(dateObj) {
     return new Date(
       0,
@@ -90,7 +125,14 @@
     );
   }
 
+  // --------------------------------------------------------------------------------------------
+  // Functie die de barchart bouwt
+  // --------------------------------------------------------------------------------------------
   function drawChart(filteredA, filteredB) {
+
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Algemene setup, maten bepalen
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const svgWidth = svg.getBoundingClientRect().width;
     const svgHeight = svg.getBoundingClientRect().height;
 
@@ -98,9 +140,11 @@
     const chartWidth = svgWidth - margin.left - margin.right;
     const chartHeight = svgHeight - margin.top - margin.bottom;
 
-    const maxCount = Math.max(filteredA.length, filteredB.length);
     const barWidth = (chartWidth / 48) * 0.8;
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Ik voeg timeOnly als key toe aan de data met als waarde een datumloze tijd
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const filteredAtime = filteredA.map((d) => ({
       ...d,
       timeOnly: timeOfDay(d.plannedDeparture),
@@ -114,18 +158,27 @@
     const startOfDay = new Date(0, 0, 0, 5, 0);
     const endOfDay = new Date(0, 0, 0, 24, 0);
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // X scale aangemaakt (nodig voor de x-as)
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const xScale = d3
       .scaleTime()
       .domain([startOfDay, endOfDay])
       .range([margin.left, svgWidth - margin.right - barWidth]);
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Y scale aangemaakt (nodig voor de y-as)
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const yScale = d3
       .scaleLinear()
       .domain([-5, 30])
       .range([svgHeight - margin.bottom, margin.top]);
 
-    const zeroY = yScale(0);
+    const zeroY = yScale(0); // Handige variabele om dingen op y hoogte 0 te positioneren
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // X-as aanmaken
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const xAxis = d3
       .axisBottom(xScale)
       .ticks(d3.timeHour.every(3))
@@ -135,6 +188,9 @@
       .attr("transform", `translate(0, ${zeroY})`)
       .call(xAxis);
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Y-as aanmaken
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const yAxis = d3
       .axisLeft(yScale)
       .ticks(8)
@@ -144,15 +200,16 @@
       .attr("transform", `translate(${margin.left}, 0)`)
       .call(yAxis);
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // De A bars aanmaken
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const barsA = d3
       .select(".bars-a")
       .selectAll("rect")
       .data(filteredAtime)
       .join("rect");
 
-    const barsWithTransition = shouldAnimate
-      ? barsA.transition().duration(500)
-      : barsA;
+    const barsWithTransition = shouldAnimate ? barsA.transition().duration(500) : barsA;
 
     barsWithTransition
       .attr("x", (d) => xScale(d.timeOnly))
@@ -165,22 +222,22 @@
         return Math.abs(yScale(d.delay) - zeroY);
       })
       .attr("width", barWidth)
-      .attr("fill", "var(--NS-blue-accent)")
       .attr("opacity", 0.7)
       .style("fill", (d) => {
         if (d.isCancelled) return "url(#diagonalHatch-positive)";
         return "var(--NS-blue-accent)";
       });
 
+      // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+      // De B bars aanmaken
+      // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const barsB = d3
       .select(".bars-b")
       .selectAll("rect")
       .data(filteredBtime)
       .join("rect");
 
-    const barsBWithTransition = shouldAnimate
-      ? barsB.transition().duration(500)
-      : barsB;
+    const barsBWithTransition = shouldAnimate ? barsB.transition().duration(500) : barsB;
 
     barsBWithTransition
       .attr("x", (d) => xScale(d.timeOnly))
@@ -193,7 +250,6 @@
         return Math.abs(yScale(d.delay) - zeroY);
       })
       .attr("width", barWidth)
-      .attr("fill", "var(--NS-yellow)")
       .attr("opacity", 0.7)
       .style("fill", (d) => {
         if (d.isCancelled) return "url(#diagonalHatch-negative)";
