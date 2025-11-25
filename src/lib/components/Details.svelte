@@ -7,19 +7,24 @@
     <h2>Description</h2>
     <p>How it works.</p>
     <p>
-      A brief explanation about what this filter entails to help the user better
-      understand whether or not it is relevant for their data fetch.
+      Welcome to the delay finder! This application lets you visualize and
+      compare NS train delays throughout the months.
     </p>
-    <p>This is a 3 step process.</p>
+    <p>It works in 3 steps.</p>
     <ol role="list">
-      <li>Do this</li>
-      <li>Do that</li>
-      <li>Click button</li>
+      <li>First, select a desired rail route</li>
+      <li>Next, choose which date you want to visualize</li>
+      <li>
+        And finally, check what percentage of trains are either delayed or
+        cancelled
+      </li>
     </ol>
     <p>
-      Analyse the data, do note that the data collected is merely a sample of
-      the actual data. Do not draw any conclusions from the charts created by
-      this project
+      This project uses data from the official NS API.
+      <br /><br />
+      <span>PLEASE NOTE:</span> NS does not provide access to historic data. The
+      data used in this project is manually collected and can therefore be incomplete
+      or inaccurate, and should not be used to draw definitive conclusions.
     </p>
   </section>
 </details>
@@ -46,7 +51,7 @@
     padding: 1rem;
     display: grid;
     place-items: center;
-    height: calc(70vh - 1rem - 2px);
+    height: calc(70vh - 1rem - 3px);
   }
 
   details summary::after {
@@ -109,6 +114,10 @@
     padding: 1rem 1.5rem;
   }
 
+  details section p span {
+    color: var(--NS-negative);
+  }
+
   details section p:not(:last-of-type, :nth-of-type(3)) {
     border-bottom: 1px solid var(--border);
   }
@@ -127,7 +136,6 @@
   }
 
   @media (width < 1225px) {
-
     details {
       --details-size: max-content;
       flex-direction: column;

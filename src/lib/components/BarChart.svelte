@@ -209,9 +209,9 @@
       .data(filteredAtime)
       .join("rect");
 
-    const barsWithTransition = shouldAnimate ? barsA.transition().duration(500) : barsA;
+    const barsAWithTransition = shouldAnimate ? barsA.transition().duration(500) : barsA;
 
-    barsWithTransition
+    barsAWithTransition
       .attr("x", (d) => xScale(d.timeOnly))
       .attr("y", (d) => {
         if (d.isCancelled) return margin.top;
@@ -229,31 +229,91 @@
       });
 
       // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+      // Tooltip op hover
+      // BRON: https://codepen.io/dandevri/pen/azdrEQb?editors=1010
+      // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+      barsA
+        .on("mouseover touchstart", (e, d) => {
+          const timeString = d3.timeFormat("%H:%M")(d.plannedDeparture);
+          const tooltipText = d.isCancelled 
+            ? `${timeString}: CANCELLED` 
+            : `${timeString}: ${d.delay > 0 ? '+' : ''}${d.delay.toFixed(1)}m`; // geschreven met hulp van AI
+          
+          d3.select("#tooltip")
+            .transition()
+            .duration(175)
+            .style("opacity", 1)
+            .style("background", "var(--NS-blue-accent)")
+            .style("color", "white")
+            .text(tooltipText);
+        })
+        .on("mousemove", (e) => {
+          d3.select("#tooltip")
+            .style("left", e.pageX + 0 + "px")
+            .style("top", e.pageY + 0 + "px");
+        })
+        .on("mouseout", () => {
+          d3.select("#tooltip").style("opacity", 0);
+        });
+
+      // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
       // De B bars aanmaken
       // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
-    const barsB = d3
-      .select(".bars-b")
-      .selectAll("rect")
-      .data(filteredBtime)
-      .join("rect");
+      const barsB = d3
+        .select(".bars-b")
+        .selectAll("rect")
+        .data(filteredBtime)
+        .join("rect");
 
-    const barsBWithTransition = shouldAnimate ? barsB.transition().duration(500) : barsB;
+      const barsBWithTransition = shouldAnimate ? barsB.transition().duration(500) : barsB;
 
-    barsBWithTransition
-      .attr("x", (d) => xScale(d.timeOnly))
-      .attr("y", (d) => {
-        if (d.isCancelled) return margin.top;
-        return d.delay >= 0 ? yScale(d.delay) : zeroY;
-      })
-      .attr("height", (d) => {
-        if (d.isCancelled) return zeroY - margin.top;
-        return Math.abs(yScale(d.delay) - zeroY);
-      })
-      .attr("width", barWidth)
-      .attr("opacity", 0.7)
-      .style("fill", (d) => {
-        if (d.isCancelled) return "url(#diagonalHatch-negative)";
-        return "var(--NS-yellow)";
+      barsBWithTransition
+        .attr("x", (d) => xScale(d.timeOnly))
+        .attr("y", (d) => {
+          if (d.isCancelled) return margin.top;
+          return d.delay >= 0 ? yScale(d.delay) : zeroY;
+        })
+        .attr("height", (d) => {
+          if (d.isCancelled) return zeroY - margin.top;
+          return Math.abs(yScale(d.delay) - zeroY);
+        })
+        .attr("width", barWidth)
+        .attr("opacity", 0.7)
+        .style("fill", (d) => {
+          if (d.isCancelled) return "url(#diagonalHatch-negative)";
+          return "var(--NS-yellow)";
+        });
+
+      // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+      // Tooltip op hover
+      // BRON: https://codepen.io/dandevri/pen/azdrEQb?editors=1010
+      // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+      barsB
+        .on("mouseover touchstart", (e, d) => {
+          const timeString = d3.timeFormat("%H:%M")(d.plannedDeparture);
+          const tooltipText = d.isCancelled 
+            ? `${timeString}: CANCELLED` 
+            : `${timeString}: ${d.delay > 0 ? '+' : ''}${d.delay.toFixed(1)}m`;
+          
+          d3.select("#tooltip")
+            .transition()
+            .duration(175)
+            .style("opacity", 1)
+            .style("background", "var(--NS-yellow)")
+            .style("color", "var(--text)")
+            .text(tooltipText);
+        })
+        .on("mousemove", (e) => {
+          d3.select("#tooltip")
+            .style("left", e.pageX + 0 + "px")
+            .style("top", e.pageY + 0 + "px");
+        })
+        .on("mouseout", () => {
+          d3.select("#tooltip").style("opacity", 0);
+        });
+
+      d3.select("body").on("touchend", () => {
+        d3.select("#tooltip").style("opacity", 0);
       });
   }
 </script>
@@ -307,11 +367,12 @@
     <small class="x-label">Delay in minutes →</small>
     <small class="y-label">Time in hours (1 day) →</small>
     <ul class="legend">
-      <li>Initial</li>
-      <li>Compare</li>
+      <li>Train delay</li>
+      <li>Compare train delay</li>
       <li>Cancelled</li>
     </ul>
   </div>
+  <div id="tooltip"></div>
 </section>
 
 <style>
@@ -414,5 +475,19 @@
 
   :global(.y-axis .tick line) {
     stroke: var(--border);
+  }
+
+  #tooltip {
+    position: absolute;
+    background: var(--NS-gray-800);
+    font-family: 'gg-mono';
+    font-size: var(--chart-font-size);
+    color: white;
+    padding: .25rem .5rem;
+    border-radius: 5px;
+    opacity: 0;
+    pointer-events: none;
+    translate: -50% 50%;
+    box-shadow: 5px 3px 14px -1px rgba(0,0,0,0.25);
   }
 </style>

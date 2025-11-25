@@ -2,21 +2,39 @@
   import { onMount } from "svelte";
   import * as d3 from "d3";
 
-  // props
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+  // Props vanuit de parent (Charts.svelte)
+  // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
   export let hoornToAmsterdam = [];
   export let amsterdamToHoorn = [];
   export let isHoornToAmsterdam = false;
   export let selectedCategory = "delay";
 
-  $: tripDirection = isHoornToAmsterdam ? hoornToAmsterdam : amsterdamToHoorn;
-
-  $: percentages = calculatePercentage(tripDirection);
-
   let svgElement;
 
+  // --------------------------------------------------------------------------------------------
+  // Reactive statements
+  // --------------------------------------------------------------------------------------------
+  // -=-=-=-=-=- Ternary operator, isHoorn is een boolean -=-=-=-=-=-
+  $: tripDirection = isHoornToAmsterdam ? hoornToAmsterdam : amsterdamToHoorn;
+
+  // -=-=-=-=-=- Roept functie aan, tripDirection als argument -> reactive dependency -=-=-=-=-=-
+  $: percentages = calculatePercentage(tripDirection);
+
+  // -=-=-=-=-=- Roept functie aan, reactive statement met 3 reactive dependencies -=-=-=-=-=-
+  $: if (svgElement && tripDirection && selectedCategory) {
+    drawChart();
+  }
+
+  // --------------------------------------------------------------------------------------------
+  // Alles binnen de onMount runned alleen wanneer het component ingeladen is
+  // --------------------------------------------------------------------------------------------
   onMount(() => {
     svgElement = document.querySelector("#totals");
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Resize observer zorgt voor responsiveness
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const resizeObserver = new ResizeObserver(() => {
       drawChart();
     });
@@ -26,13 +44,16 @@
     drawChart();
   });
 
-  $: if (svgElement && tripDirection && selectedCategory) {
-    drawChart();
-  }
-
-  function countTotal(isHoornToAmsterdam) {
+  // --------------------------------------------------------------------------------------------
+  // Hoeveelheid vertraagd & cancelled uit het totaal opslaan in variabele
+  // --------------------------------------------------------------------------------------------
+  function countTotal(trips) {
     const initialValue = 0;
-    const totalDelaysInstances = isHoornToAmsterdam.reduce(
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Reduce method om te tellen hoeveel treinen met vertraging er in de
+    // data array voorkomen
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    const totalDelaysInstances = trips.reduce(
       (accumulator, currentValue) => {
         if (currentValue.delay > 0) {
           return accumulator + 1;
@@ -43,7 +64,11 @@
       initialValue
     );
 
-    const totalCancelledInstances = isHoornToAmsterdam.reduce(
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Reduce method om te tellen hoeveel gecancelde treinen er in de
+    // data array voorkomen
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    const totalCancelledInstances = trips.reduce(
       (accumulator, currentValue) => {
         if (currentValue.isCancelled === true) {
           return accumulator + 1;
@@ -54,13 +79,12 @@
       initialValue
     );
 
-    const totalNoDelays =
-      isHoornToAmsterdam.length -
-      totalDelaysInstances -
-      totalCancelledInstances;
-
-    const totalNotCancelled =
-      isHoornToAmsterdam.length - totalCancelledInstances;
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Simpele aftrek sommen om totaal niet vertraagde en gecancelde treinen
+    // te berekenen
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    const totalNoDelays = trips.length - totalDelaysInstances - totalCancelledInstances;
+    const totalNotCancelled = trips.length - totalCancelledInstances;
 
     return {
       totalNoDelays,
@@ -70,13 +94,16 @@
     };
   }
 
-  function calculatePercentage(isHoornToAmsterdam) {
-    const totals = countTotal(isHoornToAmsterdam);
+  // --------------------------------------------------------------------------------------------
+  // Totaal hoeveelheden omrekenen naar percentages
+  // --------------------------------------------------------------------------------------------
+  function calculatePercentage(trips) {
+    const totals = countTotal(trips);
 
-    const percentageDelayed = totals.totalDelaysInstances / isHoornToAmsterdam.length * 100;
+    const percentageDelayed = totals.totalDelaysInstances / trips.length * 100;
     const percentageNotDelayed = 100 - percentageDelayed;
 
-    const percentageCancelled = totals.totalCancelledInstances / isHoornToAmsterdam.length * 100;
+    const percentageCancelled = totals.totalCancelledInstances / trips.length * 100;
     const percentageNotCancelled = 100 - percentageCancelled;
     return {
       percentageCancelled,
@@ -86,54 +113,93 @@
     }
   }
 
+  // --------------------------------------------------------------------------------------------
+  // Functie die de piechart bouwt
+  // --------------------------------------------------------------------------------------------
   function drawChart() {
     const totals = countTotal(tripDirection);
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Het return object van countTotal omzetten in gecategoriseerde objecten
+    // binnen een array
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const pieDelayedData = [];
     pieDelayedData.push({ category: "On time", value: totals.totalNoDelays });
-    pieDelayedData.push({
-      category: "Delayed",
-      value: totals.totalDelaysInstances,
-    });
+    pieDelayedData.push({ category: "Delayed", value: totals.totalDelaysInstances });
 
     const pieCancelledData = [];
-    pieCancelledData.push({
-      category: "Not cancelled",
-      value: totals.totalNotCancelled,
-    });
-    pieCancelledData.push({
-      category: "Cancelled",
-      value: totals.totalCancelledInstances,
-    });
+    pieCancelledData.push({ category: "Not cancelled", value: totals.totalNotCancelled });
+    pieCancelledData.push({ category: "Cancelled", value: totals.totalCancelledInstances });
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Algemene setup, maten bepalen
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     let svgWidth = svgElement.getBoundingClientRect().width;
     let svgHeight = svgElement.getBoundingClientRect().height;
 
-    const margin = { top: 25, right: 25, bottom: 25, left: 25 };
+    const margin = { top: 50, right: 25, bottom: 25, left: 25 };
 
     let chartWidth = svgWidth - margin.left - margin.right;
     let chartHeight = svgHeight - margin.top - margin.bottom;
 
     const radius = Math.min(chartWidth, chartHeight) / 2;
 
-    // Set SVG dimensions
-    d3.select("#totals").attr("width", chartWidth).attr("height", chartHeight);
-
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // D3 pie generator
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const pie = d3
       .pie()
       .sort(null)
-      .value((d) => d.value);
+      .value((d) => d.value); // Waarde bepaalt de grootte van de slice
+
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // D3 arc generator - tekent de cirkelvormige segmenten
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const arc = d3
       .arc()
       .innerRadius(radius * 0.6)
       .outerRadius(radius);
 
-    const dataToUse =
-      selectedCategory === "delay" ? pieDelayedData : pieCancelledData;
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Ternary operator om te bepalen welke data wordt getoont
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    const dataToUse = selectedCategory === "delay" ? pieDelayedData : pieCancelledData;
 
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
+    // Variabele aanmaken & <g> in het midden positioneren
+    // -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -  -
     const svg = d3.select("#totals");
     const g = svg.select("g");
-    g.attr("transform", `translate(${svgWidth / 2}, ${svgHeight / 2})`);
+          g.attr("transform", `translate(${svgWidth / 2}, ${svgHeight / 2})`);
+    
+
+
+
+//                    █████████████                       
+//               █████████████████████████              
+//             █████           █████████████████        
+//           █████         █████████       ███████      
+//      █████████      ████████                █████    
+//    ███████████    ██████       ███████       █████   
+//   ████    ████    ███      ███████████████    ████   
+//  ████     ████    ███ █████████       ████████████   
+// ████      ████    ███████   ███████       ████████   
+// ████      ████    ███           ███████       █████  
+//  ████     ██████  ███           ███  ██████     ████ 
+//   █████       ███████           ███    ████      ████
+//    ████████       ███████   ███████    ████      ████
+//    ████████████       █████████ ███    ████     ████ 
+//    ████    ███████████████      ███    ████    █████ 
+//    █████       ███████       ██████    ███████████   
+//     █████                █████████     █████████     
+//       ███████       █████████         █████          
+//          ████████████████           █████            
+//               █████████████████████████              
+//                        █████████████                 
+
+
+//               CODE BY CHATGPT (niet alles)
+//                     ↓↓↓↓↓↓↓↓↓↓↓↓↓↓↓
 
     const arcs = pie(dataToUse);
     const paths = g
@@ -186,6 +252,7 @@
         {selectedCategory === "delay" ? "on time" : "regular"}
       </small>
     </div>
+    <small>Visualizes all dates combined</small>
   </div>
 </section>
 
@@ -218,10 +285,19 @@
   }
 
   section .svg-container .labels small:nth-of-type(1) span {
-    background: var(--NS-negative);
+    background: color-mix(in srgb, var(--NS-negative) 50%, transparent 50%);
   }
 
   section .svg-container .labels small:nth-of-type(2) span {
-    background: var(--NS-positive);
+    background: color-mix(in srgb, var(--NS-positive) 50%, transparent 50%);
+  }
+
+  section .svg-container > small {
+    position: absolute;
+    max-width: 15ch;
+    text-wrap: nowrap;
+    top: 3px;
+    left: 3px;
+    color: #666;
   }
 </style>
